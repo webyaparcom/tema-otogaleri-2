@@ -1,0 +1,40 @@
+{
+  "id": "3dis56gedy",
+  "name": {
+    "tr": "Satıştaki araçlar",
+    "en": "Cars for sale",
+    "ar": "السيارات المعروضة"
+  },
+  "description": {
+    "tr": "Ekspertizli ikinci el araç ilanları (kurgusal).",
+    "en": "Inspected used-car listings (fictional).",
+    "ar": "إعلانات سيارات مستعملة مفحوصة (افتراضية)."
+  },
+  "keyword": {
+    "tr": "İlkelerimiz",
+    "en": "Our principles",
+    "ar": "مبادئنا"
+  },
+  "path": "hizmetler",
+  "icon": "work",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "gcfqeb",
+      "lf64q2"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Satıştaki araçlar",
+    "en": "Cars for sale",
+    "ar": "السيارات المعروضة"
+  },
+  "date": "2026-11-16T11:40:36.679Z",
+  "update": "2026-11-16T12:20:44.474Z"
+}

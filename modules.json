@@ -1,0 +1,3650 @@
+{
+  "data": [
+    {
+      "name": "Demo Bandı",
+      "path": "demo-bandi",
+      "local": "header",
+      "category": "demo",
+      "id": "k8db01",
+      "desing": {
+        "tone": "info",
+        "bandBg": "",
+        "bandFg": "",
+        "ctaHref": "https://webyapar.com/temalar",
+        "ariaLabel": {
+          "tr": "Demo site uyarısı",
+          "en": "Demo site notice",
+          "ar": "تنبيه الموقع التجريبي"
+        },
+        "text": {
+          "tr": "Bu bir demo sitedir — içerik kurgusaldır, ödeme alınmaz",
+          "en": "This is a demo site — the content is fictional and no payment is taken",
+          "ar": "هذا موقع تجريبي — المحتوى افتراضي ولا يتم تحصيل أي مدفوعات"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
+        },
+        "hataBildir": "https://webyapar.com/api/portal/tema-hata.js"
+      },
+      "version": "1.0.0",
+      "icon": "info",
+      "index": 0
+    },
+    {
+      "name": "Menü 4",
+      "path": "menu-4",
+      "local": "header",
+      "category": "menu",
+      "id": "k8mn01",
+      "desing": {
+        "logo": "logo.png",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "height": "84px",
+        "background-color": "var(--mx-site-bg, #ffffff)",
+        "menubg": "",
+        "menutext": "#fff",
+        "menuhoverbg": "rgba(255,255,255,.18)"
+      },
+      "version": "1.0.0",
+      "icon": "menu",
+      "index": 1
+    },
+    {
+      "name": "Hero 2 (Ortalanmış)",
+      "path": "hero-2",
+      "local": "body",
+      "category": "hero",
+      "id": "k8hr01",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "glow1": "rgba(255,255,255,.16)",
+        "glow2": "rgba(255,255,255,.1)",
+        "btnbg": "var(--mx-site-surface, #ffffff)",
+        "btncolor": "var(--mx-site-text, #1b1b1b)",
+        "badge": {
+          "tr": "Emlak",
+          "en": "Real estate",
+          "ar": "عقارات"
+        },
+        "title": {
+          "tr": "Hayalinizdeki yeri birlikte bulalım",
+          "en": "Let's find your dream home together",
+          "ar": "لنجد معًا المكان الذي تحلم به"
+        },
+        "description": {
+          "tr": "Satılık ve kiralık seçkin portföy, şeffaf süreç, her ilanda yetki belgesi numarası.",
+          "en": "A curated sale and rental portfolio, a transparent process, a permit number on every listing.",
+          "ar": "محفظة مختارة للبيع والإيجار وعملية شفافة ورقم ترخيص في كل إعلان."
+        },
+        "btn1Text": {
+          "tr": "İlanları gör",
+          "en": "Browse listings",
+          "ar": "تصفح الإعلانات"
+        },
+        "btn1Url": "ilanlar",
+        "btn2Text": {
+          "tr": "Değerleme",
+          "en": "Valuation",
+          "ar": "التقييم"
+        },
+        "btn2Url": "iletisim"
+      },
+      "version": "1.0.0",
+      "icon": "hero",
+      "index": 2
+    },
+    {
+      "name": "İlan Filtre (Emlak İlan Listesi)",
+      "path": "ilan-filtre",
+      "local": "body",
+      "category": "page-list",
+      "id": "k8il01",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #ffffff)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "pageSize": 6,
+        "sort": "date",
+        "urlState": true,
+        "title": {
+          "tr": "Emlak İlanları",
+          "en": "Property Listings",
+          "ar": "إعلانات العقارات"
+        },
+        "subtitle": {
+          "tr": "Satılık ve kiralık ilanları süzün, sıralayın ve karşılaştırın.",
+          "en": "Filter, sort and compare properties for sale and for rent.",
+          "ar": "صفِّ العقارات المعروضة للبيع والإيجار ورتّبها وقارن بينها."
+        },
+        "searchLabel": {
+          "tr": "İlan ara",
+          "en": "Search listings",
+          "ar": "ابحث في الإعلانات"
+        },
+        "searchPlaceholder": {
+          "tr": "Semt veya ilan başlığı…",
+          "en": "District or listing title…",
+          "ar": "الحي أو عنوان الإعلان…"
+        },
+        "dealGroupLabel": {
+          "tr": "İşlem türü",
+          "en": "Deal type",
+          "ar": "نوع الصفقة"
+        },
+        "dealAll": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "dealSale": {
+          "tr": "Satılık",
+          "en": "For sale",
+          "ar": "للبيع"
+        },
+        "dealRent": {
+          "tr": "Kiralık",
+          "en": "For rent",
+          "ar": "للإيجار"
+        },
+        "filtersTitle": {
+          "tr": "Filtreler",
+          "en": "Filters",
+          "ar": "التصفية"
+        },
+        "typeTitle": {
+          "tr": "Emlak türü",
+          "en": "Property type",
+          "ar": "نوع العقار"
+        },
+        "roomsTitle": {
+          "tr": "Oda sayısı",
+          "en": "Rooms",
+          "ar": "عدد الغرف"
+        },
+        "m2Title": {
+          "tr": "Alan (m²)",
+          "en": "Area (m²)",
+          "ar": "المساحة (م²)"
+        },
+        "priceTitle": {
+          "tr": "Fiyat",
+          "en": "Price",
+          "ar": "السعر"
+        },
+        "districtTitle": {
+          "tr": "Semt",
+          "en": "District",
+          "ar": "الحي"
+        },
+        "districtAll": {
+          "tr": "Tüm semtler",
+          "en": "All districts",
+          "ar": "كل الأحياء"
+        },
+        "minLabel": {
+          "tr": "En az",
+          "en": "Min",
+          "ar": "الحد الأدنى"
+        },
+        "maxLabel": {
+          "tr": "En çok",
+          "en": "Max",
+          "ar": "الحد الأقصى"
+        },
+        "m2Unit": {
+          "tr": "m²",
+          "en": "m²",
+          "ar": "م²"
+        },
+        "sortLabel": {
+          "tr": "Sırala",
+          "en": "Sort by",
+          "ar": "ترتيب حسب"
+        },
+        "sortDate": {
+          "tr": "En yeni",
+          "en": "Newest",
+          "ar": "الأحدث"
+        },
+        "sortPrice": {
+          "tr": "Fiyat: düşükten yükseğe",
+          "en": "Price: low to high",
+          "ar": "السعر: من الأقل إلى الأعلى"
+        },
+        "sortPriceDesc": {
+          "tr": "Fiyat: yüksekten düşüğe",
+          "en": "Price: high to low",
+          "ar": "السعر: من الأعلى إلى الأقل"
+        },
+        "sortM2": {
+          "tr": "Alan: büyükten küçüğe",
+          "en": "Area: large to small",
+          "ar": "المساحة: من الأكبر إلى الأصغر"
+        },
+        "sortM2Asc": {
+          "tr": "Alan: küçükten büyüğe",
+          "en": "Area: small to large",
+          "ar": "المساحة: من الأصغر إلى الأكبر"
+        },
+        "resetFilters": {
+          "tr": "Filtreleri temizle",
+          "en": "Clear filters",
+          "ar": "مسح عوامل التصفية"
+        },
+        "resultCount": {
+          "tr": {
+            "one": "{n} ilan bulundu",
+            "other": "{n} ilan bulundu"
+          },
+          "en": {
+            "one": "{n} listing found",
+            "other": "{n} listings found"
+          },
+          "ar": {
+            "zero": "لم يتم العثور على إعلانات",
+            "one": "تم العثور على إعلان واحد",
+            "two": "تم العثور على إعلانين",
+            "few": "تم العثور على {n} إعلانات",
+            "many": "تم العثور على {n} إعلانًا",
+            "other": "تم العثور على {n} إعلان"
+          }
+        },
+        "photoCount": {
+          "tr": {
+            "one": "{n} fotoğraf",
+            "other": "{n} fotoğraf"
+          },
+          "en": {
+            "one": "{n} photo",
+            "other": "{n} photos"
+          },
+          "ar": {
+            "one": "صورة واحدة",
+            "two": "صورتان",
+            "few": "{n} صور",
+            "many": "{n} صورة",
+            "other": "{n} صورة"
+          }
+        },
+        "noResultTitle": {
+          "tr": "Sonuç bulunamadı",
+          "en": "No results found",
+          "ar": "لم يتم العثور على نتائج"
+        },
+        "noResultText": {
+          "tr": "Filtreleri gevşetmeyi veya temizlemeyi deneyin.",
+          "en": "Try loosening or clearing your filters.",
+          "ar": "جرّب تخفيف عوامل التصفية أو مسحها."
+        },
+        "pagesLabel": {
+          "tr": "Sayfalama",
+          "en": "Pagination",
+          "ar": "التنقل بين الصفحات"
+        },
+        "prevPage": {
+          "tr": "Önceki sayfa",
+          "en": "Previous page",
+          "ar": "الصفحة السابقة"
+        },
+        "nextPage": {
+          "tr": "Sonraki sayfa",
+          "en": "Next page",
+          "ar": "الصفحة التالية"
+        },
+        "pageN": {
+          "tr": "Sayfa {n}",
+          "en": "Page {n}",
+          "ar": "الصفحة {n}"
+        },
+        "permitLabel": {
+          "tr": "Yetki belgesi no",
+          "en": "Authorization certificate no.",
+          "ar": "رقم شهادة التفويض"
+        },
+        "permitDemo": {
+          "tr": "Yetki belgesi no: örnek ilan (DEMO)",
+          "en": "Authorization no.: sample listing (DEMO)",
+          "ar": "رقم شهادة التفويض: إعلان تجريبي (عرض توضيحي)"
+        },
+        "perMonth": {
+          "tr": "/ ay",
+          "en": "/ month",
+          "ar": "/ شهريًا"
+        },
+        "details": {
+          "tr": "İlan detayı",
+          "en": "View listing",
+          "ar": "تفاصيل الإعلان"
+        },
+        "dateLabel": {
+          "tr": "İlan tarihi",
+          "en": "Listed on",
+          "ar": "تاريخ الإعلان"
+        },
+        "demoNote": {
+          "tr": "Bu sayfadaki ilanlar kurgusaldır; yetki belgesi numaraları örnektir (DEMO).",
+          "en": "Listings on this page are fictional; authorization numbers are samples (DEMO).",
+          "ar": "الإعلانات في هذه الصفحة وهمية، وأرقام شهادات التفويض أمثلة فقط (عرض توضيحي)."
+        }
+      },
+      "version": "1.0.0",
+      "icon": "real_estate_agent",
+      "data": {
+        "facets": [
+          "type",
+          "rooms",
+          "m2",
+          "price",
+          "district"
+        ],
+        "typeLabels": {
+          "daire": {
+            "tr": "Daire",
+            "en": "Apartment",
+            "ar": "شقة"
+          },
+          "villa": {
+            "tr": "Villa",
+            "en": "Villa",
+            "ar": "فيلا"
+          },
+          "rezidans": {
+            "tr": "Rezidans",
+            "en": "Residence",
+            "ar": "مجمّع سكني"
+          },
+          "arsa": {
+            "tr": "Arsa",
+            "en": "Land",
+            "ar": "أرض"
+          },
+          "isyeri": {
+            "tr": "İşyeri",
+            "en": "Commercial",
+            "ar": "محل تجاري"
+          }
+        },
+        "listings": [
+          {
+            "id": "ilan-001",
+            "title": {
+              "tr": "Deniz manzaralı 3+1 daire",
+              "en": "3+1 apartment with sea view",
+              "ar": "شقة 3+1 بإطلالة بحرية"
+            },
+            "deal": "sale",
+            "type": "daire",
+            "rooms": "3+1",
+            "m2": 142,
+            "price": 6850000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Kadıköy",
+              "en": "Kadikoy",
+              "ar": "قاضي كوي"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0001",
+            "url": "",
+            "date": "2026-10-24",
+            "badge": {
+              "tr": "Yeni",
+              "en": "New",
+              "ar": "جديد"
+            }
+          },
+          {
+            "id": "ilan-002",
+            "title": {
+              "tr": "Bahçe katı 2+1 kiralık daire",
+              "en": "2+1 garden-floor apartment for rent",
+              "ar": "شقة 2+1 في الطابق الأرضي مع حديقة للإيجار"
+            },
+            "deal": "rent",
+            "type": "daire",
+            "rooms": "2+1",
+            "m2": 95,
+            "price": 38000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Ankara",
+              "en": "Ankara",
+              "ar": "أنقرة"
+            },
+            "district": {
+              "tr": "Çankaya",
+              "en": "Cankaya",
+              "ar": "تشانكايا"
+            },
+            "img": [],
+            "permitNo": "DEMO-06-0002",
+            "url": "",
+            "date": "2026-10-22"
+          },
+          {
+            "id": "ilan-003",
+            "title": {
+              "tr": "Havuzlu müstakil villa",
+              "en": "Detached villa with pool",
+              "ar": "فيلا مستقلة مع مسبح"
+            },
+            "deal": "sale",
+            "type": "villa",
+            "rooms": "5+2",
+            "m2": 320,
+            "price": 18900000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Muğla",
+              "en": "Mugla",
+              "ar": "موغلا"
+            },
+            "district": {
+              "tr": "Bodrum",
+              "en": "Bodrum",
+              "ar": "بودروم"
+            },
+            "img": [],
+            "permitNo": "DEMO-48-0003",
+            "url": "",
+            "date": "2026-10-18"
+          },
+          {
+            "id": "ilan-004",
+            "title": {
+              "tr": "Eşyalı 1+1 kiralık daire",
+              "en": "Furnished 1+1 apartment for rent",
+              "ar": "شقة 1+1 مفروشة للإيجار"
+            },
+            "deal": "rent",
+            "type": "daire",
+            "rooms": "1+1",
+            "m2": 55,
+            "price": 22500,
+            "currency": "TRY",
+            "city": {
+              "tr": "İzmir",
+              "en": "Izmir",
+              "ar": "إزمير"
+            },
+            "district": {
+              "tr": "Karşıyaka",
+              "en": "Karsiyaka",
+              "ar": "قارشيياكا"
+            },
+            "img": [],
+            "permitNo": "DEMO-35-0004",
+            "url": "",
+            "date": "2026-10-15"
+          },
+          {
+            "id": "ilan-005",
+            "title": {
+              "tr": "İmarlı satılık arsa",
+              "en": "Zoned plot for sale",
+              "ar": "أرض مخططة للبيع"
+            },
+            "deal": "sale",
+            "type": "arsa",
+            "rooms": "",
+            "m2": 600,
+            "price": 3200000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İzmir",
+              "en": "Izmir",
+              "ar": "إزمير"
+            },
+            "district": {
+              "tr": "Urla",
+              "en": "Urla",
+              "ar": "أورلا"
+            },
+            "img": [],
+            "permitNo": "DEMO-35-0005",
+            "url": "",
+            "date": "2026-10-11"
+          },
+          {
+            "id": "ilan-006",
+            "title": {
+              "tr": "Cadde üstü kiralık dükkân",
+              "en": "Street-front shop for rent",
+              "ar": "محل على الشارع الرئيسي للإيجار"
+            },
+            "deal": "rent",
+            "type": "isyeri",
+            "rooms": "",
+            "m2": 120,
+            "price": 65000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Şişli",
+              "en": "Sisli",
+              "ar": "شيشلي"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0006",
+            "url": "",
+            "date": "2026-10-08"
+          },
+          {
+            "id": "ilan-007",
+            "title": {
+              "tr": "Site içinde 2+1 daire",
+              "en": "2+1 apartment in a gated complex",
+              "ar": "شقة 2+1 داخل مجمع سكني مسوّر"
+            },
+            "deal": "sale",
+            "type": "daire",
+            "rooms": "2+1",
+            "m2": 100,
+            "price": 4150000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Bursa",
+              "en": "Bursa",
+              "ar": "بورصة"
+            },
+            "district": {
+              "tr": "Nilüfer",
+              "en": "Nilufer",
+              "ar": "نيلوفر"
+            },
+            "img": [],
+            "permitNo": "DEMO-16-0007",
+            "url": "",
+            "date": "2026-10-05"
+          },
+          {
+            "id": "ilan-008",
+            "title": {
+              "tr": "Merkezi konumda 1+1 rezidans",
+              "en": "1+1 residence in a central location",
+              "ar": "وحدة 1+1 في مجمّع سكني بموقع مركزي"
+            },
+            "deal": "sale",
+            "type": "rezidans",
+            "rooms": "1+1",
+            "m2": 70,
+            "price": 5300000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Beşiktaş",
+              "en": "Besiktas",
+              "ar": "بشيكتاش"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0008",
+            "url": "",
+            "date": "2026-10-02"
+          }
+        ]
+      },
+      "index": 3
+    },
+    {
+      "name": "İstatistik Bandı 1",
+      "path": "stats-1",
+      "local": "body",
+      "category": "stats",
+      "id": "k8st01",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "numbercolor": "#ffffff",
+        "labelcolor": "rgba(255,255,255,.88)",
+        "iconsize": "56px",
+        "iconbox": "88px",
+        "stil": ""
+      },
+      "version": "1.0.0",
+      "icon": "monitoring",
+      "data": [
+        {
+          "number": 150,
+          "suffix": "+",
+          "label": {
+            "tr": "Tamamlanan Proje",
+            "en": "Completed Projects",
+            "ar": "مشروع منجز"
+          },
+          "icon": "task_alt"
+        },
+        {
+          "number": 50,
+          "suffix": "+",
+          "label": {
+            "tr": "Mutlu Müşteri",
+            "en": "Happy Customers",
+            "ar": "عميل سعيد"
+          },
+          "icon": "sentiment_satisfied"
+        },
+        {
+          "number": 10,
+          "suffix": "+",
+          "label": {
+            "tr": "Yıllık Deneyim",
+            "en": "Years of Experience",
+            "ar": "سنوات من الخبرة"
+          },
+          "icon": "workspace_premium"
+        },
+        {
+          "number": 24,
+          "suffix": "/7",
+          "label": {
+            "tr": "Destek",
+            "en": "Support",
+            "ar": "الدعم"
+          },
+          "icon": "support_agent"
+        }
+      ],
+      "index": 4
+    },
+    {
+      "name": "Ekip 1",
+      "path": "team-1",
+      "local": "body",
+      "category": "team",
+      "id": "k8tm01",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "badge": {
+          "tr": "Ekip",
+          "en": "Team",
+          "ar": "الفريق"
+        },
+        "title": {
+          "tr": "Danışmanlarımız",
+          "en": "Our advisors",
+          "ar": "مستشارونا"
+        },
+        "description": {
+          "tr": "Alanında deneyimli ekibimiz projelerinize değer katmak için burada.",
+          "en": "Our experienced team is here to add value to your projects.",
+          "ar": "فريقنا ذو الخبرة هنا ليضيف قيمة إلى مشاريعك."
+        },
+        "accentText": "#ffffff"
+      },
+      "version": "1.0.0",
+      "icon": "groups",
+      "data": [
+        {
+          "name": "Ad Soyad",
+          "role": {
+            "tr": "Kurucu / CEO",
+            "en": "Founder / CEO",
+            "ar": "المؤسس / الرئيس التنفيذي"
+          },
+          "bio": {
+            "tr": "10+ yıllık sektör deneyimi ile strateji ve yönetim.",
+            "en": "Strategy and management with 10+ years of industry experience.",
+            "ar": "الاستراتيجية والإدارة بخبرة تتجاوز 10 سنوات في القطاع."
+          },
+          "img": ""
+        },
+        {
+          "name": "Ad Soyad",
+          "role": {
+            "tr": "Tasarım Direktörü",
+            "en": "Design Director",
+            "ar": "مدير التصميم"
+          },
+          "bio": {
+            "tr": "Marka kimliği ve kullanıcı deneyimi tasarımı.",
+            "en": "Brand identity and user experience design.",
+            "ar": "تصميم هوية العلامة التجارية وتجربة المستخدم."
+          },
+          "img": ""
+        },
+        {
+          "name": "Ad Soyad",
+          "role": {
+            "tr": "Yazılım Geliştirici",
+            "en": "Software Developer",
+            "ar": "مطوّر برمجيات"
+          },
+          "bio": {
+            "tr": "Modern web teknolojileri ile ölçeklenebilir çözümler.",
+            "en": "Scalable solutions with modern web technologies.",
+            "ar": "حلول قابلة للتوسّع بتقنيات الويب الحديثة."
+          },
+          "img": ""
+        }
+      ],
+      "index": 5
+    },
+    {
+      "name": "Footer 3",
+      "path": "footer-3",
+      "local": "footer",
+      "category": "footer",
+      "id": "k8ft01",
+      "desing": {
+        "showlang": true,
+        "bgcolor": "var(--mx-site-surface-2, #f1f1ee)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "minimal_design": true,
+        "social_media": false,
+        "logo_maxh": "60px",
+        "logo_plate": false,
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
+      },
+      "version": "1.0.0",
+      "icon": "widgets",
+      "data": [],
+      "index": 6
+    },
+    {
+      "name": "İletişim",
+      "path": "contact-3",
+      "local": "body",
+      "category": "contact",
+      "id": "k8ct01",
+      "desing": {
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "name": {
+          "tr": "Bize Ulaşın",
+          "en": "Contact Us",
+          "ar": "تواصل معنا"
+        },
+        "margin": "30px 0px 30px 0px",
+        "linkcolor": "var(--mx-site-primary, #2563eb)",
+        "stil": ""
+      },
+      "version": "1.0.0",
+      "icon": "contact_mail",
+      "data": [
+        {
+          "icon": "phone",
+          "text": "+90",
+          "url": ""
+        },
+        {
+          "icon": "email",
+          "text": ""
+        },
+        {
+          "icon": "map",
+          "text": ""
+        }
+      ],
+      "index": 7
+    },
+    {
+      "name": "Maps",
+      "path": "map-2",
+      "local": "body",
+      "category": "map",
+      "id": "k8mp01",
+      "desing": {
+        "height": "200px",
+        "opacity": "0.5",
+        "backgroundcolor": "#ffffff",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "img": "map.png",
+        "externalUrl": "",
+        "margin": "0px 0px 0px 0px"
+      },
+      "version": "1.0.0",
+      "icon": "widgets",
+      "index": 8
+    },
+    {
+      "name": "Tanıtım Modülü",
+      "path": "module-1",
+      "local": "body",
+      "category": "module",
+      "id": "k8in01",
+      "desing": {
+        "name": {
+          "tr": "Hakkımızda",
+          "en": "About us",
+          "ar": "من نحن"
+        },
+        "description": {
+          "tr": "Bu sayfa bir tema örneğidir; içerik demo üretiminde doldurulur.",
+          "en": "This page is a theme sample; its content is filled in during demo production.",
+          "ar": "هذه الصفحة نموذج للقالب؛ يُملأ محتواها عند إنتاج العرض التجريبي."
+        },
+        "name2": {
+          "tr": "Vizyonumuz",
+          "en": "Our Vision",
+          "ar": "رؤيتنا"
+        },
+        "spot2": {
+          "tr": "Sektörümüzde yenilikçi yaklaşımlarla öncü olmak.",
+          "en": "To lead our industry with innovative approaches.",
+          "ar": "أن نكون روّادًا في قطاعنا بأساليب مبتكرة."
+        },
+        "icon2": "visibility",
+        "name3": {
+          "tr": "Misyonumuz",
+          "en": "Our Mission",
+          "ar": "مهمتنا"
+        },
+        "spot3": {
+          "tr": "İhtiyaç duyulan çözümleri hızlı ve şeffaf sunmak.",
+          "en": "Deliver needed solutions quickly and transparently.",
+          "ar": "تقديم الحلول المطلوبة بسرعة وشفافية."
+        },
+        "icon3": "flag",
+        "img": "index.jpg",
+        "bgcolor": "var(--mx-site-surface, #ffffff)",
+        "fontcolor": "var(--mx-site-text, #1b1b1b)",
+        "margintop": "20",
+        "marginbotton": "20",
+        "title": {
+          "tr": "Kurumsal",
+          "en": "Corporate",
+          "ar": "المؤسسة"
+        },
+        "stil": ""
+      },
+      "version": "1.1.0",
+      "icon": "business",
+      "index": 9
+    },
+    {
+      "name": "İlan Filtre (Emlak İlan Listesi)",
+      "path": "ilan-filtre",
+      "local": "body",
+      "category": "page-list",
+      "id": "k8il02",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #ffffff)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "pageSize": 6,
+        "sort": "date",
+        "urlState": true,
+        "title": {
+          "tr": "Emlak İlanları",
+          "en": "Property Listings",
+          "ar": "إعلانات العقارات"
+        },
+        "subtitle": {
+          "tr": "Satılık ve kiralık ilanları süzün, sıralayın ve karşılaştırın.",
+          "en": "Filter, sort and compare properties for sale and for rent.",
+          "ar": "صفِّ العقارات المعروضة للبيع والإيجار ورتّبها وقارن بينها."
+        },
+        "searchLabel": {
+          "tr": "İlan ara",
+          "en": "Search listings",
+          "ar": "ابحث في الإعلانات"
+        },
+        "searchPlaceholder": {
+          "tr": "Semt veya ilan başlığı…",
+          "en": "District or listing title…",
+          "ar": "الحي أو عنوان الإعلان…"
+        },
+        "dealGroupLabel": {
+          "tr": "İşlem türü",
+          "en": "Deal type",
+          "ar": "نوع الصفقة"
+        },
+        "dealAll": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "dealSale": {
+          "tr": "Satılık",
+          "en": "For sale",
+          "ar": "للبيع"
+        },
+        "dealRent": {
+          "tr": "Kiralık",
+          "en": "For rent",
+          "ar": "للإيجار"
+        },
+        "filtersTitle": {
+          "tr": "Filtreler",
+          "en": "Filters",
+          "ar": "التصفية"
+        },
+        "typeTitle": {
+          "tr": "Emlak türü",
+          "en": "Property type",
+          "ar": "نوع العقار"
+        },
+        "roomsTitle": {
+          "tr": "Oda sayısı",
+          "en": "Rooms",
+          "ar": "عدد الغرف"
+        },
+        "m2Title": {
+          "tr": "Alan (m²)",
+          "en": "Area (m²)",
+          "ar": "المساحة (م²)"
+        },
+        "priceTitle": {
+          "tr": "Fiyat",
+          "en": "Price",
+          "ar": "السعر"
+        },
+        "districtTitle": {
+          "tr": "Semt",
+          "en": "District",
+          "ar": "الحي"
+        },
+        "districtAll": {
+          "tr": "Tüm semtler",
+          "en": "All districts",
+          "ar": "كل الأحياء"
+        },
+        "minLabel": {
+          "tr": "En az",
+          "en": "Min",
+          "ar": "الحد الأدنى"
+        },
+        "maxLabel": {
+          "tr": "En çok",
+          "en": "Max",
+          "ar": "الحد الأقصى"
+        },
+        "m2Unit": {
+          "tr": "m²",
+          "en": "m²",
+          "ar": "م²"
+        },
+        "sortLabel": {
+          "tr": "Sırala",
+          "en": "Sort by",
+          "ar": "ترتيب حسب"
+        },
+        "sortDate": {
+          "tr": "En yeni",
+          "en": "Newest",
+          "ar": "الأحدث"
+        },
+        "sortPrice": {
+          "tr": "Fiyat: düşükten yükseğe",
+          "en": "Price: low to high",
+          "ar": "السعر: من الأقل إلى الأعلى"
+        },
+        "sortPriceDesc": {
+          "tr": "Fiyat: yüksekten düşüğe",
+          "en": "Price: high to low",
+          "ar": "السعر: من الأعلى إلى الأقل"
+        },
+        "sortM2": {
+          "tr": "Alan: büyükten küçüğe",
+          "en": "Area: large to small",
+          "ar": "المساحة: من الأكبر إلى الأصغر"
+        },
+        "sortM2Asc": {
+          "tr": "Alan: küçükten büyüğe",
+          "en": "Area: small to large",
+          "ar": "المساحة: من الأصغر إلى الأكبر"
+        },
+        "resetFilters": {
+          "tr": "Filtreleri temizle",
+          "en": "Clear filters",
+          "ar": "مسح عوامل التصفية"
+        },
+        "resultCount": {
+          "tr": {
+            "one": "{n} ilan bulundu",
+            "other": "{n} ilan bulundu"
+          },
+          "en": {
+            "one": "{n} listing found",
+            "other": "{n} listings found"
+          },
+          "ar": {
+            "zero": "لم يتم العثور على إعلانات",
+            "one": "تم العثور على إعلان واحد",
+            "two": "تم العثور على إعلانين",
+            "few": "تم العثور على {n} إعلانات",
+            "many": "تم العثور على {n} إعلانًا",
+            "other": "تم العثور على {n} إعلان"
+          }
+        },
+        "photoCount": {
+          "tr": {
+            "one": "{n} fotoğraf",
+            "other": "{n} fotoğraf"
+          },
+          "en": {
+            "one": "{n} photo",
+            "other": "{n} photos"
+          },
+          "ar": {
+            "one": "صورة واحدة",
+            "two": "صورتان",
+            "few": "{n} صور",
+            "many": "{n} صورة",
+            "other": "{n} صورة"
+          }
+        },
+        "noResultTitle": {
+          "tr": "Sonuç bulunamadı",
+          "en": "No results found",
+          "ar": "لم يتم العثور على نتائج"
+        },
+        "noResultText": {
+          "tr": "Filtreleri gevşetmeyi veya temizlemeyi deneyin.",
+          "en": "Try loosening or clearing your filters.",
+          "ar": "جرّب تخفيف عوامل التصفية أو مسحها."
+        },
+        "pagesLabel": {
+          "tr": "Sayfalama",
+          "en": "Pagination",
+          "ar": "التنقل بين الصفحات"
+        },
+        "prevPage": {
+          "tr": "Önceki sayfa",
+          "en": "Previous page",
+          "ar": "الصفحة السابقة"
+        },
+        "nextPage": {
+          "tr": "Sonraki sayfa",
+          "en": "Next page",
+          "ar": "الصفحة التالية"
+        },
+        "pageN": {
+          "tr": "Sayfa {n}",
+          "en": "Page {n}",
+          "ar": "الصفحة {n}"
+        },
+        "permitLabel": {
+          "tr": "Yetki belgesi no",
+          "en": "Authorization certificate no.",
+          "ar": "رقم شهادة التفويض"
+        },
+        "permitDemo": {
+          "tr": "Yetki belgesi no: örnek ilan (DEMO)",
+          "en": "Authorization no.: sample listing (DEMO)",
+          "ar": "رقم شهادة التفويض: إعلان تجريبي (عرض توضيحي)"
+        },
+        "perMonth": {
+          "tr": "/ ay",
+          "en": "/ month",
+          "ar": "/ شهريًا"
+        },
+        "details": {
+          "tr": "İlan detayı",
+          "en": "View listing",
+          "ar": "تفاصيل الإعلان"
+        },
+        "dateLabel": {
+          "tr": "İlan tarihi",
+          "en": "Listed on",
+          "ar": "تاريخ الإعلان"
+        },
+        "demoNote": {
+          "tr": "Bu sayfadaki ilanlar kurgusaldır; yetki belgesi numaraları örnektir (DEMO).",
+          "en": "Listings on this page are fictional; authorization numbers are samples (DEMO).",
+          "ar": "الإعلانات في هذه الصفحة وهمية، وأرقام شهادات التفويض أمثلة فقط (عرض توضيحي)."
+        }
+      },
+      "version": "1.0.0",
+      "icon": "real_estate_agent",
+      "data": {
+        "facets": [
+          "type",
+          "rooms",
+          "m2",
+          "price",
+          "district"
+        ],
+        "typeLabels": {
+          "daire": {
+            "tr": "Daire",
+            "en": "Apartment",
+            "ar": "شقة"
+          },
+          "villa": {
+            "tr": "Villa",
+            "en": "Villa",
+            "ar": "فيلا"
+          },
+          "rezidans": {
+            "tr": "Rezidans",
+            "en": "Residence",
+            "ar": "مجمّع سكني"
+          },
+          "arsa": {
+            "tr": "Arsa",
+            "en": "Land",
+            "ar": "أرض"
+          },
+          "isyeri": {
+            "tr": "İşyeri",
+            "en": "Commercial",
+            "ar": "محل تجاري"
+          }
+        },
+        "listings": [
+          {
+            "id": "ilan-001",
+            "title": {
+              "tr": "Deniz manzaralı 3+1 daire",
+              "en": "3+1 apartment with sea view",
+              "ar": "شقة 3+1 بإطلالة بحرية"
+            },
+            "deal": "sale",
+            "type": "daire",
+            "rooms": "3+1",
+            "m2": 142,
+            "price": 6850000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Kadıköy",
+              "en": "Kadikoy",
+              "ar": "قاضي كوي"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0001",
+            "url": "",
+            "date": "2026-10-24",
+            "badge": {
+              "tr": "Yeni",
+              "en": "New",
+              "ar": "جديد"
+            }
+          },
+          {
+            "id": "ilan-002",
+            "title": {
+              "tr": "Bahçe katı 2+1 kiralık daire",
+              "en": "2+1 garden-floor apartment for rent",
+              "ar": "شقة 2+1 في الطابق الأرضي مع حديقة للإيجار"
+            },
+            "deal": "rent",
+            "type": "daire",
+            "rooms": "2+1",
+            "m2": 95,
+            "price": 38000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Ankara",
+              "en": "Ankara",
+              "ar": "أنقرة"
+            },
+            "district": {
+              "tr": "Çankaya",
+              "en": "Cankaya",
+              "ar": "تشانكايا"
+            },
+            "img": [],
+            "permitNo": "DEMO-06-0002",
+            "url": "",
+            "date": "2026-10-22"
+          },
+          {
+            "id": "ilan-003",
+            "title": {
+              "tr": "Havuzlu müstakil villa",
+              "en": "Detached villa with pool",
+              "ar": "فيلا مستقلة مع مسبح"
+            },
+            "deal": "sale",
+            "type": "villa",
+            "rooms": "5+2",
+            "m2": 320,
+            "price": 18900000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Muğla",
+              "en": "Mugla",
+              "ar": "موغلا"
+            },
+            "district": {
+              "tr": "Bodrum",
+              "en": "Bodrum",
+              "ar": "بودروم"
+            },
+            "img": [],
+            "permitNo": "DEMO-48-0003",
+            "url": "",
+            "date": "2026-10-18"
+          },
+          {
+            "id": "ilan-004",
+            "title": {
+              "tr": "Eşyalı 1+1 kiralık daire",
+              "en": "Furnished 1+1 apartment for rent",
+              "ar": "شقة 1+1 مفروشة للإيجار"
+            },
+            "deal": "rent",
+            "type": "daire",
+            "rooms": "1+1",
+            "m2": 55,
+            "price": 22500,
+            "currency": "TRY",
+            "city": {
+              "tr": "İzmir",
+              "en": "Izmir",
+              "ar": "إزمير"
+            },
+            "district": {
+              "tr": "Karşıyaka",
+              "en": "Karsiyaka",
+              "ar": "قارشيياكا"
+            },
+            "img": [],
+            "permitNo": "DEMO-35-0004",
+            "url": "",
+            "date": "2026-10-15"
+          },
+          {
+            "id": "ilan-005",
+            "title": {
+              "tr": "İmarlı satılık arsa",
+              "en": "Zoned plot for sale",
+              "ar": "أرض مخططة للبيع"
+            },
+            "deal": "sale",
+            "type": "arsa",
+            "rooms": "",
+            "m2": 600,
+            "price": 3200000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İzmir",
+              "en": "Izmir",
+              "ar": "إزمير"
+            },
+            "district": {
+              "tr": "Urla",
+              "en": "Urla",
+              "ar": "أورلا"
+            },
+            "img": [],
+            "permitNo": "DEMO-35-0005",
+            "url": "",
+            "date": "2026-10-11"
+          },
+          {
+            "id": "ilan-006",
+            "title": {
+              "tr": "Cadde üstü kiralık dükkân",
+              "en": "Street-front shop for rent",
+              "ar": "محل على الشارع الرئيسي للإيجار"
+            },
+            "deal": "rent",
+            "type": "isyeri",
+            "rooms": "",
+            "m2": 120,
+            "price": 65000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Şişli",
+              "en": "Sisli",
+              "ar": "شيشلي"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0006",
+            "url": "",
+            "date": "2026-10-08"
+          },
+          {
+            "id": "ilan-007",
+            "title": {
+              "tr": "Site içinde 2+1 daire",
+              "en": "2+1 apartment in a gated complex",
+              "ar": "شقة 2+1 داخل مجمع سكني مسوّر"
+            },
+            "deal": "sale",
+            "type": "daire",
+            "rooms": "2+1",
+            "m2": 100,
+            "price": 4150000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Bursa",
+              "en": "Bursa",
+              "ar": "بورصة"
+            },
+            "district": {
+              "tr": "Nilüfer",
+              "en": "Nilufer",
+              "ar": "نيلوفر"
+            },
+            "img": [],
+            "permitNo": "DEMO-16-0007",
+            "url": "",
+            "date": "2026-10-05"
+          },
+          {
+            "id": "ilan-008",
+            "title": {
+              "tr": "Merkezi konumda 1+1 rezidans",
+              "en": "1+1 residence in a central location",
+              "ar": "وحدة 1+1 في مجمّع سكني بموقع مركزي"
+            },
+            "deal": "sale",
+            "type": "rezidans",
+            "rooms": "1+1",
+            "m2": 70,
+            "price": 5300000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Beşiktaş",
+              "en": "Besiktas",
+              "ar": "بشيكتاش"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0008",
+            "url": "",
+            "date": "2026-10-02"
+          }
+        ]
+      },
+      "index": 10
+    },
+    {
+      "name": "Demo Kredi Şeridi",
+      "description": "Demo sitelerin alt bilgisinde duran kredi şeridi: «Bu demo Webyapar tarafından hazırlanmıştır — Bu temayı iste». Marka adı çevrilmez (Latin, dir=ltr izole), bağlantı demo adına göre webyapar.com/temalar#<slug>. Üç dil (TR/EN/AR), mantıksal CSS (RTL), mobilde sarar, reduced-motion'a saygılı.",
+      "version": "1.0.0",
+      "icon": "campaign",
+      "category": "demo",
+      "tags": [
+        "demo",
+        "footer",
+        "kredi",
+        "rtl"
+      ],
+      "desing": {
+        "href": "https://webyapar.com/temalar#otogaleri-2",
+        "brand": "Webyapar",
+        "text": {
+          "tr": "Bu demo {brand} tarafından hazırlanmıştır —",
+          "en": "This demo was prepared by {brand} —",
+          "ar": "تم إعداد هذا العرض التجريبي بواسطة {brand} —"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "ariaLabel": {
+          "tr": "Demo bilgisi",
+          "en": "Demo credit",
+          "ar": "معلومات العرض التجريبي"
+        }
+      },
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "6zo8ee",
+      "path": "demo-kredi",
+      "local": "footer",
+      "data": [],
+      "index": 11
+    },
+    {
+      "name": "Menü 8",
+      "path": "menu-8",
+      "desing": {
+        "logo": "logo.png",
+        "logosize": 220,
+        "logosizemobil": 160,
+        "palette": {
+          "primary": "#14161B",
+          "accent": "#E0662E",
+          "surface": "#1C1F26",
+          "muted": "rgba(255, 255, 255, 0.72)"
+        },
+        "identity": {
+          "title": "",
+          "text": ""
+        },
+        "cta": {
+          "primary": {
+            "text": "",
+            "url": "",
+            "icon": "sync_alt"
+          },
+          "secondary": {
+            "text": "",
+            "url": "",
+            "icon": "call"
+          }
+        },
+        "stats": [],
+        "ariaToggle": {
+          "tr": "Menüyü aç/kapat",
+          "en": "Toggle menu",
+          "ar": "تبديل القائمة"
+        },
+        "color": "#1e3046",
+        "logo_acik": "logo-acik.svg",
+        "logo_h": "44px",
+        "cta_url": "teklif-al"
+      },
+      "local": "header",
+      "data": [],
+      "category": "menu",
+      "description": "Dernek ve kurumsal siteler için tasarlanan üst menü modülü. Üst barda iletişim bilgileri ve dil seçenekleri, ana bölümde logo, alt bölümde ise mega menü destekli navigasyon sunar. Mobilde çökmeden açılır kapanır menü yapısı, çoklu dil desteği, modern gölgeler ve responsive logo boyutları içerir.",
+      "version": "2.0.0",
+      "icon": "menu",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "0qosed",
+      "index": 12
+    },
+    {
+      "name": "Açılış Katalog Arama — tam ekran vitrin üstünde marka/model/fiyat çipli arama yuvası",
+      "description": "Tam ekran vitrin görseli (alttan koyulaşan örtü) üstünde etiket, h1, metin ve düğmeler; sahnenin tabanına oturan açık renkli arama yuvası: her filtre grubu (marka · model/kasa · fiyat …) kendi sütununda başlık + seçim çipleri, yanda canlı seçim özeti, Temizle ve «sonuçlar» bağlantısı. Çip seçildikçe liste bağlantısının sorgu parametreleri güncellenir (…?marka=bmw&fiyat=0-1000000); seçili çipe yeniden tıklamak seçimi kaldırır. JS yokken form GET ile aynı adrese gider. Altta öne çıkan maddeler. acilis-hizmet-secici sabit bağlantı satırlarıdır, acilis-tam-ortu yalnız metinli örtüdür; bu modül görselin tabanına filtre gruplarından oluşan arama yuvası oturtur ve çip seçimini liste URL'sine çevirir. kargo-takip-hero serbest metin girer, teklif-sihirbazi-hero form gönderir; burada hedef bir katalog liste sayfasıdır (parametreli bağlantı). Başlık h1, ilk görsel eager. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "manage_search",
+      "category": "hero",
+      "subCategory": "catalog-search",
+      "tags": [
+        "hero",
+        "catalog",
+        "search",
+        "filter-chips",
+        "fullbleed",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1280px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": {
+          "tr": "Kasa tipi, yakıt ve bütçeye göre seçin; her ilanda yetki belgesi numarası ve ekspertiz raporu bulunur.",
+          "en": "Choose by body type, fuel and budget; every listing carries an authorisation certificate number and an inspection report.",
+          "ar": "اختر حسب نوع الهيكل والوقود والميزانية؛ يحمل كل إعلان رقم شهادة التفويض وتقرير الفحص."
+        },
+        "img": "otogaleri-hero-galeri.webp",
+        "img2": "",
+        "video": "",
+        "poster": "",
+        "alt": {
+          "tr": "Galeride sıralanmış ikinci el araçlar",
+          "en": "Used cars lined up in the showroom",
+          "ar": "سيارات مستعملة مصطفّة في المعرض"
+        },
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "teklif-al",
+        "rozet_ikon": "",
+        "rozet_deger": "",
+        "rozet_metin": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "ortu": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 22%, #0b1220)",
+        "ortuText": "#ffffff",
+        "liste_url": "hizmetler",
+        "filtreler": [
+          {
+            "anahtar": "kasa",
+            "ad": {
+              "tr": "Kasa",
+              "en": "Body",
+              "ar": "الهيكل"
+            },
+            "secenekler": [
+              {
+                "deger": "sedan",
+                "ad": {
+                  "tr": "Sedan",
+                  "en": "Sedan",
+                  "ar": "سيدان"
+                }
+              },
+              {
+                "deger": "hatchback",
+                "ad": {
+                  "tr": "Hatchback",
+                  "en": "Hatchback",
+                  "ar": "هاتشباك"
+                }
+              },
+              {
+                "deger": "suv",
+                "ad": {
+                  "tr": "SUV",
+                  "en": "SUV",
+                  "ar": "SUV"
+                }
+              },
+              {
+                "deger": "ticari",
+                "ad": {
+                  "tr": "Hafif ticari",
+                  "en": "Light commercial",
+                  "ar": "تجارية خفيفة"
+                }
+              }
+            ]
+          },
+          {
+            "anahtar": "yakit",
+            "ad": {
+              "tr": "Yakıt",
+              "en": "Fuel",
+              "ar": "الوقود"
+            },
+            "secenekler": [
+              {
+                "deger": "dizel",
+                "ad": {
+                  "tr": "Dizel",
+                  "en": "Diesel",
+                  "ar": "ديزل"
+                }
+              },
+              {
+                "deger": "benzin",
+                "ad": {
+                  "tr": "Benzin",
+                  "en": "Petrol",
+                  "ar": "بنزين"
+                }
+              },
+              {
+                "deger": "hibrit",
+                "ad": {
+                  "tr": "Hibrit",
+                  "en": "Hybrid",
+                  "ar": "هجين"
+                }
+              },
+              {
+                "deger": "elektrik",
+                "ad": {
+                  "tr": "Elektrik",
+                  "en": "Electric",
+                  "ar": "كهرباء"
+                }
+              }
+            ]
+          },
+          {
+            "anahtar": "fiyat",
+            "ad": {
+              "tr": "Bütçe",
+              "en": "Budget",
+              "ar": "الميزانية"
+            },
+            "secenekler": [
+              {
+                "deger": "0-800000",
+                "ad": {
+                  "tr": "800 bin ₺ altı",
+                  "en": "Under 800k TRY",
+                  "ar": "أقل من 800 ألف ليرة"
+                }
+              },
+              {
+                "deger": "800000-1300000",
+                "ad": {
+                  "tr": "800 bin – 1,3 milyon ₺",
+                  "en": "800k – 1.3m TRY",
+                  "ar": "800 ألف – 1.3 مليون ليرة"
+                }
+              },
+              {
+                "deger": "1300000-",
+                "ad": {
+                  "tr": "1,3 milyon ₺ üstü",
+                  "en": "Over 1.3m TRY",
+                  "ar": "أكثر من 1.3 مليون ليرة"
+                }
+              }
+            ]
+          }
+        ],
+        "sonuc_ad": {
+          "tr": "İlanları göster",
+          "en": "Show listings",
+          "ar": "اعرض الإعلانات"
+        },
+        "temizle_ad": {
+          "tr": "Temizle",
+          "en": "Clear",
+          "ar": "مسح"
+        },
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "yukseklik": 88,
+        "eyebrow": {
+          "tr": "Oto galeri · ekspertizli ilanlar",
+          "en": "Car dealer · inspected listings",
+          "ar": "معرض سيارات · إعلانات مفحوصة"
+        },
+        "title": {
+          "tr": "Raporu açık araç, sözü net galeri",
+          "en": "Cars with open reports, a dealer that keeps its word",
+          "ar": "سيارات بتقارير مكشوفة ومعرض يفي بكلمته"
+        },
+        "cta1": {
+          "tr": "Araçları gör",
+          "en": "See the cars",
+          "ar": "شاهد السيارات"
+        },
+        "cta1_url": "hizmetler",
+        "cta2": {
+          "tr": "Aracımı takasla",
+          "en": "Trade in my car",
+          "ar": "قايض سيارتي"
+        },
+        "scroll_label": {
+          "tr": "Aşağı kaydır",
+          "en": "Scroll down",
+          "ar": "انزل للأسفل"
+        }
+      },
+      "data": [
+        {
+          "ikon": "fact_check",
+          "metin": {
+            "tr": "Her ilanda ekspertiz raporu",
+            "en": "An inspection report on every listing",
+            "ar": "تقرير فحص مع كل إعلان"
+          }
+        },
+        {
+          "ikon": "badge",
+          "metin": {
+            "tr": "Yetki belgesi no ilanda",
+            "en": "Authorisation number on the listing",
+            "ar": "رقم التفويض في الإعلان"
+          }
+        },
+        {
+          "ikon": "sync_alt",
+          "metin": {
+            "tr": "Takas değerlemesi",
+            "en": "Trade-in valuation",
+            "ar": "تقييم المقايضة"
+          }
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "deger": "sayı/değer (ör. 1.200+, dil sözlüğü olabilir)",
+          "metin": "madde metni (dil sözlüğü)",
+          "img": "madde görseli (mozaik yerleşimlerde)",
+          "url": "madde bağlantısı"
+        }
+      },
+      "id": "5rypkn",
+      "path": "acilis-katalog-arama",
+      "local": "body",
+      "index": 13
+    },
+    {
+      "name": "Sayaç Dönem Kıyas — iki dönemli karne tablosu + dönem düğmesi",
+      "description": "Rakamlar bir karne tablosunda: gösterge (ikon, etiket, not, oran çubuğu) | önceki dönem | güncel dönem | Δ değişim rozeti. Dönem düğmesi (önceki ↔ güncel) çubukları ve sütun vurgusunu çevirir. Satırda `onceki` (önceki dönem sayısı) ve desing `donem_a` / `donem_b` (dil sözlüğü) verilirse kıyas açılır; yoksa tek sütunlu karne. sayac-cubuk ve sayac-sutun-grafik tek anlık değeri çizer; bu modül iki dönemi yan yana karşılaştıran semantik bir <table> iskeletidir (Δ sütunu + dönem geçişi) — ailede tablo ve zaman kıyası kuran ilk modül (kolej «yıllar arası başarı» dili). Sayılar sayfa diliyle biçimlenir (Intl), metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "compare_arrows",
+      "category": "stats",
+      "subCategory": "period-compare",
+      "tags": [
+        "stats",
+        "table",
+        "compare",
+        "period",
+        "toggle",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Karne",
+          "en": "Scorecard",
+          "ar": "بطاقة الأداء"
+        },
+        "baslik": {
+          "tr": "Geçen yıla göre",
+          "en": "Compared with last year",
+          "ar": "مقارنةً بالعام الماضي"
+        },
+        "metin": {
+          "tr": "Kurgusal demo verileri.",
+          "en": "Fictional demo figures.",
+          "ar": "بيانات تجريبية افتراضية."
+        },
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "donem_a": "2025",
+        "donem_b": "2026",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "color": "var(--mx-site-text, #111318)",
+        "title": {
+          "tr": "Söylediğimizi nasıl gösteriyoruz?",
+          "en": "How we show what we say",
+          "ar": "كيف نُثبت ما نقوله؟"
+        },
+        "description": {
+          "tr": "Kurgusal demo verileri.",
+          "en": "Fictional demo figures.",
+          "ar": "بيانات تجريبية افتراضية."
+        }
+      },
+      "data": [
+        {
+          "sayi": 214,
+          "onceki": 182,
+          "etiket": {
+            "tr": "Teslim edilen araç",
+            "en": "Cars delivered",
+            "ar": "سيارات مُسلَّمة"
+          },
+          "metin": {
+            "tr": "Kurgusal.",
+            "en": "Fictional.",
+            "ar": "افتراضي."
+          },
+          "ikon": "directions_car"
+        },
+        {
+          "sayi": 78,
+          "onceki": 61,
+          "etiket": {
+            "tr": "Takasla alınan araç",
+            "en": "Trade-ins taken",
+            "ar": "سيارات مقايضة"
+          },
+          "metin": {
+            "tr": "Kurgusal.",
+            "en": "Fictional.",
+            "ar": "افتراضي."
+          },
+          "ikon": "sync_alt"
+        },
+        {
+          "sayi": 27,
+          "onceki": 34,
+          "sonek": {
+            "tr": " gün",
+            "en": " days",
+            "ar": " يومًا"
+          },
+          "etiket": {
+            "tr": "Ortalama ilan süresi",
+            "en": "Average listing time",
+            "ar": "متوسط مدة الإعلان"
+          },
+          "metin": {
+            "tr": "İlandan teslime.",
+            "en": "From listing to handover.",
+            "ar": "من الإعلان إلى التسليم."
+          },
+          "ikon": "schedule"
+        },
+        {
+          "sayi": 100,
+          "onceki": 100,
+          "sonek": {
+            "tr": "%",
+            "en": "%",
+            "ar": "%"
+          },
+          "max": 100,
+          "etiket": {
+            "tr": "Ekspertizli ilan",
+            "en": "Inspected listings",
+            "ar": "إعلانات مفحوصة"
+          },
+          "metin": {
+            "tr": "Raporsuz ilan yok.",
+            "en": "No listing without a report.",
+            "ar": "لا إعلان دون تقرير."
+          },
+          "ikon": "fact_check"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "sayi": "sayı (zorunlu; 1200 · \"4.9\")",
+          "onek": "önek (dil sözlüğü; ör. «%»)",
+          "sonek": "sonek (dil sözlüğü; ör. «+», «/5»)",
+          "etiket": "etiket (dil sözlüğü, zorunlu)",
+          "metin": "kısa not (dil sözlüğü)",
+          "ikon": "Material Symbols adı",
+          "ondalik": "ondalık basamak (yoksa sayıdan)",
+          "max": "oran tavanı (halka/çubuk/dolgu; yoksa % → 100, değilse listedeki en büyük)"
+        }
+      },
+      "id": "uy12ih",
+      "path": "sayac-donem-kiyas",
+      "local": "body",
+      "index": 14
+    },
+    {
+      "name": "Değer İlke → Kanıt — iki sütun eşleme çizgili ilke tablosu",
+      "description": "Her satır bir eşleme: solda ilke kartı (ikon, no, başlık), sağda kanıtı (öne çıkan ölçü — `etiket` — ve açıklama); ikisini uçlarında düğüm olan kesikli bir bağ çizgisi birleştirir. Görününce çizgiler sırayla çizilir, satıra gelince ilke kartı ve çizgi vurgulanır. Sütun başlıkları desing `solMetin`/`sagMetin`. deger-tablo ve deger-numara-serit tek satırda ikon-başlık-metin dizer; bu modül iki ayrı sütunu (iddia ↔ kanıt) görsel bir bağlantı çizgisiyle eşler, mobilde çizgi dikeye döner. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "rule",
+      "category": "values",
+      "subCategory": "principle-proof",
+      "tags": [
+        "values",
+        "mapping",
+        "proof",
+        "two-column",
+        "connector",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "İlkelerimiz",
+          "en": "Our principles",
+          "ar": "مبادئنا"
+        },
+        "baslik": {
+          "tr": "Söylediğimizi nasıl gösteriyoruz?",
+          "en": "How we show what we say",
+          "ar": "كيف نُثبت ما نقوله؟"
+        },
+        "metin": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "solMetin": {
+          "tr": "İlke",
+          "en": "Principle",
+          "ar": "المبدأ"
+        },
+        "sagMetin": {
+          "tr": "Kanıt",
+          "en": "Evidence",
+          "ar": "الدليل"
+        },
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "color": "var(--mx-site-text, #111318)",
+        "badge": {
+          "tr": "İlkelerimiz",
+          "en": "Our principles",
+          "ar": "مبادئنا"
+        },
+        "title": {
+          "tr": "Söylediğimizi nasıl gösteriyoruz?",
+          "en": "How we show what we say",
+          "ar": "كيف نُثبت ما نقوله؟"
+        },
+        "description": {
+          "tr": "Her ilkenin karşısında, ilanda ya da galeride görebileceğiniz bir kanıt var.",
+          "en": "Each principle is matched by evidence you can see in the listing or at the showroom.",
+          "ar": "يقابل كل مبدأ دليلٌ يمكنك رؤيته في الإعلان أو في المعرض."
+        }
+      },
+      "data": [
+        {
+          "ikon": "fact_check",
+          "baslik": {
+            "tr": "Her araç ekspertizli",
+            "en": "Every car inspected",
+            "ar": "كل سيارة مفحوصة"
+          },
+          "etiket": {
+            "tr": "Rapor ilanda",
+            "en": "Report on the listing",
+            "ar": "التقرير في الإعلان"
+          },
+          "metin": {
+            "tr": "Bağımsız ekspertiz raporu ilanla birlikte açılır; galeride basılı kopyası verilir.",
+            "en": "The independent inspection report opens with the listing; a printed copy is given at the showroom.",
+            "ar": "يُفتح تقرير الفحص المستقل مع الإعلان، وتُعطى نسخة مطبوعة في المعرض."
+          }
+        },
+        {
+          "ikon": "badge",
+          "baslik": {
+            "tr": "Belgeli satış",
+            "en": "Documented sale",
+            "ar": "بيع موثّق"
+          },
+          "etiket": {
+            "tr": "Yetki belgesi no",
+            "en": "Authorisation number",
+            "ar": "رقم التفويض"
+          },
+          "metin": {
+            "tr": "Her ilanda yetki belgesi numarası ve ticari unvan yazılıdır.",
+            "en": "Every listing states the authorisation certificate number and the trade name.",
+            "ar": "يذكر كل إعلان رقم شهادة التفويض والاسم التجاري."
+          }
+        },
+        {
+          "ikon": "sell",
+          "baslik": {
+            "tr": "Tek fiyat",
+            "en": "One price",
+            "ar": "سعر واحد"
+          },
+          "etiket": {
+            "tr": "İlan = galeri",
+            "en": "Listing = showroom",
+            "ar": "الإعلان = المعرض"
+          },
+          "metin": {
+            "tr": "İlandaki fiyat galeride değişmez; paket bedelleri ayrı ve yazılıdır.",
+            "en": "The listed price does not change at the showroom; package fees are separate and in writing.",
+            "ar": "لا يتغيّر السعر المعلن في المعرض، ورسوم الباقات منفصلة ومكتوبة."
+          }
+        },
+        {
+          "ikon": "speed",
+          "baslik": {
+            "tr": "Doğru kilometre",
+            "en": "True mileage",
+            "ar": "مسافة صحيحة"
+          },
+          "etiket": {
+            "tr": "Rapor ile",
+            "en": "With the report",
+            "ar": "بالتقرير"
+          },
+          "metin": {
+            "tr": "Kilometre ve hasar durumu yalnız ekspertiz raporuna dayanır.",
+            "en": "Mileage and damage status rely only on the inspection report.",
+            "ar": "تستند المسافة وحالة الأضرار إلى تقرير الفحص فقط."
+          }
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "ikon": "Material Symbols adı",
+          "baslik": "dil sözlüğü (zorunlu)",
+          "metin": "dil sözlüğü",
+          "etiket": "dil sözlüğü (küçük üst etiket)",
+          "img": "görsel yolu (destekleyen yerleşimde)",
+          "url": "iç/dış bağlantı (kartın tamamı tıklanır)"
+        }
+      },
+      "id": "1fj3vz",
+      "path": "deger-ilke-kanit",
+      "local": "body",
+      "index": 15
+    },
+    {
+      "name": "Yorum Araç Teslim — aldığı araçla müşteri ve plaka etiketi",
+      "description": "Her yorum bir teslim anı: üstte müşterinin aracıyla fotoğrafı (yoksa araç simgesi), fotoğrafın altına taşan plaka biçiminde araç modeli (`baslik`), köşede anahtarlıkta teslim tarihi; altında puan, yorum ve kişi. Kartlar görünür olunca yandan «sürülerek» gelir. Ürün (araç) + müşteri birlikte: yorum-portre-ray'in portre-önce kartından farklı olarak görsel teslim fotoğrafıdır ve plaka/anahtarlık nesneleri model ile tarihi taşır; ızgara, ray değil; yorum-zigzag-foto'nun satır anlatısından farklı olarak eşit kart vitrini. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "directions_car",
+      "category": "testimonial",
+      "subCategory": "delivery-photo",
+      "tags": [
+        "testimonial",
+        "delivery",
+        "photo",
+        "car",
+        "plate",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Teslim anları",
+          "en": "Handover moments",
+          "ar": "لحظات التسليم"
+        },
+        "baslik": {
+          "tr": "Anahtarı alanlar ne dedi?",
+          "en": "What buyers said at handover",
+          "ar": "ماذا قال من استلموا المفاتيح؟"
+        },
+        "metin": {
+          "tr": "Kurgusal müşteri notları; adlar kısaltılmıştır.",
+          "en": "Fictional customer notes; names are shortened.",
+          "ar": "ملاحظات زبائن افتراضية؛ الأسماء مختصرة."
+        },
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "yildiz": "color-mix(in srgb, var(--mx-color-warning, #d97706) 78%, var(--mx-site-text, #111318))",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "badge": {
+          "tr": "Müşteri yorumları",
+          "en": "Customer reviews",
+          "ar": "تقييمات العملاء"
+        },
+        "title": {
+          "tr": "Müşterilerimiz ne diyor?",
+          "en": "What our customers say",
+          "ar": "ماذا يقول عملاؤنا؟"
+        },
+        "description": {
+          "tr": "Kurgusal demo yorumlar.",
+          "en": "Fictional demo reviews.",
+          "ar": "تقييمات تجريبية افتراضية."
+        }
+      },
+      "data": [
+        {
+          "metin": {
+            "tr": "Raporu ilandan okuyup geldim; galeride söylenen her şey rapordakiyle aynıydı.",
+            "en": "I read the report on the listing before coming; everything said at the showroom matched it.",
+            "ar": "قرأت التقرير في الإعلان قبل المجيء، وكان كل ما قيل في المعرض مطابقًا له."
+          },
+          "ad": "Hakan Y.",
+          "unvan": {
+            "tr": "Şehitkamil",
+            "en": "Sehitkamil",
+            "ar": "شهيد كامل"
+          },
+          "puan": 5,
+          "baslik": {
+            "tr": "Hibrit SUV",
+            "en": "Hybrid SUV",
+            "ar": "SUV هجينة"
+          },
+          "tarih": {
+            "tr": "Ekim 2026",
+            "en": "October 2026",
+            "ar": "أكتوبر 2026"
+          },
+          "img": "/img/otogaleri-arac-3.webp"
+        },
+        {
+          "metin": {
+            "tr": "Eski aracımı takasa verdim, değerleme yarım saat sürdü. Noter randevusunu da onlar aldı.",
+            "en": "I traded in my old car; the valuation took half an hour. They also booked the notary.",
+            "ar": "قايضت سيارتي القديمة واستغرق التقييم نصف ساعة، وحجزوا موعد الكاتب العدل أيضًا."
+          },
+          "ad": "Selin T.",
+          "unvan": {
+            "tr": "Şahinbey",
+            "en": "Sahinbey",
+            "ar": "شاهين بي"
+          },
+          "puan": 5,
+          "baslik": {
+            "tr": "Elektrikli şehir aracı",
+            "en": "Electric city car",
+            "ar": "سيارة مدينة كهربائية"
+          },
+          "tarih": {
+            "tr": "Eylül 2026",
+            "en": "September 2026",
+            "ar": "سبتمبر 2026"
+          },
+          "img": "/img/otogaleri-arac-5.webp"
+        },
+        {
+          "metin": {
+            "tr": "Panelvanı iş için aldım; faturası ve raporu tamdı, teslimde temizlenmişti.",
+            "en": "I bought the panel van for work; invoice and report were complete and it was cleaned for handover.",
+            "ar": "اشتريت الفان للعمل؛ كانت الفاتورة والتقرير كاملين ونُظّفت عند التسليم."
+          },
+          "ad": "Emre K.",
+          "unvan": {
+            "tr": "Oğuzeli",
+            "en": "Oguzeli",
+            "ar": "أوغوز إلي"
+          },
+          "puan": 4,
+          "baslik": {
+            "tr": "Hafif ticari panelvan",
+            "en": "Light commercial van",
+            "ar": "فان تجاري خفيف"
+          },
+          "tarih": {
+            "tr": "Ağustos 2026",
+            "en": "August 2026",
+            "ar": "أغسطس 2026"
+          },
+          "img": "/img/otogaleri-arac-8.webp"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "metin": "yorum metni — dil sözlüğü (zorunlu)",
+          "ad": "yorumu yapanın adı",
+          "unvan": "görev / unvan (dil sözlüğü)",
+          "firma": "firma adı",
+          "puan": "1–5 yıldız (0/boş → yıldız yok)",
+          "img": "avatar / portre görseli",
+          "logo": "firma logosu (destekleyen yerleşimde)",
+          "baslik": "yorum başlığı (destekleyen yerleşimde)",
+          "tarih": "tarih metni",
+          "kaynak": "kaynak (Google, Instagram …)"
+        }
+      },
+      "id": "65uxy5",
+      "path": "yorum-arac-teslim",
+      "local": "body",
+      "index": 16
+    },
+    {
+      "name": "Özellik Donanım Tablosu — paket sütunlu var/yok karşılaştırması",
+      "description": "Satırlar özellik (ikon + ad + kısa not), sütunlar donanım paketleri (desing `paketler`: ad + fiyat/not); hücreler satırın `degerler` dizisinden: var ✓ · yok — · ya da değer metni (ör. 18 inç). Paket başlığına tıklayınca sütun vurgulanır, «yalnız farkları göster» tüm paketlerde aynı olan satırları gizler; önerilen paket üst çizgiyle işaretli. Paket yoksa iki sütunlu özellik tablosu. Ailede tablo yok: ozellik-cizgi-izgara hücre ızgarası, ozellik-onay-kenar onay listesi; bu modül gerçek <table> karşılaştırması — sabit ilk sütun, yatay kaydırma, paket sütunu vurgusu ve eşit satır süzgeci. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "table_view",
+      "category": "ozellik",
+      "subCategory": "spec-compare",
+      "tags": [
+        "ozellik",
+        "comparison",
+        "table",
+        "packages",
+        "interactive",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Satış paketleri",
+          "en": "Sale packages",
+          "ar": "باقات البيع"
+        },
+        "baslik": {
+          "tr": "Aracınızla birlikte ne gelir?",
+          "en": "What comes with your car?",
+          "ar": "ماذا يأتي مع سيارتك؟"
+        },
+        "metin": {
+          "tr": "Üç paket aynı araç için geçerlidir; fark yalnız hizmettedir. Paket bedeli satışta yazılı verilir.",
+          "en": "All three packages apply to the same car; only the services differ. The package fee is given in writing at sale.",
+          "ar": "تنطبق الباقات الثلاث على السيارة نفسها والفرق في الخدمات فقط. تُعطى رسوم الباقة كتابيًا عند البيع."
+        },
+        "img": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "paketler": [
+          {
+            "ad": {
+              "tr": "Temel",
+              "en": "Basic",
+              "ar": "أساسية"
+            },
+            "not": {
+              "tr": "Araç fiyatına dahil",
+              "en": "Included in the price",
+              "ar": "مشمولة في السعر"
+            }
+          },
+          {
+            "ad": {
+              "tr": "Güvence",
+              "en": "Assurance",
+              "ar": "ضمان"
+            },
+            "not": {
+              "tr": "Ek bedelli",
+              "en": "Extra fee",
+              "ar": "برسوم إضافية"
+            }
+          },
+          {
+            "ad": {
+              "tr": "Tam",
+              "en": "Complete",
+              "ar": "كاملة"
+            },
+            "not": {
+              "tr": "Ek bedelli",
+              "en": "Extra fee",
+              "ar": "برسوم إضافية"
+            }
+          }
+        ],
+        "onerilen": 2,
+        "onerilenAd": {
+          "tr": "En çok seçilen",
+          "en": "Most chosen",
+          "ar": "الأكثر اختيارًا"
+        },
+        "ozellikAd": {
+          "tr": "Hizmet",
+          "en": "Service",
+          "ar": "الخدمة"
+        },
+        "farkAd": {
+          "tr": "Yalnız farkları göster",
+          "en": "Show differences only",
+          "ar": "اعرض الفروق فقط"
+        },
+        "varAd": "",
+        "yokAd": "",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "color": "var(--mx-site-text, #111318)",
+        "eyebrow": "",
+        "title": "",
+        "description": "",
+        "ctaLabel": ""
+      },
+      "data": [
+        {
+          "ikon": "fact_check",
+          "baslik": {
+            "tr": "Bağımsız ekspertiz raporu",
+            "en": "Independent inspection report",
+            "ar": "تقرير فحص مستقل"
+          },
+          "metin": {
+            "tr": "Satış öncesi, ilanda paylaşılan rapor.",
+            "en": "The report shared on the listing before sale.",
+            "ar": "التقرير المنشور مع الإعلان قبل البيع."
+          },
+          "degerler": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "ikon": "gavel",
+          "baslik": {
+            "tr": "Noter devri desteği",
+            "en": "Notary transfer support",
+            "ar": "دعم نقل الملكية لدى الكاتب العدل"
+          },
+          "metin": {
+            "tr": "Randevu ve evrak hazırlığı.",
+            "en": "Appointment and paperwork.",
+            "ar": "الموعد وتجهيز الأوراق."
+          },
+          "degerler": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "ikon": "cleaning_services",
+          "baslik": {
+            "tr": "Detaylı iç temizlik",
+            "en": "Detailed interior cleaning",
+            "ar": "تنظيف داخلي شامل"
+          },
+          "degerler": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "ikon": "key",
+          "baslik": {
+            "tr": "Yedek anahtar kopyası",
+            "en": "Spare key copy",
+            "ar": "نسخة مفتاح احتياطي"
+          },
+          "degerler": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "ikon": "build",
+          "baslik": {
+            "tr": "Mekanik güvence (kurgusal)",
+            "en": "Mechanical cover (fictional)",
+            "ar": "ضمان ميكانيكي (افتراضي)"
+          },
+          "metin": {
+            "tr": "Motor ve şanzıman için.",
+            "en": "For engine and gearbox.",
+            "ar": "للمحرك وناقل الحركة."
+          },
+          "degerler": [
+            false,
+            {
+              "tr": "3 ay",
+              "en": "3 months",
+              "ar": "3 أشهر"
+            },
+            {
+              "tr": "6 ay",
+              "en": "6 months",
+              "ar": "6 أشهر"
+            }
+          ]
+        },
+        {
+          "ikon": "local_shipping",
+          "baslik": {
+            "tr": "Adrese teslim",
+            "en": "Delivery to your address",
+            "ar": "التسليم إلى عنوانك"
+          },
+          "metin": {
+            "tr": "Gaziantep il sınırı içinde.",
+            "en": "Within Gaziantep province.",
+            "ar": "داخل حدود ولاية غازي عنتاب."
+          },
+          "degerler": [
+            false,
+            false,
+            true
+          ]
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "baslik": "özellik adı — dil sözlüğü (zorunlu)",
+          "metin": "açıklama — dil sözlüğü",
+          "ikon": "Material Symbols adı",
+          "img": "görsel yolu (destekleyen yerleşimde; ana görsel yoksa ilk görsel)",
+          "alt": "görsel alt metni — dil sözlüğü",
+          "url": "bağlantı",
+          "linkMetin": "bağlantı yazısı (yoksa eski `ctaLabel`, o da yoksa «Devamını oku»)"
+        }
+      },
+      "id": "cpi6su",
+      "path": "ozellik-donanim-tablo",
+      "local": "body",
+      "index": 17
+    },
+    {
+      "name": "Şube Harita Liste — şube kartları + seçilen şubenin haritası, konuma göre sırala",
+      "description": "Bir yanda numaralı şube kartları (ad · adres · çalışma saati · telefon · yol tarifi), öbür yanda yapışkan harita paneli: karta dokununca o şubenin haritası (https gömme ya da desen + yol tarifi) açılır. «Konuma göre sırala» izin verilirse şubeleri enlem/boylamla mesafeye göre dizer ve mesafeyi yazar; izin yoksa liste sırası kalır. Şube dışı kanallar (WhatsApp · e-posta) altta çip. iletisim-harita-yan tek adresi yapışkan haritayla gösterir, map* tek konum gömer; bu modül ÇOK ŞUBE seçicisidir: liste ↔ harita paneli eşlemesi (data-sube), gecikmeli iframe ve geolocation ile mesafe sıralaması (CSS sayacıyla yeniden numaralanır). Kanallar desing'den (adres · telefon · WhatsApp · e-posta · saat) + data satırları; etiketler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Kanal yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "store",
+      "category": "contact",
+      "subCategory": "branch-map-list",
+      "tags": [
+        "contact",
+        "branches",
+        "map",
+        "geolocation",
+        "interactive",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Şubeler",
+          "en": "Branches",
+          "ar": "الفروع"
+        },
+        "baslik": {
+          "tr": "Araçları yerinde görün",
+          "en": "See the cars in person",
+          "ar": "شاهد السيارات في مكانها"
+        },
+        "metin": {
+          "tr": "Bir şube seçin; haritası ve yol tarifi açılır.",
+          "en": "Choose a branch to see its map and directions.",
+          "ar": "اختر فرعًا لترى خريطته والاتجاهات."
+        },
+        "adres": {
+          "tr": "Oto Sanayi Sitesi 4. Cadde No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "21 Fourth Street, Auto Industrial Estate, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "الشارع الرابع رقم 21، المنطقة الصناعية للسيارات، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "telefon": "+90 342 063 36 36",
+        "eposta": "ilan@rotaoto.example",
+        "whatsapp": "903420633636",
+        "saat": {
+          "tr": "Pzt–Cmt 09:00 – 19:00 · Paz 11:00 – 17:00",
+          "en": "Mon–Sat 09:00 – 19:00 · Sun 11:00 – 17:00",
+          "ar": "الاثنين–السبت 09:00 – 19:00 · الأحد 11:00 – 17:00"
+        },
+        "haritaUrl": "",
+        "haritaGomme": "",
+        "waMesaj": {
+          "tr": "Merhaba, Rota Otomotiv’deki bir ilan hakkında bilgi almak istiyorum.",
+          "en": "Hello, I would like information about a listing at Rota Motors.",
+          "ar": "مرحبًا، أودّ معلومات عن إعلان لدى روتا للسيارات."
+        },
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "lat": "37.0905",
+        "lng": "37.3305",
+        "subeAd": {
+          "tr": "Oto Sanayi galerisi",
+          "en": "Auto Estate showroom",
+          "ar": "معرض المنطقة الصناعية"
+        },
+        "konumAd": {
+          "tr": "Konuma göre sırala",
+          "en": "Sort by my location",
+          "ar": "رتّب حسب موقعي"
+        },
+        "konumRed": {
+          "tr": "Konum izni verilmedi; liste sırası korunuyor.",
+          "en": "Location permission denied; list order kept.",
+          "ar": "لم يُمنح إذن الموقع؛ بقي ترتيب القائمة."
+        },
+        "konumTamam": {
+          "tr": "Şubeler yakınlığa göre sıralandı.",
+          "en": "Branches sorted by distance.",
+          "ar": "رُتّبت الفروع حسب القرب."
+        },
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "gonderim": "mailto",
+        "address": {
+          "tr": "Oto Sanayi Sitesi 4. Cadde No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "21 Fourth Street, Auto Industrial Estate, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "الشارع الرابع رقم 21، المنطقة الصناعية للسيارات، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 063 36 36",
+        "email": "ilan@rotaoto.example",
+        "hours": {
+          "tr": "Pzt–Cmt 09:00 – 19:00 · Paz 11:00 – 17:00",
+          "en": "Mon–Sat 09:00 – 19:00 · Sun 11:00 – 17:00",
+          "ar": "الاثنين–السبت 09:00 – 19:00 · الأحد 11:00 – 17:00"
+        },
+        "social": [],
+        "title": {
+          "tr": "Teklif isteyin",
+          "en": "Request a quote",
+          "ar": "اطلب عرض سعر"
+        },
+        "description": {
+          "tr": "Bilgilerinizi bırakın; en geç iki iş günü içinde dönüş yaparız. Bu form demodur; e-posta istemciniz açılır, veri saklanmaz.",
+          "en": "Leave your details; we reply within two business days. This form is a demo; it opens your e-mail client and stores no data.",
+          "ar": "اترك بياناتك وسنرد خلال يومي عمل. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يحفظ أي بيانات."
+        },
+        "panelTitle": {
+          "tr": "Rota Otomotiv",
+          "en": "Rota Otomotiv",
+          "ar": "Rota Otomotiv"
+        },
+        "panelText": {
+          "tr": "Görseller temsilidir; bu bir kurulum demosudur.",
+          "en": "Images are representative; this is a setup demo.",
+          "ar": "الصور تمثيلية وهذا عرض تجريبي."
+        },
+        "formTitle": {
+          "tr": "Teklif formu",
+          "en": "Quote form",
+          "ar": "نموذج الطلب"
+        },
+        "subjects": [
+          {
+            "id": "a",
+            "name": {
+              "tr": "Yeni talep",
+              "en": "New request",
+              "ar": "طلب جديد"
+            }
+          },
+          {
+            "id": "b",
+            "name": {
+              "tr": "Ölçü ve keşif",
+              "en": "Measure and survey",
+              "ar": "قياس واستقصاء"
+            }
+          },
+          {
+            "id": "c",
+            "name": {
+              "tr": "Teknik soru",
+              "en": "Technical question",
+              "ar": "سؤال فني"
+            }
+          },
+          {
+            "id": "d",
+            "name": {
+              "tr": "Diğer",
+              "en": "Other",
+              "ar": "أخرى"
+            }
+          }
+        ],
+        "kvkkText": {
+          "tr": "Kişisel verilerimin bu talebin yanıtlanması amacıyla işlenmesine ilişkin aydınlatma metnini okudum.",
+          "en": "I have read the privacy notice on how my personal data is processed to answer this request.",
+          "ar": "لقد قرأت إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية للرد على هذا الطلب."
+        },
+        "kvkkLinkText": {
+          "tr": "Aydınlatma metni",
+          "en": "Privacy notice",
+          "ar": "إشعار الخصوصية"
+        },
+        "kvkkHref": "kisiselveriler"
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "Merkez galeri",
+            "en": "City showroom",
+            "ar": "معرض المركز"
+          },
+          "deger": {
+            "tr": "İnönü Caddesi No: 140, Şahinbey, Gaziantep (kurgusal adres)",
+            "en": "140 Inonu Avenue, Sahinbey, Gaziantep (fictional address)",
+            "ar": "شارع إينونو رقم 140، شاهين بي، غازي عنتاب (عنوان افتراضي)"
+          },
+          "telefon": "+90 342 063 36 37",
+          "saat": {
+            "tr": "Pzt–Cmt 09:00 – 19:00 · Paz 11:00 – 17:00",
+            "en": "Mon–Sat 09:00 – 19:00 · Sun 11:00 – 17:00",
+            "ar": "الاثنين–السبت 09:00 – 19:00 · الأحد 11:00 – 17:00"
+          },
+          "lat": "37.0640",
+          "lng": "37.3820"
+        },
+        {
+          "baslik": {
+            "tr": "Ekspertiz noktası",
+            "en": "Inspection point",
+            "ar": "نقطة الفحص"
+          },
+          "deger": {
+            "tr": "Organize Sanayi 3. Bölge No: 8, Başpınar, Gaziantep (kurgusal adres)",
+            "en": "8 Third Zone, Organised Industrial Area, Baspinar, Gaziantep (fictional address)",
+            "ar": "المنطقة الثالثة رقم 8، المنطقة الصناعية المنظمة، باشبينار، غازي عنتاب (عنوان افتراضي)"
+          },
+          "telefon": "+90 342 063 36 38",
+          "saat": {
+            "tr": "Pzt–Cmt 08:30 – 18:00",
+            "en": "Mon–Sat 08:30 – 18:00",
+            "ar": "الاثنين–السبت 08:30 – 18:00"
+          },
+          "lat": "37.1660",
+          "lng": "37.4150"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "ikon": "Material Symbols adı (kanal türü ikondan da anlaşılır: mail · call · location_on · schedule)",
+          "deger": "dil sözlüğü (görünen değer, zorunlu; eski `text`)",
+          "url": "bağlantı (boşsa e-posta/telefon/haritadan türetilir)",
+          "baslik": "dil sözlüğü (kanal etiketi)"
+        }
+      },
+      "id": "xebeqi",
+      "path": "sube-harita-liste",
+      "local": "body",
+      "index": 18
+    },
+    {
+      "name": "Araç İlan Filtre — sol filtre paneli, araç kart ızgarası, hızlı bakış çekmecesi",
+      "description": "Solda yapışkan filtre paneli: kayıtların `marka` (seçim kutusu), `yakit` ve `vites` (radyo çipleri) değerlerinden ve `fiyat` aralığından (azami fiyat sürgüsü) türeyen süzgeçler + sıfırla. Sağda araç kartları (görsel, yıl rozeti, marka, model, yakıt · vites · km, fiyat), «n / t» sayacı ve «sonuç yok» durumu. Kartın «hızlı bakış» düğmesi aracı yandan kayan <dialog> çekmecesinde, iletişim düğmeleriyle açar. JS yokken panel ve düğmeler gizli, tüm kartlar görünür. module ailesinde süzgeç/çekmece yok. body/ilan-filtre* (emlak: sekme + üst süzgeç + sıralama + sayfalama, data.listings nesnesi) iskeletinden farkı: sol yapışkan filtre paneli, araç alanları (marka/yakıt/vites/km/yıl) ve kart yerine açılan yan çekmece (hızlı bakış); arac-filo-kart'ın süzgeçsiz kiralık filo kartlarından farklı. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık ve metin yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "directions_car",
+      "category": "module",
+      "subCategory": "vehicle-filter-drawer",
+      "tags": [
+        "module",
+        "listing",
+        "filter",
+        "drawer",
+        "vehicles",
+        "interactive",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1280px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Satıştaki araçlar",
+          "en": "Cars for sale",
+          "ar": "السيارات المعروضة"
+        },
+        "baslik": {
+          "tr": "Galerideki ilanlar",
+          "en": "Listings at the showroom",
+          "ar": "الإعلانات في المعرض"
+        },
+        "metin": {
+          "tr": "Kasa tipi, yakıt, vites ve azami fiyata göre süzün. Tüm ilanlar kurgusaldır; Rota Otomotiv Tic. Ltd. Şti. (kurgusal).",
+          "en": "Filter by body type, fuel, gearbox and maximum price. All listings are fictional; Rota Automotive Trading Ltd. (fictional).",
+          "ar": "صفِّ حسب نوع الهيكل والوقود وناقل الحركة والسعر الأقصى. جميع الإعلانات افتراضية؛ شركة روتا لتجارة السيارات المحدودة (افتراضية)."
+        },
+        "img": "",
+        "img2": "",
+        "cta_ad": {
+          "tr": "Ekspertiz randevusu",
+          "en": "Book an inspection",
+          "ar": "احجز موعد فحص"
+        },
+        "cta_url": "teklif-al",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "paraBirimi": "TRY",
+        "filtreAd": {
+          "tr": "Süz",
+          "en": "Filter",
+          "ar": "تصفية"
+        },
+        "markaAd": {
+          "tr": "Kasa tipi",
+          "en": "Body type",
+          "ar": "نوع الهيكل"
+        },
+        "yakitAd": {
+          "tr": "Yakıt",
+          "en": "Fuel",
+          "ar": "الوقود"
+        },
+        "vitesAd": {
+          "tr": "Vites",
+          "en": "Gearbox",
+          "ar": "ناقل الحركة"
+        },
+        "fiyatAd": {
+          "tr": "Azami fiyat",
+          "en": "Maximum price",
+          "ar": "السعر الأقصى"
+        },
+        "sifirlaAd": {
+          "tr": "Sıfırla",
+          "en": "Reset",
+          "ar": "إعادة ضبط"
+        },
+        "hizliBakisAd": {
+          "tr": "Hızlı bakış",
+          "en": "Quick look",
+          "ar": "نظرة سريعة"
+        },
+        "kapatAd": {
+          "tr": "Kapat",
+          "en": "Close",
+          "ar": "إغلاق"
+        },
+        "sonucYokAd": {
+          "tr": "Bu süzgece uyan araç yok.",
+          "en": "No cars match this filter.",
+          "ar": "لا توجد سيارات تطابق هذه التصفية."
+        },
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "color": "var(--mx-site-text, #111318)",
+        "title": "",
+        "name": "",
+        "description": "",
+        "name2": "",
+        "spot2": {
+          "tr": "Her ilanda rapor",
+          "en": "A report on every listing",
+          "ar": "تقرير مع كل إعلان"
+        },
+        "icon2": "fact_check",
+        "name3": "",
+        "spot3": {
+          "tr": "Aynı gün değerleme",
+          "en": "Same-day valuation",
+          "ar": "تقييم في اليوم نفسه"
+        },
+        "icon3": "sync_alt"
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "2021 model 1.5 dizel sedan, gümüş",
+            "en": "2021 1.5 diesel sedan, silver",
+            "ar": "سيدان ديزل 1.5 موديل 2021، فضية"
+          },
+          "marka": {
+            "tr": "Sedan",
+            "en": "Sedan",
+            "ar": "سيدان"
+          },
+          "yakit": {
+            "tr": "Dizel",
+            "en": "Diesel",
+            "ar": "ديزل"
+          },
+          "vites": {
+            "tr": "Otomatik",
+            "en": "Automatic",
+            "ar": "أوتوماتيك"
+          },
+          "yil": "2021",
+          "km": 68000,
+          "fiyat": 985000,
+          "img": "/img/otogaleri-arac-1.webp",
+          "metin": {
+            "tr": "Tek kullanıcıdan, servis kayıtlı. Yetki belgesi no: DEMO-27-0101 · Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Km ve hasar durumu ekspertiz raporuyla doğrulanır.",
+            "en": "One owner, service history. Authorisation certificate no: DEMO-27-0101 · Rota Automotive Trading Ltd. (fictional). Mileage and damage status are verified by an inspection report.",
+            "ar": "مالك واحد، سجل صيانة. رقم شهادة التفويض: DEMO-27-0101 · شركة روتا لتجارة السيارات المحدودة (افتراضية). يُتحقَّق من المسافة المقطوعة وحالة الأضرار بتقرير فحص."
+          }
+        },
+        {
+          "baslik": {
+            "tr": "2020 model 1.0 benzinli hatchback, beyaz",
+            "en": "2020 1.0 petrol hatchback, white",
+            "ar": "هاتشباك بنزين 1.0 موديل 2020، بيضاء"
+          },
+          "marka": {
+            "tr": "Hatchback",
+            "en": "Hatchback",
+            "ar": "هاتشباك"
+          },
+          "yakit": {
+            "tr": "Benzin",
+            "en": "Petrol",
+            "ar": "بنزين"
+          },
+          "vites": {
+            "tr": "Manuel",
+            "en": "Manual",
+            "ar": "يدوي"
+          },
+          "yil": "2020",
+          "km": 54000,
+          "fiyat": 640000,
+          "img": "/img/otogaleri-arac-2.webp",
+          "metin": {
+            "tr": "Şehir içi kullanım, yeni lastikler. Yetki belgesi no: DEMO-27-0102 · Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Km ve hasar durumu ekspertiz raporuyla doğrulanır.",
+            "en": "City use, new tyres. Authorisation certificate no: DEMO-27-0102 · Rota Automotive Trading Ltd. (fictional). Mileage and damage status are verified by an inspection report.",
+            "ar": "استخدام داخل المدينة، إطارات جديدة. رقم شهادة التفويض: DEMO-27-0102 · شركة روتا لتجارة السيارات المحدودة (افتراضية). يُتحقَّق من المسافة المقطوعة وحالة الأضرار بتقرير فحص."
+          }
+        },
+        {
+          "baslik": {
+            "tr": "2022 model hibrit SUV, antrasit",
+            "en": "2022 hybrid SUV, anthracite",
+            "ar": "SUV هجينة موديل 2022، رمادية داكنة"
+          },
+          "marka": {
+            "tr": "SUV",
+            "en": "SUV",
+            "ar": "SUV"
+          },
+          "yakit": {
+            "tr": "Hibrit",
+            "en": "Hybrid",
+            "ar": "هجين"
+          },
+          "vites": {
+            "tr": "Otomatik",
+            "en": "Automatic",
+            "ar": "أوتوماتيك"
+          },
+          "yil": "2022",
+          "km": 41000,
+          "fiyat": 1720000,
+          "img": "/img/otogaleri-arac-3.webp",
+          "metin": {
+            "tr": "Geri görüş kamerası, ısıtmalı koltuk. Yetki belgesi no: DEMO-27-0103 · Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Km ve hasar durumu ekspertiz raporuyla doğrulanır.",
+            "en": "Reversing camera, heated seats. Authorisation certificate no: DEMO-27-0103 · Rota Automotive Trading Ltd. (fictional). Mileage and damage status are verified by an inspection report.",
+            "ar": "كاميرا خلفية ومقاعد مدفأة. رقم شهادة التفويض: DEMO-27-0103 · شركة روتا لتجارة السيارات المحدودة (افتراضية). يُتحقَّق من المسافة المقطوعة وحالة الأضرار بتقرير فحص."
+          }
+        },
+        {
+          "baslik": {
+            "tr": "2019 model 1.6 dizel station wagon",
+            "en": "2019 1.6 diesel estate",
+            "ar": "ستيشن واغن ديزل 1.6 موديل 2019"
+          },
+          "marka": {
+            "tr": "Station wagon",
+            "en": "Estate",
+            "ar": "ستيشن واغن"
+          },
+          "yakit": {
+            "tr": "Dizel",
+            "en": "Diesel",
+            "ar": "ديزل"
+          },
+          "vites": {
+            "tr": "Manuel",
+            "en": "Manual",
+            "ar": "يدوي"
+          },
+          "yil": "2019",
+          "km": 112000,
+          "fiyat": 720000,
+          "img": "/img/otogaleri-arac-4.webp",
+          "metin": {
+            "tr": "Geniş bagaj, çeki demiri. Yetki belgesi no: DEMO-27-0104 · Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Km ve hasar durumu ekspertiz raporuyla doğrulanır.",
+            "en": "Large boot, tow bar. Authorisation certificate no: DEMO-27-0104 · Rota Automotive Trading Ltd. (fictional). Mileage and damage status are verified by an inspection report.",
+            "ar": "صندوق واسع وخطاف قطر. رقم شهادة التفويض: DEMO-27-0104 · شركة روتا لتجارة السيارات المحدودة (افتراضية). يُتحقَّق من المسافة المقطوعة وحالة الأضرار بتقرير فحص."
+          }
+        },
+        {
+          "baslik": {
+            "tr": "2023 model elektrikli şehir aracı, mavi",
+            "en": "2023 electric city car, blue",
+            "ar": "سيارة مدينة كهربائية موديل 2023، زرقاء"
+          },
+          "marka": {
+            "tr": "Hatchback",
+            "en": "Hatchback",
+            "ar": "هاتشباك"
+          },
+          "yakit": {
+            "tr": "Elektrik",
+            "en": "Electric",
+            "ar": "كهرباء"
+          },
+          "vites": {
+            "tr": "Otomatik",
+            "en": "Automatic",
+            "ar": "أوتوماتيك"
+          },
+          "yil": "2023",
+          "km": 18000,
+          "fiyat": 1390000,
+          "img": "/img/otogaleri-arac-5.webp",
+          "metin": {
+            "tr": "Batarya sağlık raporu ekli. Yetki belgesi no: DEMO-27-0105 · Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Km ve hasar durumu ekspertiz raporuyla doğrulanır.",
+            "en": "Battery health report attached. Authorisation certificate no: DEMO-27-0105 · Rota Automotive Trading Ltd. (fictional). Mileage and damage status are verified by an inspection report.",
+            "ar": "تقرير صحة البطارية مرفق. رقم شهادة التفويض: DEMO-27-0105 · شركة روتا لتجارة السيارات المحدودة (افتراضية). يُتحقَّق من المسافة المقطوعة وحالة الأضرار بتقرير فحص."
+          }
+        },
+        {
+          "baslik": {
+            "tr": "2018 model 2.0 benzinli sedan, siyah",
+            "en": "2018 2.0 petrol sedan, black",
+            "ar": "سيدان بنزين 2.0 موديل 2018، سوداء"
+          },
+          "marka": {
+            "tr": "Sedan",
+            "en": "Sedan",
+            "ar": "سيدان"
+          },
+          "yakit": {
+            "tr": "Benzin",
+            "en": "Petrol",
+            "ar": "بنزين"
+          },
+          "vites": {
+            "tr": "Otomatik",
+            "en": "Automatic",
+            "ar": "أوتوماتيك"
+          },
+          "yil": "2018",
+          "km": 126000,
+          "fiyat": 850000,
+          "img": "/img/otogaleri-arac-6.webp",
+          "metin": {
+            "tr": "Deri döşeme, sunroof. Yetki belgesi no: DEMO-27-0106 · Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Km ve hasar durumu ekspertiz raporuyla doğrulanır.",
+            "en": "Leather seats, sunroof. Authorisation certificate no: DEMO-27-0106 · Rota Automotive Trading Ltd. (fictional). Mileage and damage status are verified by an inspection report.",
+            "ar": "مقاعد جلدية وفتحة سقف. رقم شهادة التفويض: DEMO-27-0106 · شركة روتا لتجارة السيارات المحدودة (افتراضية). يُتحقَّق من المسافة المقطوعة وحالة الأضرار بتقرير فحص."
+          }
+        },
+        {
+          "baslik": {
+            "tr": "2021 model 4x4 SUV, yeşil",
+            "en": "2021 4x4 SUV, green",
+            "ar": "SUV دفع رباعي موديل 2021، خضراء"
+          },
+          "marka": {
+            "tr": "SUV",
+            "en": "SUV",
+            "ar": "SUV"
+          },
+          "yakit": {
+            "tr": "Dizel",
+            "en": "Diesel",
+            "ar": "ديزل"
+          },
+          "vites": {
+            "tr": "Otomatik",
+            "en": "Automatic",
+            "ar": "أوتوماتيك"
+          },
+          "yil": "2021",
+          "km": 73000,
+          "fiyat": 1480000,
+          "img": "/img/otogaleri-arac-7.webp",
+          "metin": {
+            "tr": "Arazi paketi, yedek anahtar. Yetki belgesi no: DEMO-27-0107 · Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Km ve hasar durumu ekspertiz raporuyla doğrulanır.",
+            "en": "Off-road pack, spare key. Authorisation certificate no: DEMO-27-0107 · Rota Automotive Trading Ltd. (fictional). Mileage and damage status are verified by an inspection report.",
+            "ar": "باقة طرق وعرة ومفتاح احتياطي. رقم شهادة التفويض: DEMO-27-0107 · شركة روتا لتجارة السيارات المحدودة (افتراضية). يُتحقَّق من المسافة المقطوعة وحالة الأضرار بتقرير فحص."
+          }
+        },
+        {
+          "baslik": {
+            "tr": "2020 model hafif ticari panelvan, beyaz",
+            "en": "2020 light commercial panel van, white",
+            "ar": "فان تجاري خفيف موديل 2020، بيضاء"
+          },
+          "marka": {
+            "tr": "Hafif ticari",
+            "en": "Light commercial",
+            "ar": "تجارية خفيفة"
+          },
+          "yakit": {
+            "tr": "Dizel",
+            "en": "Diesel",
+            "ar": "ديزل"
+          },
+          "vites": {
+            "tr": "Manuel",
+            "en": "Manual",
+            "ar": "يدوي"
+          },
+          "yil": "2020",
+          "km": 95000,
+          "fiyat": 790000,
+          "img": "/img/otogaleri-arac-8.webp",
+          "metin": {
+            "tr": "Faturalı, raf sistemi sökülebilir. Yetki belgesi no: DEMO-27-0108 · Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Km ve hasar durumu ekspertiz raporuyla doğrulanır.",
+            "en": "Invoiced; the shelving can be removed. Authorisation certificate no: DEMO-27-0108 · Rota Automotive Trading Ltd. (fictional). Mileage and damage status are verified by an inspection report.",
+            "ar": "بفاتورة، ونظام الرفوف قابل للفك. رقم شهادة التفويض: DEMO-27-0108 · شركة روتا لتجارة السيارات المحدودة (افتراضية). يُتحقَّق من المسافة المقطوعة وحالة الأضرار بتقرير فحص."
+          }
+        },
+        {
+          "baslik": {
+            "tr": "2019 model 7 kişilik minivan, gümüş",
+            "en": "2019 seven-seat minivan, silver",
+            "ar": "ميني فان 7 مقاعد موديل 2019، فضية"
+          },
+          "marka": {
+            "tr": "Minivan",
+            "en": "Minivan",
+            "ar": "ميني فان"
+          },
+          "yakit": {
+            "tr": "Dizel",
+            "en": "Diesel",
+            "ar": "ديزل"
+          },
+          "vites": {
+            "tr": "Otomatik",
+            "en": "Automatic",
+            "ar": "أوتوماتيك"
+          },
+          "yil": "2019",
+          "km": 104000,
+          "fiyat": 930000,
+          "img": "/img/arackiralama-arac-4.webp",
+          "metin": {
+            "tr": "Üçüncü sıra koltuk, aile aracı. Yetki belgesi no: DEMO-27-0109 · Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Km ve hasar durumu ekspertiz raporuyla doğrulanır.",
+            "en": "Third-row seats, a family car. Authorisation certificate no: DEMO-27-0109 · Rota Automotive Trading Ltd. (fictional). Mileage and damage status are verified by an inspection report.",
+            "ar": "صف ثالث من المقاعد، سيارة عائلية. رقم شهادة التفويض: DEMO-27-0109 · شركة روتا لتجارة السيارات المحدودة (افتراضية). يُتحقَّق من المسافة المقطوعة وحالة الأضرار بتقرير فحص."
+          }
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+          "metin": "madde metni (dil sözlüğü)",
+          "url": "madde bağlantısı"
+        }
+      },
+      "id": "gcfqeb",
+      "path": "arac-ilan-filtre",
+      "local": "body",
+      "index": 19
+    },
+    {
+      "name": "Çağrı Ekspertiz Takas — rapor sayfası + takas formu",
+      "description": "İki bölmeli rapor kartı: başlangıçta damga ikonu, başlık, metin ve görününce sırayla onaylanan ekspertiz kapsamı (data); bitişte vurgu bölmesinde araç + kilometre girişli takas formu — gönderimde WhatsApp hazır mesajı (numara yoksa btn1Url'e GET: vehicle · km). cagri-maddeler maddeleri durağan listeler; bu modül maddeleri onay animasyonlu bir rapor sayfası olarak dizer ve yanına ziyaretçinin aracını yazdığı form koyar — cagri-whatsapp'ın sabit mesajı yerine form verisiyle kurulan mesaj. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık da düğme de yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "directions_car",
+      "category": "cta",
+      "subCategory": "trade-in",
+      "tags": [
+        "cta",
+        "trade-in",
+        "report",
+        "form",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Takas ve ekspertiz",
+          "en": "Trade-in and inspection",
+          "ar": "المقايضة والفحص"
+        },
+        "baslik": "",
+        "metin": "",
+        "btn1Text": "",
+        "btn1Url": "teklif-al",
+        "btn2Text": "",
+        "btn2Url": "hizmetler",
+        "img": "",
+        "alt": "",
+        "ikon": "fact_check",
+        "not": {
+          "tr": "Form demodur; WhatsApp’ta hazır mesaj açılır, veri saklanmaz.",
+          "en": "The form is a demo; a ready message opens in WhatsApp and no data is stored.",
+          "ar": "النموذج تجريبي؛ تُفتح رسالة جاهزة في واتساب ولا تُحفظ البيانات."
+        },
+        "number": "903420633636",
+        "numberText": "+90 342 063 36 36",
+        "waLabel": {
+          "tr": "Mesaj gönder",
+          "en": "Send a message",
+          "ar": "أرسل رسالة"
+        },
+        "waTitle": {
+          "tr": "WhatsApp ile yazın",
+          "en": "Write on WhatsApp",
+          "ar": "راسلنا عبر واتساب"
+        },
+        "waMessage": {
+          "tr": "Merhaba, Rota Otomotiv’e takas için aracımı göstermek istiyorum.",
+          "en": "Hello, I would like to show my car to Rota Motors for a trade-in.",
+          "ar": "مرحبًا، أودّ عرض سيارتي على روتا للسيارات للمقايضة."
+        },
+        "hours": {
+          "tr": "Pzt–Cmt 09:00 – 19:00 · Paz 11:00 – 17:00",
+          "en": "Mon–Sat 09:00 – 19:00 · Sun 11:00 – 17:00",
+          "ar": "الاثنين–السبت 09:00 – 19:00 · الأحد 11:00 – 17:00"
+        },
+        "hoursLabel": {
+          "tr": "Çalışma saatleri",
+          "en": "Opening hours",
+          "ar": "ساعات العمل"
+        },
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "yaziRenk": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "color": "var(--mx-site-text, #111318)",
+        "sag": "whatsapp",
+        "title": {
+          "tr": "Aracınızı getirin, raporuyla değerleyelim",
+          "en": "Bring your car and we will value it with a report",
+          "ar": "أحضر سيارتك ولنقيّمها بتقرير"
+        },
+        "btn1Label": {
+          "tr": "Takas talebi gönder",
+          "en": "Send a trade-in request",
+          "ar": "أرسل طلب مقايضة"
+        },
+        "btn2Label": {
+          "tr": "Satıştaki araçlar",
+          "en": "Cars for sale",
+          "ar": "السيارات المعروضة"
+        },
+        "description": {
+          "tr": "Model ve kilometreyi yazın; ekspertiz saatini WhatsApp’tan bildirelim. Değerleme ücreti randevuda yazılı bildirilir.",
+          "en": "Write the model and mileage; we will send the inspection time on WhatsApp. The valuation fee is stated in writing when booking.",
+          "ar": "اكتب الطراز والمسافة المقطوعة لنرسل لك موعد الفحص عبر واتساب. وتُبلَّغ رسوم التقييم كتابيًا عند الحجز."
+        },
+        "aracAd": {
+          "tr": "Araç (model, yıl)",
+          "en": "Car (model, year)",
+          "ar": "السيارة (الطراز، السنة)"
+        },
+        "kmAd": {
+          "tr": "Kilometre",
+          "en": "Mileage (km)",
+          "ar": "المسافة (كم)"
+        },
+        "raporAd": {
+          "tr": "Ekspertiz kapsamı",
+          "en": "Inspection scope",
+          "ar": "نطاق الفحص"
+        }
+      },
+      "data": [
+        {
+          "ikon": "car_crash",
+          "baslik": {
+            "tr": "Kaporta ve boya",
+            "en": "Body and paint",
+            "ar": "الهيكل والطلاء"
+          },
+          "aciklama": {
+            "tr": "Parça parça ölçüm",
+            "en": "Panel-by-panel measurement",
+            "ar": "قياس لكل لوح"
+          }
+        },
+        {
+          "ikon": "settings",
+          "baslik": {
+            "tr": "Motor ve şanzıman",
+            "en": "Engine and gearbox",
+            "ar": "المحرك وناقل الحركة"
+          },
+          "aciklama": {
+            "tr": "Yol ve dinamometre testi",
+            "en": "Road and dynamometer test",
+            "ar": "اختبار الطريق والدينامومتر"
+          }
+        },
+        {
+          "ikon": "tire_repair",
+          "baslik": {
+            "tr": "Alt takım ve lastik",
+            "en": "Chassis and tyres",
+            "ar": "الهيكل السفلي والإطارات"
+          },
+          "aciklama": {
+            "tr": "Lift üzerinde kontrol",
+            "en": "Checked on a lift",
+            "ar": "فحص على الرافعة"
+          }
+        },
+        {
+          "ikon": "memory",
+          "baslik": {
+            "tr": "Elektronik arıza tarama",
+            "en": "Electronic fault scan",
+            "ar": "مسح الأعطال الإلكترونية"
+          },
+          "aciklama": {
+            "tr": "OBD kayıtları",
+            "en": "OBD records",
+            "ar": "سجلات OBD"
+          }
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "ikon": "Material Symbols adı (madde)",
+          "baslik": "dil sözlüğü (madde yazısı, zorunlu)",
+          "aciklama": "dil sözlüğü (madde alt yazısı)"
+        }
+      },
+      "id": "lf64q2",
+      "path": "cagri-ekspertiz-takas",
+      "local": "body",
+      "index": 20
+    },
+    {
+      "name": "Footer 8",
+      "desing": {
+        "showlang": true,
+        "bgcolor": "#101217",
+        "color": "#ECEAE6",
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, #101217 0%, #1B1E25 55%, #101217 100%)",
+        "aboutText": {
+          "tr": "Ekspertizli ikinci el araç galerisi. Rota Otomotiv Tic. Ltd. Şti. (kurgusal). Çalışma saatleri: Pzt–Cmt 09:00 – 19:00 · Paz 11:00 – 17:00.",
+          "en": "Inspected used-car dealer. Rota Automotive Trading Ltd. (fictional). Opening hours: Mon–Sat 09:00 – 19:00 · Sun 11:00 – 17:00.",
+          "ar": "معرض سيارات مستعملة مفحوصة. شركة روتا لتجارة السيارات المحدودة (افتراضية). ساعات العمل: الاثنين–السبت 09:00 – 19:00 · الأحد 11:00 – 17:00."
+        },
+        "address": {
+          "tr": "Oto Sanayi Sitesi 4. Cadde No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "21 Fourth Street, Auto Industrial Estate, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "الشارع الرابع رقم 21، المنطقة الصناعية للسيارات، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "⁦+90 342 063 36 36⁩",
+        "phoneRaw": "+903420633636",
+        "email": "ilan@rotaoto.example",
+        "maxpages": 8,
+        "nlShow": true,
+        "nlGonderim": "mailto",
+        "about": {
+          "tr": "Rota Otomotiv demo temadır; içerik ve ilanlar kurgusaldır.",
+          "en": "Rota Motors is a demo theme; content and listings are fictional.",
+          "ar": "روتا للسيارات قالب تجريبي؛ المحتوى والإعلانات افتراضية."
+        },
+        "social": [],
+        "legal": [
+          {
+            "name": {
+              "tr": "KVKK",
+              "en": "Privacy (KVKK)",
+              "ar": "حماية البيانات"
+            },
+            "href": "kisiselveriler"
+          },
+          {
+            "name": {
+              "tr": "Gizlilik",
+              "en": "Privacy policy",
+              "ar": "سياسة الخصوصية"
+            },
+            "href": "gizlilikpolitikasi"
+          },
+          {
+            "name": {
+              "tr": "Yasal uyarı",
+              "en": "Legal notice",
+              "ar": "إشعار قانوني"
+            },
+            "href": "yasaluyari"
+          }
+        ],
+        "nlTitle": {
+          "tr": "Haberdar olun",
+          "en": "Stay informed",
+          "ar": "ابقَ على اطلاع"
+        },
+        "nlText": {
+          "tr": "Yeni duyurular için e-posta bırakın. Bu demo sitede veri saklanmaz.",
+          "en": "Leave your e-mail for new announcements. No data is stored on this demo site.",
+          "ar": "اترك بريدك الإلكتروني للإعلانات الجديدة. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
+        },
+        "nlKvkk": {
+          "tr": "E-postanız yalnızca duyuru göndermek için kullanılır; dilediğiniz an listeden çıkabilirsiniz.",
+          "en": "Your e-mail is used only to send announcements; you can leave the list at any time.",
+          "ar": "يُستخدم بريدك الإلكتروني لإرسال الإعلانات فقط، ويمكنك إلغاء الاشتراك في أي وقت."
+        },
+        "services": {
+          "tr": "Sayfalar",
+          "en": "Pages",
+          "ar": "الصفحات"
+        },
+        "hours": [],
+        "showsocial": false,
+        "about-us": {
+          "tr": "Hakkımızda",
+          "en": "About us",
+          "ar": "من نحن"
+        },
+        "contact": {
+          "tr": "İletişim",
+          "en": "Contact",
+          "ar": "اتصل بنا"
+        }
+      },
+      "category": "footer",
+      "description": "Modern gradient footer modülü. 3 sütunlu grid yapısı, sosyal medya ikonları, iletişim bilgileri ve yasal uyarı içerir. Glassmorphism efektli wave tasarım.",
+      "version": "1.1.0",
+      "icon": "footer",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "d7fxvp",
+      "path": "footer-8",
+      "local": "footer",
+      "data": [],
+      "index": 21
+    },
+    {
+      "name": "Footer 5",
+      "desing": {
+        "showlang": true,
+        "color": "#101217",
+        "footer_bg": "#101217",
+        "footer_text": "#ECEAE6",
+        "footer_bottom_bg": "#0A0C10",
+        "footer_link_hover": "#F4A57E",
+        "social_bg": "#0A0C10",
+        "logo": "logo-acik.svg",
+        "responsive_grid": true,
+        "columns": 4,
+        "contact_info": true,
+        "social_media": true,
+        "category_links": true,
+        "newsletter": true,
+        "web_name": {
+          "tr": "Rota Otomotiv",
+          "en": "Rota Otomotiv",
+          "ar": "Rota Otomotiv"
+        },
+        "description": {
+          "tr": "Ekspertizli ikinci el araç galerisi. Rota Otomotiv Tic. Ltd. Şti. (kurgusal).",
+          "en": "Inspected used-car dealer. Rota Automotive Trading Ltd. (fictional).",
+          "ar": "معرض سيارات مستعملة مفحوصة. شركة روتا لتجارة السيارات المحدودة (افتراضية)."
+        },
+        "corporate_title": {
+          "tr": "Kurumsal",
+          "en": "Company",
+          "ar": "الشركة"
+        },
+        "categories_title": {
+          "tr": "Araçlar",
+          "en": "Cars",
+          "ar": "السيارات"
+        },
+        "contact_title": {
+          "tr": "İletişim",
+          "en": "Contact",
+          "ar": "اتصل بنا"
+        },
+        "working_hours": {
+          "tr": "Pzt–Cmt 09:00 – 19:00 · Paz 11:00 – 17:00<br>Oto Sanayi Sitesi 4. Cadde No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "Mon–Sat 09:00 – 19:00 · Sun 11:00 – 17:00<br>21 Fourth Street, Auto Industrial Estate, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "الاثنين–السبت 09:00 – 19:00 · الأحد 11:00 – 17:00<br>الشارع الرابع رقم 21، المنطقة الصناعية للسيارات، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone_number": "⁦+90 342 063 36 36⁩",
+        "email_address": "ilan@rotaoto.example",
+        "follow_us": {
+          "tr": "Ekspertiz ve takas randevusu için arayın.",
+          "en": "Call to book an inspection or trade-in.",
+          "ar": "اتصل لحجز موعد فحص أو مقايضة."
+        },
+        "copyright": {
+          "tr": "© 2026 Rota Otomotiv — Tüm hakları saklıdır. Demo site; ilanlar kurgusaldır.",
+          "en": "© 2026 Rota Motors — All rights reserved. Demo site; listings are fictional.",
+          "ar": "© 2026 روتا للسيارات — جميع الحقوق محفوظة. موقع تجريبي؛ الإعلانات افتراضية."
+        },
+        "jetkur_text": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "ssl_text": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "maxpages": 8,
+        "nlShow": true,
+        "nlGonderim": "mailto",
+        "about": {
+          "tr": "Rota Otomotiv demo temadır; içerik ve ilanlar kurgusaldır.",
+          "en": "Rota Motors is a demo theme; content and listings are fictional.",
+          "ar": "روتا للسيارات قالب تجريبي؛ المحتوى والإعلانات افتراضية."
+        },
+        "address": {
+          "tr": "Oto Sanayi Sitesi 4. Cadde No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "21 Fourth Street, Auto Industrial Estate, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "الشارع الرابع رقم 21، المنطقة الصناعية للسيارات، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 063 36 36",
+        "email": "ilan@rotaoto.example",
+        "social": [],
+        "legal": [
+          {
+            "name": {
+              "tr": "KVKK",
+              "en": "Privacy (KVKK)",
+              "ar": "حماية البيانات"
+            },
+            "href": "kisiselveriler"
+          },
+          {
+            "name": {
+              "tr": "Gizlilik",
+              "en": "Privacy policy",
+              "ar": "سياسة الخصوصية"
+            },
+            "href": "gizlilikpolitikasi"
+          },
+          {
+            "name": {
+              "tr": "Yasal uyarı",
+              "en": "Legal notice",
+              "ar": "إشعار قانوني"
+            },
+            "href": "yasaluyari"
+          }
+        ],
+        "nlTitle": {
+          "tr": "Haberdar olun",
+          "en": "Stay informed",
+          "ar": "ابقَ على اطلاع"
+        },
+        "nlText": {
+          "tr": "Yeni duyurular için e-posta bırakın. Bu demo sitede veri saklanmaz.",
+          "en": "Leave your e-mail for new announcements. No data is stored on this demo site.",
+          "ar": "اترك بريدك الإلكتروني للإعلانات الجديدة. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
+        },
+        "nlKvkk": {
+          "tr": "E-postanız yalnızca duyuru göndermek için kullanılır; dilediğiniz an listeden çıkabilirsiniz.",
+          "en": "Your e-mail is used only to send announcements; you can leave the list at any time.",
+          "ar": "يُستخدم بريدك الإلكتروني لإرسال الإعلانات فقط، ويمكنك إلغاء الاشتراك في أي وقت."
+        },
+        "services": [
+          {
+            "name": {
+              "tr": "Hizmetlerimiz",
+              "en": "Our services",
+              "ar": "خدماتنا"
+            },
+            "href": "hizmetler"
+          },
+          {
+            "name": {
+              "tr": "Hakkımızda",
+              "en": "About us",
+              "ar": "من نحن"
+            },
+            "href": "hakkimizda"
+          },
+          {
+            "name": {
+              "tr": "Referanslar",
+              "en": "References",
+              "ar": "المرجعيات"
+            },
+            "href": "referanslar"
+          }
+        ],
+        "hours": []
+      },
+      "category": "footer",
+      "data": {
+        "corporate_links": [
+          {
+            "name": {
+              "tr": "Galerimiz",
+              "en": "Our dealership",
+              "ar": "معرضنا"
+            },
+            "url": "/{{lang}}/hakkimizda/"
+          },
+          {
+            "name": {
+              "tr": "Satış paketleri",
+              "en": "Sale packages",
+              "ar": "باقات البيع"
+            },
+            "url": "/{{lang}}/sorular/"
+          },
+          {
+            "name": {
+              "tr": "Teslimatlar",
+              "en": "Handovers",
+              "ar": "التسليمات"
+            },
+            "url": "/{{lang}}/referanslar/"
+          },
+          {
+            "name": {
+              "tr": "Kişisel veriler",
+              "en": "Personal data",
+              "ar": "البيانات الشخصية"
+            },
+            "url": "/{{lang}}/kisiselveriler/"
+          }
+        ],
+        "category_links": [
+          {
+            "name": {
+              "tr": "Satıştaki araçlar",
+              "en": "Cars for sale",
+              "ar": "السيارات المعروضة"
+            },
+            "url": "/{{lang}}/hizmetler/"
+          },
+          {
+            "name": {
+              "tr": "Takas ve ekspertiz",
+              "en": "Trade-in & inspection",
+              "ar": "المقايضة والفحص"
+            },
+            "url": "/{{lang}}/teklif-al/"
+          },
+          {
+            "name": {
+              "tr": "Şubeler",
+              "en": "Branches",
+              "ar": "الفروع"
+            },
+            "url": "/{{lang}}/iletisim/"
+          }
+        ],
+        "social_media_links": []
+      },
+      "description": "Web sitesi alt bilgi (footer) bölümü. Logo, telif hakları, iletişim bilgileri ve sosyal medya linklerini içerir. Tüm sayfa türlerinde kullanılabilir evrensel modüldür.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "txqgpi",
+      "path": "footer-5",
+      "local": "footer",
+      "index": 22
+    }
+  ]
+}

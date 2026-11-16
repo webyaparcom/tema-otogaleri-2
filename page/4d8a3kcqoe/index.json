@@ -1,0 +1,40 @@
+{
+  "id": "4d8a3kcqoe",
+  "name": {
+    "tr": "Teslimatlar",
+    "en": "Handovers",
+    "ar": "التسليمات"
+  },
+  "description": {
+    "tr": "Kurgusal müşteri notları.",
+    "en": "Fictional customer notes.",
+    "ar": "ملاحظات زبائن افتراضية."
+  },
+  "keyword": {
+    "tr": "referans, müşteri yorumu",
+    "en": "reference, review",
+    "ar": "مرجع، تقييم"
+  },
+  "path": "referanslar",
+  "icon": "stars",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "65uxy5",
+      "lf64q2"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Teslimatlar",
+    "en": "Handovers",
+    "ar": "التسليمات"
+  },
+  "date": "2026-11-16T11:40:36.693Z",
+  "update": "2026-11-16T12:20:44.485Z"
+}

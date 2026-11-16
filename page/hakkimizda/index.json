@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Galerimiz",
+    "en": "Our dealership",
+    "ar": "معرضنا"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "1fj3vz",
+      "uy12ih"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Ekspertizli ikinci el araç; takas ve ekspertiz randevusu.",
+    "en": "Inspected used cars; trade-in and inspection appointments.",
+    "ar": "سيارات مستعملة مفحوصة؛ مواعيد مقايضة وفحص."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Galerimiz",
+    "en": "Our dealership",
+    "ar": "معرضنا"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T12:20:44.477Z",
+  "date": "2026-10-30"
+}

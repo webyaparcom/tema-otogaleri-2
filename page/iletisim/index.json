@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Şubeler",
+    "en": "Branches",
+    "ar": "الفروع"
+  },
+  "status": "play",
+  "category": "",
+  "id": "iletisim",
+  "url": "",
+  "path": "iletisim",
+  "index": 5,
+  "icon": "call",
+  "desing": {
+    "header": [],
+    "body": [
+      "xebeqi",
+      "k8mp01"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Adres, telefon ve çalışma saatleri.",
+    "en": "Address, phone and opening hours.",
+    "ar": "العنوان والهاتف وساعات العمل."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Şubeler",
+    "en": "Branches",
+    "ar": "الفروع"
+  },
+  "keyword": {
+    "tr": "iletişim",
+    "en": "contact",
+    "ar": "اتصال"
+  },
+  "text": {},
+  "update": "2026-11-16T12:20:44.493Z",
+  "date": "2026-10-30"
+}
