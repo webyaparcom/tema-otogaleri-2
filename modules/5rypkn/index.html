@@ -1,0 +1,165 @@
+<section class="modulex-acilis-katalog-arama{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-acilis-katalog-arama-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* acilis-katalog-arama — acilis-hizmet-secici sabit bağlantı satırlarıdır, acilis-tam-ortu yalnız metinli örtüdür; bu modül görselin tabanına filtre gruplarından oluşan arama yuvası oturtur ve çip seçimini liste URL'sine çevirir. kargo-takip-hero serbest metin girer, teklif-sihirbazi-hero form gönderir; burada hedef bir katalog liste sayfasıdır (parametreli bağlantı). */
+  .modulex-acilis-katalog-arama { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-acilis-katalog-arama *, .modulex-acilis-katalog-arama *::before, .modulex-acilis-katalog-arama *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-acilis-katalog-arama :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-acilis-katalog-arama :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-acilis-katalog-arama :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-acilis-katalog-arama :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-acilis-katalog-arama img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-acilis-katalog-arama) img { height: auto; }
+  .modulex-acilis-katalog-arama [hidden] { display: none !important; }
+  .modulex-acilis-katalog-arama :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-acilis-katalog-arama :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-acilis-katalog-arama-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-acilis-katalog-arama-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-acilis-katalog-arama--bassiz .modulex-acilis-katalog-arama-bas { display: none; }
+  .modulex-acilis-katalog-arama-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-acilis-katalog-arama-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-acilis-katalog-arama-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-acilis-katalog-arama-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-acilis-katalog-arama-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-acilis-katalog-arama-dugme:hover { transform: translateY(-2px); }
+  .modulex-acilis-katalog-arama-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-acilis-katalog-arama-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-acilis-katalog-arama-dugme .material-symbols-outlined { font-size: 20px; }
+
+  section.modulex-acilis-katalog-arama { padding: 0; }
+  .modulex-acilis-katalog-arama-ic { max-width: none; }
+  .modulex-acilis-katalog-arama-sahne { position: relative; display: grid; align-content: end; gap: clamp(22px, 3vw, 34px); min-height: max(640px, 94vh); padding: clamp(110px, 14vw, 180px) max(20px, calc((100% - --max--) / 2)) clamp(26px, 4vw, 48px); isolation: isolate; overflow: hidden; }
+  .modulex-acilis-katalog-arama-arka { position: absolute; inset: 0; z-index: -2; inline-size: 100%; block-size: 100%; object-fit: cover; animation: modulex-acilis-katalog-arama-kay 18s ease-in-out infinite alternate; }
+  @keyframes modulex-acilis-katalog-arama-kay { from { transform: scale(1.04); } to { transform: scale(1.1) translateY(-1.5%); } }
+  .modulex-acilis-katalog-arama-perde { position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, --ortu-- 0%, color-mix(in srgb, --ortu-- 72%, transparent) 42%, color-mix(in srgb, --ortu-- 25%, transparent) 100%); }
+  .modulex-acilis-katalog-arama-yazi { display: grid; gap: 16px; justify-items: start; max-width: 780px; }
+  .modulex-acilis-katalog-arama-sahne .modulex-acilis-katalog-arama-h1 { font-size: clamp(2.2rem, 5vw, 4rem); }
+  .modulex-acilis-katalog-arama-dok { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 0.32fr); overflow: hidden; border-radius: calc(--yuvarlak-- * 1.2); background-color: --bg--; color: --text--; box-shadow: 0 40px 80px -40px color-mix(in srgb, --ortu-- 90%, transparent); animation: modulex-acilis-katalog-arama-gir 0.8s 0.15s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  .modulex-acilis-katalog-arama-kumeler { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+  .modulex-acilis-katalog-arama-kume { display: grid; align-content: start; gap: 12px; min-width: 0; padding: clamp(16px, 2vw, 24px); border-inline-start: 1px solid --cizgi--; }
+  .modulex-acilis-katalog-arama-kume:first-child { border-inline-start: 0; }
+  .modulex-acilis-katalog-arama-kad { color: --muted--; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .modulex-acilis-katalog-arama-cipler { display: flex; flex-wrap: wrap; gap: 6px; }
+  .modulex-acilis-katalog-arama-cip { position: relative; display: inline-flex; cursor: pointer; }
+  .modulex-acilis-katalog-arama-cradyo { position: absolute; inset-block-start: 0; inset-inline-start: 0; inline-size: 1px; block-size: 1px; opacity: 0; pointer-events: none; }
+  .modulex-acilis-katalog-arama-cyazi { display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 6px 14px; border: 1px solid color-mix(in srgb, --text-- 24%, transparent); border-radius: 8px; background-color: --bg--; color: --text--; font-size: 0.92rem; font-weight: 650; white-space: nowrap; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
+  .modulex-acilis-katalog-arama-cip:hover .modulex-acilis-katalog-arama-cyazi { border-color: --accent--; transform: translateY(-1px); }
+  .modulex-acilis-katalog-arama-cradyo:focus-visible + .modulex-acilis-katalog-arama-cyazi { outline: 3px solid --accent--; outline-offset: 2px; }
+  .modulex-acilis-katalog-arama-cradyo:checked + .modulex-acilis-katalog-arama-cyazi { border-color: --text--; background-color: --text--; color: --bg--; }
+  .modulex-acilis-katalog-arama-cradyo:checked + .modulex-acilis-katalog-arama-cyazi::before { content: "✓"; font-weight: 800; }
+  .modulex-acilis-katalog-arama-dokalt { display: grid; align-content: center; gap: 12px; padding: clamp(16px, 2vw, 24px); background-color: color-mix(in srgb, --accent-- 9%, --bg--); }
+  .modulex-acilis-katalog-arama-secim { color: --text--; font-size: 0.9rem; font-weight: 700; }
+  .modulex-acilis-katalog-arama-secim:empty { display: none; }
+  .modulex-acilis-katalog-arama-temizle { display: inline-flex; align-items: center; justify-self: start; gap: 4px; min-height: 36px; padding: 4px 8px; border: 0; border-radius: 6px; background: transparent; color: --text--; font: inherit; font-size: 0.88rem; font-weight: 650; text-decoration: underline; text-underline-offset: 3px; transition: background-color 0.2s ease; }
+  .modulex-acilis-katalog-arama-temizle:hover { background-color: color-mix(in srgb, --text-- 8%, transparent); }
+  .modulex-acilis-katalog-arama-temizle .material-symbols-outlined { font-size: 18px; }
+  .modulex-acilis-katalog-arama-sonuc { justify-content: space-between; inline-size: 100%; border-radius: 10px; }
+  .modulex-acilis-katalog-arama--nabiz { animation: modulex-acilis-katalog-arama-nabiz 0.5s ease; }
+  @keyframes modulex-acilis-katalog-arama-nabiz { 50% { transform: scale(1.04); } }
+  .modulex-acilis-katalog-arama-sahne .modulex-acilis-katalog-arama-dok :where(a, button):focus-visible { outline-color: --accent--; }
+  .modulex-acilis-katalog-arama-dok:focus-within { box-shadow: 0 0 0 4px color-mix(in srgb, --accent-- 40%, transparent), 0 40px 80px -40px color-mix(in srgb, --ortu-- 90%, transparent); }
+  .modulex-acilis-katalog-arama-sahne > .modulex-acilis-katalog-arama-ogeler { gap: 10px 32px; }
+  @media (max-width: 1024px) {
+    .modulex-acilis-katalog-arama-dok { grid-template-columns: minmax(0, 1fr); }
+    .modulex-acilis-katalog-arama-kumeler { grid-auto-flow: row; }
+    .modulex-acilis-katalog-arama-kume { border-inline-start: 0; border-block-start: 1px solid --cizgi--; }
+    .modulex-acilis-katalog-arama-kume:first-child { border-block-start: 0; }
+  }
+  @media (max-width: 768px) {
+    .modulex-acilis-katalog-arama-sahne { min-height: 0; padding-block-start: 96px; }
+    .modulex-acilis-katalog-arama-cipler { flex-wrap: nowrap; overflow-x: auto; padding-block-end: 4px; scrollbar-width: none; }
+    .modulex-acilis-katalog-arama-kume { padding: 14px; }
+  }
+  .modulex-acilis-katalog-arama-h1 { font-family: var(--mx-font-heading, inherit); font-size: clamp(2.3rem, 5.2vw, 4.2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; text-wrap: balance; }
+  .modulex-acilis-katalog-arama-metin { color: --muted--; font-size: clamp(1.02rem, 1.3vw, 1.18rem); line-height: 1.7; max-width: 62ch; }
+  .modulex-acilis-katalog-arama-ogeler { display: flex; flex-wrap: wrap; gap: 14px 30px; }
+  .modulex-acilis-katalog-arama-oge { display: flex; align-items: center; gap: 10px; }
+  .modulex-acilis-katalog-arama-oikon { color: --accentInk--; font-size: 22px; }
+  .modulex-acilis-katalog-arama-odeger { font-size: 1.45rem; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+  .modulex-acilis-katalog-arama-ometin { color: --muted--; font-size: 0.95rem; }
+  .modulex-acilis-katalog-arama-obag { color: inherit; text-underline-offset: 3px; }
+  .modulex-acilis-katalog-arama-gir { animation: modulex-acilis-katalog-arama-gir 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  @keyframes modulex-acilis-katalog-arama-gir { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-acilis-katalog-arama-h1 { letter-spacing: 0; line-height: 1.3; }
+  .modulex-acilis-katalog-arama-sahne { background: --ortu--; color: --ortuText--; }
+  .modulex-acilis-katalog-arama-sahne :is(.modulex-acilis-katalog-arama-ust, .modulex-acilis-katalog-arama-metin, .modulex-acilis-katalog-arama-ometin, .modulex-acilis-katalog-arama-oikon, .modulex-acilis-katalog-arama-odeger) { color: --ortuText--; }
+  .modulex-acilis-katalog-arama-sahne .modulex-acilis-katalog-arama-dugme--ikincil { color: --ortuText--; border-color: color-mix(in srgb, --ortuText-- 60%, transparent); }
+  .modulex-acilis-katalog-arama-sahne .modulex-acilis-katalog-arama-dugme--ikincil:hover { border-color: --ortuText--; }
+  .modulex-acilis-katalog-arama-sahne :where(a, button):focus-visible { outline-color: --ortuText--; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-acilis-katalog-arama :is(.modulex-acilis-katalog-arama-baslik, .modulex-acilis-katalog-arama-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-acilis-katalog-arama-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-acilis-katalog-arama { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-acilis-katalog-arama *, .modulex-acilis-katalog-arama *::before, .modulex-acilis-katalog-arama *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-acilis-katalog-arama";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const katalogCip = (s, P) => {
+        s.querySelectorAll("form[data-katalog]").forEach((f) => {
+          const a = f.querySelector("[data-liste]");
+          const kok = f.dataset.katalog;
+          if (!a || !kok) return;
+          const gon = f.querySelector("[data-gonder]");
+          const tem = f.querySelector("[data-temizle]");
+          const ozet = f.querySelector("[data-secim]");
+          const radyo = Array.from(f.querySelectorAll("input[type=radio]"));
+          const son = {};
+          const kes = kok.indexOf("#");
+          const yol = kes === -1 ? kok : kok.slice(0, kes);
+          const kare = kes === -1 ? "" : kok.slice(kes);
+          const url = () => {
+            const p = new URLSearchParams();
+            radyo.filter((r) => r.checked).forEach((r) => p.append(r.name, r.value));
+            const q = p.toString();
+            return yol + (q ? (yol.indexOf("?") === -1 ? "?" : "&") + q : "") + kare;
+          };
+          const guncelle = () => {
+            const sec = radyo.filter((r) => r.checked);
+            a.href = url();
+            if (ozet) ozet.textContent = sec.map((r) => r.dataset.metin || r.value).join(" · ");
+            if (tem) tem.hidden = !sec.length;
+            f.classList.toggle(P + "--secili", sec.length > 0);
+            a.classList.remove(P + "--nabiz");
+            void a.offsetWidth;
+            if (sec.length) a.classList.add(P + "--nabiz");
+          };
+          radyo.forEach((r) => {
+            if (r.checked) son[r.name] = r.value;
+            r.addEventListener("click", () => {
+              if (son[r.name] === r.value) { r.checked = false; son[r.name] = ""; } else son[r.name] = r.value;
+              guncelle();
+            });
+          });
+          if (tem) tem.addEventListener("click", () => {
+            radyo.forEach((r) => { r.checked = false; });
+            Object.keys(son).forEach((k) => { son[k] = ""; });
+            guncelle();
+            if (radyo[0]) radyo[0].focus();
+          });
+          f.addEventListener("submit", (e) => { e.preventDefault(); location.href = url(); });
+          a.hidden = false;
+          if (gon) gon.hidden = true;
+          guncelle();
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      katalogCip(s, P, az);
+    });
+  })();
+</script>

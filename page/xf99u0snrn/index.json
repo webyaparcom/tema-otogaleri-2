@@ -1,0 +1,40 @@
+{
+  "id": "xf99u0snrn",
+  "name": {
+    "tr": "Satış paketleri",
+    "en": "Sale packages",
+    "ar": "باقات البيع"
+  },
+  "description": {
+    "tr": "Paket karşılaştırması.",
+    "en": "Package comparison.",
+    "ar": "مقارنة الباقات."
+  },
+  "keyword": {
+    "tr": "sss, soru cevap",
+    "en": "faq, questions",
+    "ar": "أسئلة وأجوبة"
+  },
+  "path": "sorular",
+  "icon": "help",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "cpi6su",
+      "lf64q2"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Satış paketleri",
+    "en": "Sale packages",
+    "ar": "باقات البيع"
+  },
+  "date": "2026-11-16T11:40:36.688Z",
+  "update": "2026-11-16T12:20:44.481Z"
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Yorum Araç Teslim — aldığı araçla müşteri ve plaka etiketi",
+  "description": "Her yorum bir teslim anı: üstte müşterinin aracıyla fotoğrafı (yoksa araç simgesi), fotoğrafın altına taşan plaka biçiminde araç modeli (`baslik`), köşede anahtarlıkta teslim tarihi; altında puan, yorum ve kişi. Kartlar görünür olunca yandan «sürülerek» gelir. Ürün (araç) + müşteri birlikte: yorum-portre-ray'in portre-önce kartından farklı olarak görsel teslim fotoğrafıdır ve plaka/anahtarlık nesneleri model ile tarihi taşır; ızgara, ray değil; yorum-zigzag-foto'nun satır anlatısından farklı olarak eşit kart vitrini. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "directions_car",
+  "category": "testimonial",
+  "subCategory": "delivery-photo",
+  "tags": [
+    "testimonial",
+    "delivery",
+    "photo",
+    "car",
+    "plate",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "yildiz": "color-mix(in srgb, var(--mx-color-warning, #d97706) 78%, var(--mx-site-text, #111318))",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "metin": "yorum metni — dil sözlüğü (zorunlu)",
+      "ad": "yorumu yapanın adı",
+      "unvan": "görev / unvan (dil sözlüğü)",
+      "firma": "firma adı",
+      "puan": "1–5 yıldız (0/boş → yıldız yok)",
+      "img": "avatar / portre görseli",
+      "logo": "firma logosu (destekleyen yerleşimde)",
+      "baslik": "yorum başlığı (destekleyen yerleşimde)",
+      "tarih": "tarih metni",
+      "kaynak": "kaynak (Google, Instagram …)"
+    }
+  }
+}

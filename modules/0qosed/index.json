@@ -1,0 +1,105 @@
+{
+  "name": "Menü 8",
+  "path": "menu-8",
+  "desing": {
+    "logo": "logo.svg",
+    "logosize": 300,
+    "logosizemobil": 200,
+    "palette": {
+      "primary": "#0f1e41",
+      "accent": "#f4b400",
+      "surface": "#ffffff",
+      "muted": "rgba(255, 255, 255, 0.65)"
+    },
+    "identity": {
+      "title": {
+        "tr": "Birlikte Daha Güçlüyüz"
+      },
+      "text": {
+        "tr": "Kurumsal yönetim, sosyal sorumluluk ve dayanışma kültürü ile üyelerimizin her projesinde yanındayız. Ortak akıl, şeffaflık ve toplumsal fayda temelinde ilerliyoruz."
+      }
+    },
+    "cta": {
+      "primary": {
+        "text": {
+          "tr": "Üye Ol"
+        },
+        "url": "/{{lang}}/uye-basvuru",
+        "icon": "how_to_reg"
+      },
+      "secondary": {
+        "text": {
+          "tr": "Randevu Al"
+        },
+        "url": "/{{lang}}/iletisim",
+        "icon": "call"
+      }
+    },
+    "stats": [
+      {
+        "value": "150+",
+        "label": {
+          "tr": "Aktif Üye"
+        },
+        "icon": "groups"
+      },
+      {
+        "value": "25",
+        "label": {
+          "tr": "Sosyal Proje"
+        },
+        "icon": "handshake"
+      }
+    ],
+    "ariaToggle": {
+      "tr": "Menüyü aç/kapat",
+      "en": "Toggle menu", "ar": "تبديل القائمة"
+    },
+    "color": "#1e3046"
+  },
+  "local": "header",
+  "data": [
+    {
+      "name": {
+        "tr": "Bizi hemen arayın"
+      },
+      "spot": "+90 342 221 00 02",
+      "icon": "phone",
+      "externalUrl": "",
+      "titlecolor": "#000",
+      "spotcolor": "#000",
+      "iconcolor": "#000"
+    },
+    {
+      "name": {
+        "tr": "Bize yazın"
+      },
+      "spot": "info@{{domain}}",
+      "icon": "mail",
+      "url": "info@{{domain}}",
+      "titlecolor": "#000",
+      "spotcolor": "#000",
+      "iconcolor": "#000"
+    },
+    {
+      "name": {
+        "tr": "İncilipınar Mah. Şehit Yusuf Erin Cad."
+      },
+      "spot": "Çayırlı İş Mrk. B Blok Kat:6 No:22 Gaziantep",
+      "icon": "location_on",
+      "externalUrl": "",
+      "titlecolor": "#000",
+      "spotcolor": "#000",
+      "iconcolor": "#000"
+    }
+  ],
+  "category": "menu",
+  "description": "Dernek ve kurumsal siteler için tasarlanan üst menü modülü. Üst barda iletişim bilgileri ve dil seçenekleri, ana bölümde logo, alt bölümde ise mega menü destekli navigasyon sunar. Mobilde çökmeden açılır kapanır menü yapısı, çoklu dil desteği, modern gölgeler ve responsive logo boyutları içerir.",
+  "version": "2.0.0",
+  "icon": "menu",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
+}

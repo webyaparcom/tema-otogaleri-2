@@ -1,0 +1,165 @@
+{
+  "data": [
+    {
+      "id": "3dis56gedy",
+      "name": {
+        "tr": "Satıştaki araçlar",
+        "en": "Cars for sale",
+        "ar": "السيارات المعروضة"
+      },
+      "description": {
+        "tr": "Ekspertizli ikinci el araç ilanları (kurgusal).",
+        "en": "Inspected used-car listings (fictional).",
+        "ar": "إعلانات سيارات مستعملة مفحوصة (افتراضية)."
+      },
+      "path": "hizmetler",
+      "icon": "work",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "gcfqeb",
+          "lf64q2"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Galerimiz",
+        "en": "Our dealership",
+        "ar": "معرضنا"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "1fj3vz",
+          "uy12ih"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Ekspertizli ikinci el araç; takas ve ekspertiz randevusu.",
+        "en": "Inspected used cars; trade-in and inspection appointments.",
+        "ar": "سيارات مستعملة مفحوصة؛ مواعيد مقايضة وفحص."
+      }
+    },
+    {
+      "id": "xf99u0snrn",
+      "name": {
+        "tr": "Satış paketleri",
+        "en": "Sale packages",
+        "ar": "باقات البيع"
+      },
+      "description": {
+        "tr": "Paket karşılaştırması.",
+        "en": "Package comparison.",
+        "ar": "مقارنة الباقات."
+      },
+      "path": "sorular",
+      "icon": "help",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "cpi6su",
+          "lf64q2"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "4d8a3kcqoe",
+      "name": {
+        "tr": "Teslimatlar",
+        "en": "Handovers",
+        "ar": "التسليمات"
+      },
+      "description": {
+        "tr": "Kurgusal müşteri notları.",
+        "en": "Fictional customer notes.",
+        "ar": "ملاحظات زبائن افتراضية."
+      },
+      "path": "referanslar",
+      "icon": "stars",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "65uxy5",
+          "lf64q2"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "id": "1graz97q0x",
+      "name": {
+        "tr": "Takas ve ekspertiz",
+        "en": "Trade-in & inspection",
+        "ar": "المقايضة والفحص"
+      },
+      "description": {
+        "tr": "Takas ve ekspertiz talebi (demo).",
+        "en": "Trade-in and inspection request (demo).",
+        "ar": "طلب مقايضة وفحص (تجريبي)."
+      },
+      "path": "teklif-al",
+      "icon": "request_quote",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "lf64q2",
+          "xebeqi"
+        ],
+        "footer": []
+      },
+      "index": 4
+    },
+    {
+      "name": {
+        "tr": "Şubeler",
+        "en": "Branches",
+        "ar": "الفروع"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 5,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "xebeqi",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve çalışma saatleri.",
+        "en": "Address, phone and opening hours.",
+        "ar": "العنوان والهاتف وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}

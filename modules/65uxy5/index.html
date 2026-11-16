@@ -1,0 +1,105 @@
+<section class="modulex-yorum-arac-teslim{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-yorum-arac-teslim-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* yorum-arac-teslim — Ürün (araç) + müşteri birlikte: yorum-portre-ray'in portre-önce kartından farklı olarak görsel teslim fotoğrafıdır ve plaka/anahtarlık nesneleri model ile tarihi taşır; ızgara, ray değil; yorum-zigzag-foto'nun satır anlatısından farklı olarak eşit kart vitrini. */
+  .modulex-yorum-arac-teslim { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-yorum-arac-teslim *, .modulex-yorum-arac-teslim *::before, .modulex-yorum-arac-teslim *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-yorum-arac-teslim :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-yorum-arac-teslim :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-yorum-arac-teslim :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-yorum-arac-teslim :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-yorum-arac-teslim img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-yorum-arac-teslim) img { height: auto; }
+  .modulex-yorum-arac-teslim [hidden] { display: none !important; }
+  .modulex-yorum-arac-teslim :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-yorum-arac-teslim :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-yorum-arac-teslim-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-yorum-arac-teslim-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-yorum-arac-teslim--bassiz .modulex-yorum-arac-teslim-bas { display: none; }
+  .modulex-yorum-arac-teslim-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-yorum-arac-teslim-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-yorum-arac-teslim-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-yorum-arac-teslim-bas { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px 48px; align-items: end; }
+  .modulex-yorum-arac-teslim-ust { grid-column: 1 / -1; }
+  .modulex-yorum-arac-teslim-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-yorum-arac-teslim-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-yorum-arac-teslim-dugme:hover { transform: translateY(-2px); }
+  .modulex-yorum-arac-teslim-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-yorum-arac-teslim-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-yorum-arac-teslim-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-yorum-arac-teslim-ad { font-weight: 700; }
+  .modulex-yorum-arac-teslim-kisi { display: grid; gap: 2px; min-width: 0; }
+  .modulex-yorum-arac-teslim-unvan { color: --muted--; font-size: 0.88rem; line-height: 1.45; }
+  .modulex-yorum-arac-teslim-puan { display: flex; gap: 2px; color: --yildiz--; }
+  .modulex-yorum-arac-teslim-puan .material-symbols-outlined { font-size: 20px; font-variation-settings: "FILL" 1; }
+  .modulex-yorum-arac-teslim-yildiz--bos { opacity: 0.3; }
+  .modulex-yorum-arac-teslim-avatar { flex: none; width: 52px; height: 52px; border-radius: 50%; object-fit: cover; }
+  .modulex-yorum-arac-teslim-harf { display: inline-grid; place-items: center; background: color-mix(in srgb, --accent-- 18%, --kartBg--); color: --accentInk--; font-weight: 800; letter-spacing: 0.02em; }
+  .modulex-yorum-arac-teslim-yazar { display: flex; align-items: center; gap: 12px; }
+
+  .modulex-yorum-arac-teslim-galeri { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: clamp(26px, 3vw, 36px) clamp(20px, 2.4vw, 28px); }
+  .modulex-yorum-arac-teslim-teslim { display: grid; align-content: start; gap: 34px; transition: opacity 0.6s ease calc(var(--i) * 0.1s), transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) calc(var(--i) * 0.1s); }
+  .modulex-yorum-arac-teslim--hazir:not(.modulex-yorum-arac-teslim--gor) .modulex-yorum-arac-teslim-teslim { opacity: 0; transform: translateX(-40px); }
+  [dir="rtl"] .modulex-yorum-arac-teslim--hazir:not(.modulex-yorum-arac-teslim--gor) .modulex-yorum-arac-teslim-teslim { transform: translateX(40px); }
+  .modulex-yorum-arac-teslim-kare { position: relative; display: grid; aspect-ratio: 4 / 3; border-radius: --yuvarlak--; background: linear-gradient(160deg, color-mix(in srgb, --accent-- 20%, --kartBg--), --kartBg--); }
+  .modulex-yorum-arac-teslim-cerceve { grid-area: 1 / 1; display: grid; overflow: hidden; border-radius: inherit; }
+  .modulex-yorum-arac-teslim-resim { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+  .modulex-yorum-arac-teslim-teslim:hover .modulex-yorum-arac-teslim-resim { transform: scale(1.05); }
+  .modulex-yorum-arac-teslim-bos-ikon { place-self: center; color: --accentInk--; font-size: 96px; opacity: 0.55; }
+  .modulex-yorum-arac-teslim-plaka { position: absolute; inset-block-end: 0; inset-inline-start: 18px; display: inline-flex; align-items: stretch; max-width: calc(100% - 36px); overflow: hidden; border: 2px solid --text--; border-radius: 7px; background: --bg--; color: --text--; transform: translateY(50%); box-shadow: 0 12px 20px -14px color-mix(in srgb, --text-- 75%, transparent); transition: transform 0.35s ease; }
+  .modulex-yorum-arac-teslim-teslim:hover .modulex-yorum-arac-teslim-plaka { transform: translateY(42%); }
+  .modulex-yorum-arac-teslim-plaka-serit { flex: none; width: 16px; background: --accent--; }
+  .modulex-yorum-arac-teslim-model { padding-block: 7px; padding-inline: 12px 14px; overflow: hidden; font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; }
+  .modulex-yorum-arac-teslim-anahtar { position: absolute; inset-block-start: 14px; inset-inline-end: 14px; display: inline-flex; align-items: center; gap: 6px; padding-block: 6px; padding-inline: 8px 12px; border-radius: 999px; background: --bg--; color: --text--; font-size: 0.82rem; font-weight: 700; transform-origin: 50% 0; box-shadow: 0 6px 14px -10px color-mix(in srgb, --text-- 70%, transparent); }
+  .modulex-yorum-arac-teslim-teslim:hover .modulex-yorum-arac-teslim-anahtar { animation: modulex-yorum-arac-teslim-sallan 0.9s ease; }
+  .modulex-yorum-arac-teslim-anahtar .material-symbols-outlined { color: --accentInk--; font-size: 18px; }
+  @keyframes modulex-yorum-arac-teslim-sallan { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(7deg); } 60% { transform: rotate(-5deg); } }
+  .modulex-yorum-arac-teslim-soz { display: grid; gap: 12px; padding-inline: 4px; }
+  .modulex-yorum-arac-teslim-alinti { font-size: 1.04rem; line-height: 1.65; }
+  .modulex-yorum-arac-teslim-avatar { width: 42px; height: 42px; font-size: 0.85rem; }
+  @media (max-width: 768px) {
+    .modulex-yorum-arac-teslim-model { font-size: 0.85rem; }
+    .modulex-yorum-arac-teslim-bos-ikon { font-size: 72px; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-yorum-arac-teslim :is(.modulex-yorum-arac-teslim-baslik, .modulex-yorum-arac-teslim-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-yorum-arac-teslim-baslik { line-height: 1.35; }
+  @media (max-width: 1024px) {
+    .modulex-yorum-arac-teslim-bas { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .modulex-yorum-arac-teslim { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-yorum-arac-teslim *, .modulex-yorum-arac-teslim *::before, .modulex-yorum-arac-teslim *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-yorum-arac-teslim";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const gozlem = (s, P, az) => {
+        const gor = () => s.classList.add(P + "--gor");
+        s.classList.add(P + "--hazir");
+        if (az || !("IntersectionObserver" in window)) { gor(); return; }
+        const io = new IntersectionObserver((gs) => {
+          gs.forEach((g) => { if (g.isIntersecting) { gor(); io.disconnect(); } });
+        }, { threshold: 0.15 });
+        io.observe(s);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      gozlem(s, P, az);
+    });
+  })();
+</script>

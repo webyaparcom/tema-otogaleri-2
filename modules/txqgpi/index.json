@@ -1,0 +1,154 @@
+{
+  "name": "Footer 5",
+  "desing": {
+    "showlang": true,
+    "color": "#0B3A6E",
+    "footer_bg": "#0B3A6E",
+    "footer_text": "#FFFFFF",
+    "footer_bottom_bg": "#02427A",
+    "footer_link_hover": "#E9F3FB",
+    "social_bg": "#02427A",
+    "logo": "logo.png",
+    "responsive_grid": true,
+    "columns": 4,
+    "contact_info": true,
+    "social_media": true,
+    "category_links": true,
+    "newsletter": true,
+    "web_name": {
+      "tr": "Site Adı",
+      "en": "Site Name",
+      "ar": "اسم الموقع"
+    },
+    "description": {
+      "tr": "",
+      "en": "",
+      "ar": ""
+    },
+    "corporate_title": {
+      "tr": "KURUMSAL",
+      "en": "CORPORATE",
+      "ar": "الشركة"
+    },
+    "categories_title": {
+      "tr": "KATEGORİLER",
+      "en": "CATEGORIES",
+      "ar": "الفئات"
+    },
+    "contact_title": {
+      "tr": "BİZE ULAŞIN",
+      "en": "CONTACT US",
+      "ar": "اتصل بنا"
+    },
+    "working_hours": {
+      "tr": "Haftaiçi 08:00 - 19:00<br>Cumartesi 08:00 - 19:00",
+      "en": "Weekdays 08:00 - 19:00<br>Saturday 08:00 - 19:00",
+      "ar": "أيام الأسبوع 08:00 - 19:00<br>السبت 08:00 - 19:00"
+    },
+    "phone_number": "444 2 102",
+    "email_address": "destek@example.com",
+    "follow_us": {
+      "tr": "Bizi Takip Edin",
+      "en": "Follow Us",
+      "ar": "تابعنا"
+    },
+    "copyright": {
+      "tr": "© 2024 Site Adı - Tüm Hakları Saklıdır.",
+      "en": "© 2024 Site Name - All Rights Reserved.",
+      "ar": "© 2024 اسم الموقع - جميع الحقوق محفوظة."
+    },
+    "jetkur_text": {
+      "tr": "Jetkur ® | E-ticaret paketleri ile hazırlanmıştır.",
+      "en": "Jetkur ® | Prepared with e-commerce packages.",
+      "ar": "Jetkur ® | تم إعداده بحزم التجارة الإلكترونية."
+    },
+    "ssl_text": {
+      "tr": "Tüm bilgileriniz 256bit SSL Sertifikası ile korunmaktadır.",
+      "en": "All your information is protected with 256bit SSL Certificate.",
+      "ar": "جميع معلوماتك محمية بشهادة SSL 256 بت."
+    }
+  },
+  "category": "footer",
+  "data": {
+    "corporate_links": [
+      {
+        "name": "Hakkımızda",
+        "url": "#"
+      },
+      {
+        "name": "Gizlilik Sözleşmesi",
+        "url": "#"
+      },
+      {
+        "name": "Kullanıcı Sözleşmesi",
+        "url": "#"
+      },
+      {
+        "name": "İletişim",
+        "url": "#"
+      },
+      {
+        "name": "Sıkça Sorulan Sorular",
+        "url": "#"
+      },
+      {
+        "name": "Sipariş Takip",
+        "url": "#"
+      }
+    ],
+    "category_links": [
+      {
+        "name": "Baklava",
+        "url": "#"
+      },
+      {
+        "name": "Kadayıf",
+        "url": "#"
+      },
+      {
+        "name": "Baharat",
+        "url": "#"
+      },
+      {
+        "name": "Kuruyemiş",
+        "url": "#"
+      },
+      {
+        "name": "Lokum",
+        "url": "#"
+      },
+      {
+        "name": "Kahve",
+        "url": "#"
+      }
+    ],
+    "social_media_links": [
+      {
+        "name": "Facebook",
+        "url": "#",
+        "icon": "facebook"
+      },
+      {
+        "name": "Twitter",
+        "url": "#",
+        "icon": "twitter"
+      },
+      {
+        "name": "Instagram",
+        "url": "#",
+        "icon": "instagram"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "#",
+        "icon": "linkedin"
+      }
+    ]
+  },
+  "description": "Web sitesi alt bilgi (footer) bölümü. Logo, telif hakları, iletişim bilgileri ve sosyal medya linklerini içerir. Tüm sayfa türlerinde kullanılabilir evrensel modüldür.",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
+}

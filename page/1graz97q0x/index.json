@@ -1,0 +1,40 @@
+{
+  "id": "1graz97q0x",
+  "name": {
+    "tr": "Takas ve ekspertiz",
+    "en": "Trade-in & inspection",
+    "ar": "المقايضة والفحص"
+  },
+  "description": {
+    "tr": "Takas ve ekspertiz talebi (demo).",
+    "en": "Trade-in and inspection request (demo).",
+    "ar": "طلب مقايضة وفحص (تجريبي)."
+  },
+  "keyword": {
+    "tr": "teklif",
+    "en": "quote",
+    "ar": "عرض سعر"
+  },
+  "path": "teklif-al",
+  "icon": "request_quote",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "lf64q2",
+      "xebeqi"
+    ],
+    "footer": []
+  },
+  "index": 4,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Takas ve ekspertiz",
+    "en": "Trade-in & inspection",
+    "ar": "المقايضة والفحص"
+  },
+  "date": "2026-11-16T11:40:36.698Z",
+  "update": "2026-11-16T12:20:44.489Z"
+}

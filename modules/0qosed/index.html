@@ -1,0 +1,599 @@
+<div class="modulex-header">
+  <div class="modulex-topbar">
+    <div class="modulex-topbar-inner">
+      <div class="modulex-topbar-contact">
+        {{menucontactlist}}
+      </div>
+      <div class="modulex-languages {{langclass}}">
+        <ul>
+          {{langhtml}}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modulex-main">
+    <div class="modulex-main-left">
+      <a href="/{{lang}}/" class="modulex-logo" aria-label="{{web-name}}">
+        <img src="/img/{{logo}}?v={{random}}" alt="{{web-name}} Logo" loading="lazy" />
+      </a>
+      {{missionblock}}
+    </div>
+    <div class="modulex-main-right">
+      {{actionbutton}}
+      <button type="button" class="modulex-mobile-toggle" onclick="menu8_toggle()" aria-label="{{ariaToggle}}">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </div>
+  <nav class="modulex-nav" id="menu-8-root">
+    <div class="modulex-nav-inner">
+      <div class="modulex-menu">
+        {{html}}
+      </div>
+    </div>
+  </nav>
+</div>
+<style>
+  .modulex-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 12px 32px rgba(15, 30, 65, 0.08);
+  }
+
+  .modulex-topbar {
+    width: 100%;
+    border-bottom: 1px solid rgba(15, 30, 65, 0.08);
+    background-color: rgba(239, 243, 250, 0.92);
+  }
+
+  .modulex-topbar-inner {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 10px 0;
+  }
+
+  .modulex-topbar-contact {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .modulex-topbar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #0f1e41;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: color 0.2s ease, opacity 0.2s ease;
+  }
+
+  .modulex-topbar-link:hover {
+    color: --color--;
+    color: #1d4ed8;
+  }
+
+  .modulex-topbar-icon {
+    font-size: 24px;
+    color: --color--;
+    color: #1d4ed8;
+  }
+
+  .modulex-topbar-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .modulex-topbar-title {
+    font-weight: 600;
+    color: #0f1e41;
+  }
+
+  .modulex-topbar-spot {
+    font-size: 13px;
+    color: rgba(15, 30, 65, 0.7);
+  }
+
+  .modulex-languages {
+    display: flex;
+    align-items: center;
+  }
+
+  .modulex-languages.lang-hidden {
+    display: none;
+  }
+
+  .modulex-languages ul {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .modulex-languages li {
+    list-style: none;
+  }
+
+  .modulex-languages a {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .modulex-main {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 22px 0;
+  }
+
+  .modulex-main-left {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .modulex-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: min(90vw, --logosize--px);
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+  }
+
+  .modulex-logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(100%, --logosize--px);
+    max-height: 120px;
+    object-fit: contain;
+    object-position: left center;
+    filter: drop-shadow(0 12px 20px rgba(15, 30, 65, 0.08));
+  }
+
+  /* SVG logo korumasi (2026-09-13): SVG'de width/height yoksa (yalniz
+     viewBox) <img> intrinsic boyut tasimaz. Bu modulde ayrica sarmalayici
+     `height: --height--` sablonu kullaniyor; sablon BOS gelirse kural
+     duser, sarmalayici auto olur ve `height:100%` hicbir seye cozulmez.
+     Acik yukseklik ikisini de kapatir. */
+  .modulex-logo img[src*=".svg"] {
+    height: 60px;
+    width: auto;
+  }
+
+  .modulex-mission {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 420px;
+  }
+
+  .modulex-mission-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #0f1e41;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  .modulex-mission-text {
+    font-size: 15px;
+    color: rgba(15, 30, 65, 0.72);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .modulex-main-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .modulex-action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(29, 78, 216, 0.92), rgba(56, 189, 248, 0.92));
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 16px 32px rgba(29, 78, 216, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .modulex-action-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(29, 78, 216, 0.28);
+  }
+
+  .modulex-action-button span {
+    font-size: 20px;
+  }
+
+  .modulex-mobile-toggle {
+    display: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: --color--;
+    background-color: #1f2a44;
+    color: #ffffff;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+  }
+
+  .modulex-mobile-toggle:hover {
+    background-color: rgba(31, 42, 68, 0.8);
+  }
+
+  .modulex-mobile-toggle span {
+    font-size: 24px;
+  }
+
+  .modulex-nav {
+    width: 100%;
+    background-color: --color--;
+    background: linear-gradient(95deg, rgba(18, 33, 68, 0.96), rgba(8, 23, 58, 0.96));
+    position: relative;
+    overflow: hidden;
+  }
+
+  .modulex-nav::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(56, 189, 248, 0.18), transparent 38%, rgba(59, 130, 246, 0.18));
+    pointer-events: none;
+  }
+
+  .modulex-nav-inner {
+    width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .modulex-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 0;
+  }
+
+  .modulex-menu-item {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .modulex-menu-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .modulex-menu-link::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 8px;
+    height: 2px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.8);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+  }
+
+  .modulex-menu-link:hover,
+  .modulex-menu-item-active .modulex-menu-link {
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+  }
+
+  .modulex-menu-link:hover::after,
+  .modulex-menu-item-active .modulex-menu-link::after {
+    transform: scaleX(1);
+  }
+
+  .modulex-menu-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    min-width: 240px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 18px 40px rgba(15, 30, 65, 0.18);
+    padding: 12px 0;
+    z-index: 110;
+  }
+
+  .modulex-menu-item:hover .modulex-menu-dropdown,
+  .modulex-menu-item:focus-within .modulex-menu-dropdown,
+  .modulex-menu-item.modulex-dropdown-open .modulex-menu-dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modulex-menu-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #0f1e41;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .modulex-menu-dropdown a:hover {
+    background-color: rgba(29, 78, 216, 0.08);
+    color: --color--;
+    color: #1d4ed8;
+  }
+
+  .modulex-menu-divider {
+    width: 1px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .modulex-menu-caret {
+    margin-left: 6px;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+  }
+
+  .modulex-menu-item-has-dropdown:hover .modulex-menu-caret,
+  .modulex-menu-item-has-dropdown.modulex-dropdown-open .modulex-menu-caret {
+    transform: rotate(180deg);
+  }
+
+  @media screen and (max-width: 1200px) {
+    .modulex-topbar-inner,
+    .modulex-main,
+    .modulex-nav-inner {
+      width: calc(100% - 40px);
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .modulex-menu {
+      overflow-x: auto;
+      justify-content: flex-start;
+      padding: 10px 10px 14px 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modulex-topbar-inner {
+      width: calc(100% - 32px);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .modulex-topbar-contact {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .modulex-topbar-link {
+      font-size: 15px;
+    }
+
+    .modulex-languages {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    .modulex-main {
+      width: calc(100% - 32px);
+      flex-direction: column;
+      align-items: stretch;
+      padding: 16px 0;
+      gap: 18px;
+    }
+
+    .modulex-main-left {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .modulex-logo {
+      max-width: min(50vw, --logosizemobil--px);
+    }
+
+    .modulex-logo img {
+      max-width: min(50vw, --logosizemobil--px);
+      max-height: 90px;
+    }
+
+    .modulex-mobile-toggle {
+      display: inline-flex;
+    }
+
+    .modulex-main-right {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .modulex-action-button {
+      flex: 1;
+      justify-content: center;
+    }
+
+    .modulex-nav {
+      display: grid;
+      grid-template-rows: 0fr;
+      overflow: hidden;
+      transition: grid-template-rows 0.3s ease;
+    }
+
+    .modulex-nav.modulex-nav-open {
+      grid-template-rows: 1fr;
+    }
+
+    .modulex-nav-inner {
+      width: calc(100% - 32px);
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .modulex-menu {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+      padding: 16px 0;
+    }
+
+    .modulex-menu-item {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .modulex-menu-link {
+      justify-content: flex-start;
+      width: 100%;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .modulex-menu-item-active .modulex-menu-link {
+      background-color: rgba(255, 255, 255, 0.16);
+    }
+
+    .modulex-menu-dropdown {
+      position: static;
+      display: none;
+      margin-top: 8px;
+      padding: 8px 0;
+      box-shadow: none;
+      border-radius: 10px;
+      background-color: rgba(15, 30, 65, 0.08);
+    }
+
+    .modulex-menu-dropdown a {
+      color: #0f1e41;
+    }
+
+    .modulex-menu-item-has-dropdown .modulex-menu-link::after {
+      display: none;
+    }
+  }
+
+  /* W2: mobil tasma kontrolu */
+  @media (max-width: 768px) {
+    [class*="modulex"] {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  /* W2: erisilebilirlik — animasyon kapatma */
+  @media (prefers-reduced-motion: reduce) {
+    [class*="modulex"],
+    [class*="modulex"] * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
+<script>
+  if (typeof menu8_toggle === "undefined") {
+    function menu8_toggle() {
+      var root = document.getElementById("menu-8-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("modulex-nav-open")) {
+        root.classList.remove("modulex-nav-open");
+      } else {
+        root.classList.add("modulex-nav-open");
+      }
+    }
+  }
+  if (typeof menu8_setup === "undefined") {
+    function menu8_setup() {
+      var root = document.getElementById("menu-8-root");
+      if (!root) {
+        return;
+      }
+      var links = root.querySelectorAll(".modulex-menu-item-has-dropdown > .modulex-menu-link");
+      for (var i = 0; i < links.length; i++) {
+        if (links[i].getAttribute("data-menu8-listener") === "true") {
+          continue;
+        }
+        links[i].setAttribute("data-menu8-listener", "true");
+        links[i].addEventListener("click", function (event) {
+          if (window.innerWidth > 768) {
+            return;
+          }
+          event.preventDefault();
+          var parent = this.parentNode;
+          var menuRoot = parent.parentNode;
+          var toggled = parent.classList.contains("modulex-dropdown-open");
+          var siblings = menuRoot.querySelectorAll(".modulex-menu-item-has-dropdown");
+          for (var j = 0; j < siblings.length; j++) {
+            siblings[j].classList.remove("modulex-dropdown-open");
+          }
+          if (!toggled) {
+            parent.classList.add("modulex-dropdown-open");
+          }
+        });
+      }
+    }
+    function menu8_reset() {
+      if (window.innerWidth > 768) {
+        var root = document.getElementById("menu-8-root");
+        if (!root) {
+          return;
+        }
+        var items = root.querySelectorAll(".modulex-menu-item-has-dropdown");
+        for (var i = 0; i < items.length; i++) {
+          items[i].classList.remove("modulex-dropdown-open");
+        }
+      }
+    }
+    setTimeout(menu8_setup, 150);
+    window.addEventListener("resize", menu8_reset);
+  }
+</script>

@@ -1,0 +1,30 @@
+{
+  "name": "Footer 8",
+  "desing": {
+    "showlang": true,
+    "bgcolor": "#0f172a",
+    "color": "#ffffff",
+    "max": "1200px",
+    "gradient": "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)",
+    "aboutText": {
+      "tr": "Dijital dünyada profesyonel çözümler. Web tasarım, mobil uygulama, SEO ve dijital pazarlama alanlarında güvenilir partneriniz.",
+      "en": "Professional solutions in the digital world. Your trusted partner in web design, mobile apps, SEO and digital marketing."
+    },
+    "address": {
+      "tr": "Gaziantep, Türkiye",
+      "en": "Gaziantep, Turkey"
+    },
+    "phone": "0531 679 10 14",
+    "phoneRaw": "05316791014",
+    "email": "info@ajansmobil.com"
+  },
+  "category": "footer",
+  "description": "Modern gradient footer modülü. 3 sütunlu grid yapısı, sosyal medya ikonları, iletişim bilgileri ve yasal uyarı içerir. Glassmorphism efektli wave tasarım.",
+  "version": "1.1.0",
+  "icon": "footer",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
+}

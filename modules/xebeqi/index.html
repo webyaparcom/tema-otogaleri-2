@@ -1,0 +1,186 @@
+<section class="modulex-sube-harita-liste{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-sube-harita-liste-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* sube-harita-liste — iletisim-harita-yan tek adresi yapışkan haritayla gösterir, map* tek konum gömer; bu modül ÇOK ŞUBE seçicisidir: liste ↔ harita paneli eşlemesi (data-sube), gecikmeli iframe ve geolocation ile mesafe sıralaması (CSS sayacıyla yeniden numaralanır). */
+  .modulex-sube-harita-liste { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-sube-harita-liste *, .modulex-sube-harita-liste *::before, .modulex-sube-harita-liste *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-sube-harita-liste :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-sube-harita-liste :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-sube-harita-liste :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-sube-harita-liste :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-sube-harita-liste img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-sube-harita-liste) img { height: auto; }
+  .modulex-sube-harita-liste [hidden] { display: none !important; }
+  .modulex-sube-harita-liste :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-sube-harita-liste :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-sube-harita-liste-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-sube-harita-liste-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-sube-harita-liste--bassiz .modulex-sube-harita-liste-bas { display: none; }
+  .modulex-sube-harita-liste-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-sube-harita-liste-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-sube-harita-liste-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-sube-harita-liste-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-sube-harita-liste-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-sube-harita-liste-dugme:hover { transform: translateY(-2px); }
+  .modulex-sube-harita-liste-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-sube-harita-liste-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-sube-harita-liste-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-sube-harita-liste-duzen { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+  .modulex-sube-harita-liste-duzen--tek { grid-template-columns: minmax(0, 1fr); }
+  .modulex-sube-harita-liste-sol { display: grid; gap: 16px; min-width: 0; }
+  .modulex-sube-harita-liste-arac { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .modulex-sube-harita-liste-konum { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 18px; border: 1.5px solid --accent--; border-radius: 999px; background: transparent; color: --accentInk--; font: inherit; font-weight: 700; transition: background 0.2s ease, color 0.2s ease; }
+  .modulex-sube-harita-liste-konum:hover:not(:disabled) { background: --accent--; color: --accentText--; }
+  .modulex-sube-harita-liste-konum:disabled { opacity: 0.7; cursor: progress; }
+  .modulex-sube-harita-liste-konum[aria-busy="true"] .material-symbols-outlined { animation: modulex-sube-harita-liste-don 1s linear infinite; }
+  @keyframes modulex-sube-harita-liste-don { to { transform: rotate(360deg); } }
+  .modulex-sube-harita-liste-kdurum { color: --muted--; font-size: 0.92rem; }
+  .modulex-sube-harita-liste-kdurum:empty { display: none; }
+  .modulex-sube-harita-liste-subeler { display: grid; gap: 12px; counter-reset: modulex-sube-harita-liste-s; }
+  .modulex-sube-harita-liste-sube { counter-increment: modulex-sube-harita-liste-s; display: grid; gap: 8px; padding: 16px 18px; border: 1px solid --cizgi--; border-inline-start: 4px solid transparent; border-radius: --yuvarlak--; background: --kartBg--; transition: border-color 0.25s ease, box-shadow 0.25s ease; }
+  .modulex-sube-harita-liste-sube:hover { border-color: color-mix(in srgb, --accent-- 45%, transparent); }
+  .modulex-sube-harita-liste-sube.modulex-sube-harita-liste--secili { border-color: --cizgi--; border-inline-start-color: --accent--; box-shadow: 0 14px 34px -22px color-mix(in srgb, --text-- 50%, transparent); }
+  .modulex-sube-harita-liste-sec { display: flex; align-items: center; gap: 12px; width: 100%; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; text-align: start; }
+  .modulex-sube-harita-liste-sec::before { content: counter(modulex-sube-harita-liste-s, decimal-leading-zero); flex: none; display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: color-mix(in srgb, --accent-- 14%, transparent); color: --accentInk--; font-size: 0.9rem; font-weight: 800; transition: background 0.25s ease, color 0.25s ease; }
+  .modulex-sube-harita-liste--secili .modulex-sube-harita-liste-sec::before { background: --accent--; color: --accentText--; }
+  .modulex-sube-harita-liste-sad { flex: 1; min-width: 0; font-size: 1.08rem; font-weight: 750; }
+  .modulex-sube-harita-liste-mesafe { flex: none; padding: 2px 10px; border-radius: 999px; background: color-mix(in srgb, --accent-- 12%, transparent); color: --accentInk--; font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .modulex-sube-harita-liste-mesafe:empty { display: none; }
+  .modulex-sube-harita-liste-sadres { color: --muted--; padding-inline-start: 52px; }
+  .modulex-sube-harita-liste-sbilgi { display: flex; flex-wrap: wrap; gap: 6px 16px; padding-inline-start: 52px; font-size: 0.92rem; }
+  .modulex-sube-harita-liste-sbilgi > * { display: inline-flex; align-items: center; gap: 6px; }
+  .modulex-sube-harita-liste-sbilgi .material-symbols-outlined { color: --accentInk--; font-size: 18px; }
+  .modulex-sube-harita-liste-sbilgi a { min-height: 32px; color: inherit; font-weight: 650; text-decoration: none; transition: color 0.2s ease; }
+  .modulex-sube-harita-liste-sbilgi a:hover { color: --accentInk--; text-decoration: underline; text-underline-offset: 3px; }
+  .modulex-sube-harita-liste-sag { position: sticky; inset-block-start: 96px; display: grid; gap: 16px; min-width: 0; }
+  .modulex-sube-harita-liste-panel { display: grid; gap: 10px; animation: modulex-sube-harita-liste-gel 0.35s ease both; }
+  .modulex-sube-harita-liste--js .modulex-sube-harita-liste-panel:not(.modulex-sube-harita-liste--acik) { display: none; }
+  .modulex-sube-harita-liste:not(.modulex-sube-harita-liste--js) .modulex-sube-harita-liste-panel + .modulex-sube-harita-liste-panel { display: none; }
+  @keyframes modulex-sube-harita-liste-gel { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .modulex-sube-harita-liste-panel .modulex-sube-harita-liste-harita { min-height: clamp(300px, 34vw, 460px); }
+  .modulex-sube-harita-liste-palt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+  .modulex-sube-harita-liste-palt strong { font-weight: 750; }
+  .modulex-sube-harita-liste-palt span { color: --muted--; font-size: 0.92rem; }
+  .modulex-sube-harita-liste-serit { display: flex; flex-wrap: wrap; gap: 10px; }
+  .modulex-sube-harita-liste-kc { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; min-height: 44px; padding: 8px 16px; border: 1px solid --cizgi--; border-radius: 999px; background: --kartBg--; }
+  .modulex-sube-harita-liste-kci { color: --accentInk--; font-size: 20px; }
+  .modulex-sube-harita-liste-kc .modulex-sube-harita-liste-deger { font-weight: 600; }
+  @media (max-width: 1024px) {
+    .modulex-sube-harita-liste-duzen { grid-template-columns: minmax(0, 1fr); }
+    .modulex-sube-harita-liste-sag { position: static; }
+  }
+  @media (max-width: 768px) {
+    .modulex-sube-harita-liste-sadres, .modulex-sube-harita-liste-sbilgi { padding-inline-start: 0; }
+    .modulex-sube-harita-liste-panel .modulex-sube-harita-liste-harita { min-height: 260px; }
+  }
+  .modulex-sube-harita-liste-kikon { flex: none; display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: color-mix(in srgb, --accent-- 14%, transparent); color: --accentInk--; font-size: 24px; }
+  .modulex-sube-harita-liste-ketiket { display: block; color: --muted--; font-size: 0.82rem; font-weight: 650; letter-spacing: 0.06em; text-transform: uppercase; }
+  .modulex-sube-harita-liste-deger { color: inherit; font-weight: 650; text-decoration: none; overflow-wrap: anywhere; transition: color 0.2s ease; }
+  a.modulex-sube-harita-liste-deger:hover { color: --accentInk--; text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-sube-harita-liste-eylem { display: inline-flex; align-items: center; gap: 6px; color: --accentInk--; font-weight: 700; text-decoration: none; transition: gap 0.2s ease; }
+  .modulex-sube-harita-liste-eylem:hover { gap: 10px; }
+  .modulex-sube-harita-liste-eylem .material-symbols-outlined { font-size: 18px; }
+  .modulex-sube-harita-liste-kopya { display: none; align-items: center; gap: 6px; min-height: 36px; padding: 6px 12px; border: 1px solid --cizgi--; border-radius: 999px; background: transparent; color: --text--; font: inherit; font-size: 0.85rem; font-weight: 650; transition: border-color 0.2s ease, background 0.2s ease; }
+  .modulex-sube-harita-liste--kjs .modulex-sube-harita-liste-kopya { display: inline-flex; }
+  .modulex-sube-harita-liste-kopya:hover { border-color: --accent--; }
+  .modulex-sube-harita-liste-kopya .material-symbols-outlined { font-size: 18px; }
+  .modulex-sube-harita-liste--kopyalandi { background: color-mix(in srgb, --accent-- 14%, transparent); }
+  .modulex-sube-harita-liste-sosyal { display: grid; gap: 10px; }
+  .modulex-sube-harita-liste-sbaslik { color: --muted--; font-size: 0.9rem; font-weight: 650; }
+  .modulex-sube-harita-liste-sliste { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-sube-harita-liste-cip { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 8px 14px; border: 1px solid --cizgi--; border-radius: 999px; color: inherit; font-weight: 650; text-decoration: none; transition: border-color 0.2s ease, transform 0.2s ease; }
+  .modulex-sube-harita-liste-cip:hover { border-color: --accent--; transform: translateY(-2px); }
+  .modulex-sube-harita-liste-cikon { font-size: 18px; }
+  .modulex-sube-harita-liste-harita { position: relative; overflow: hidden; min-height: 280px; border-radius: --yuvarlak--; background: --kartBg--; }
+  .modulex-sube-harita-liste-iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .modulex-sube-harita-liste-hdesen { position: absolute; inset: 0; display: grid; place-items: center; background-color: color-mix(in srgb, --accent-- 8%, --kartBg--); background-image: linear-gradient(color-mix(in srgb, --text-- 7%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, --text-- 7%, transparent) 1px, transparent 1px), radial-gradient(circle at 30% 40%, color-mix(in srgb, --accent-- 18%, transparent) 0 18%, transparent 19%); background-size: 36px 36px, 36px 36px, 100% 100%; }
+  .modulex-sube-harita-liste-pin { color: --accentInk--; font-size: 56px; animation: modulex-sube-harita-liste-zipla 2.4s ease-in-out infinite; }
+  @keyframes modulex-sube-harita-liste-zipla { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  .modulex-sube-harita-liste-hyol { position: absolute; inset-block-end: 16px; inset-inline-start: 16px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 16px; border-radius: 999px; background: --bg--; color: --text--; font-weight: 700; text-decoration: none; box-shadow: 0 6px 20px color-mix(in srgb, --text-- 16%, transparent); transition: transform 0.2s ease; }
+  .modulex-sube-harita-liste-hyol:hover { transform: translateY(-2px); }
+  .modulex-sube-harita-liste-hyol .material-symbols-outlined { font-size: 18px; color: --accentInk--; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sube-harita-liste :is(.modulex-sube-harita-liste-baslik, .modulex-sube-harita-liste-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sube-harita-liste-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-sube-harita-liste { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-sube-harita-liste *, .modulex-sube-harita-liste *::before, .modulex-sube-harita-liste *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-sube-harita-liste";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const subeSec = (s, P) => {
+        const dg = [...s.querySelectorAll("[data-sube]")];
+        const pn = [...s.querySelectorAll("[data-sube-panel]")];
+        if (!dg.length) return;
+        s.classList.add(P + "--js");
+        const sec = (n) => {
+          dg.forEach((b) => {
+            const on = b.dataset.sube === n;
+            b.setAttribute("aria-pressed", String(on));
+            const li = b.closest("li");
+            if (li) li.classList.toggle(P + "--secili", on);
+          });
+          pn.forEach((p) => {
+            const on = p.dataset.subePanel === n;
+            p.classList.toggle(P + "--acik", on);
+            const f = p.querySelector("iframe[data-src]");
+            if (on && f && !f.getAttribute("src")) f.setAttribute("src", f.dataset.src);
+          });
+        };
+        dg.forEach((b) => b.addEventListener("click", () => sec(b.dataset.sube)));
+        sec(dg[0].dataset.sube);
+        const konum = s.querySelector("[data-konum]");
+        const liste = s.querySelector("[data-sube-liste]");
+        const durum = s.querySelector("[data-konum-durum]");
+        if (!konum || !liste || !navigator.geolocation) return;
+        konum.hidden = false;
+        const rad = (x) => (x * Math.PI) / 180;
+        const km = (a, b, c, d) => {
+          const h = Math.sin(rad(c - a) / 2) ** 2 + Math.cos(rad(a)) * Math.cos(rad(c)) * Math.sin(rad(d - b) / 2) ** 2;
+          return 12742 * Math.asin(Math.min(1, Math.sqrt(h)));
+        };
+        let bic = null;
+        try { bic = new Intl.NumberFormat(document.documentElement.lang || undefined, { style: "unit", unit: "kilometer", maximumFractionDigits: 1 }); } catch (e) { bic = null; }
+        const bitti = () => { konum.disabled = false; konum.removeAttribute("aria-busy"); };
+        konum.addEventListener("click", () => {
+          konum.disabled = true;
+          konum.setAttribute("aria-busy", "true");
+          navigator.geolocation.getCurrentPosition((p) => {
+            bitti();
+            const la = p.coords.latitude;
+            const lo = p.coords.longitude;
+            const L = [...liste.children].map((li) => ({ li, d: "lat" in li.dataset ? km(la, lo, Number(li.dataset.lat), Number(li.dataset.lng)) : Infinity }));
+            L.sort((a, b) => a.d - b.d);
+            L.forEach((x) => {
+              liste.append(x.li);
+              const m = x.li.querySelector("[data-mesafe]");
+              if (m) m.textContent = Number.isFinite(x.d) ? (bic ? bic.format(x.d) : x.d.toFixed(1)) : "";
+            });
+            const ilkB = L[0] && L[0].li.querySelector("[data-sube]");
+            if (ilkB) sec(ilkB.dataset.sube);
+            if (durum) durum.textContent = konum.dataset.tamam || "";
+            s.classList.add(P + "--sirali");
+          }, () => { bitti(); if (durum) durum.textContent = konum.dataset.red || ""; }, { timeout: 10000, maximumAge: 300000 });
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      subeSec(s, P, az);
+    });
+  })();
+</script>

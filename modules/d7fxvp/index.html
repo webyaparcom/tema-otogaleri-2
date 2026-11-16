@@ -1,0 +1,253 @@
+<footer class="modulex-footer" role="contentinfo">
+  <div class="modulex-footer-wave"></div>
+  
+  <div class="modulex-footer-main">
+    <div class="modulex-footer-container">
+      <div class="modulex-footer-grid">
+        <div class="modulex-footer-col">
+          <h3 class="modulex-footer-title">@about-us@</h3>
+          <p class="modulex-footer-desc">{{web-name}} - {{aboutText}}</p>
+          {{socialbar}}
+        </div>
+        
+        <div class="modulex-footer-col">
+          <h3 class="modulex-footer-title">@services@</h3>
+          <ul class="modulex-footer-links">
+            {{html}}
+          </ul>
+        </div>
+        
+        <div class="modulex-footer-col">
+          <h3 class="modulex-footer-title">@contact@</h3>
+          <div class="modulex-footer-contact">
+            <div class="modulex-footer-contact-item">
+              <span class="material-symbols-outlined">location_on</span>
+              <span>{{address}}</span>
+            </div>
+            <div class="modulex-footer-contact-item">
+              <span class="material-symbols-outlined">phone</span>
+              <a href="tel:{{phoneRaw}}">{{phone}}</a>
+            </div>
+            <div class="modulex-footer-contact-item">
+              <span class="material-symbols-outlined">mail</span>
+              <a href="mailto:{{email}}">{{email}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modulex-footer-bottom">
+    <div class="modulex-footer-container">
+      {{langbar}}
+      <p>&copy; {{year}} {{web-name}}. @all-rights@.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .modulex-footer {
+    width: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .modulex-footer-wave {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat top center;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .modulex-footer-main {
+    position: relative;
+    z-index: 2;
+    padding: 80px 0 40px;
+  }
+
+  .modulex-footer-container {
+    max-width: --max--;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .modulex-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+  }
+
+  .modulex-footer-col h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .modulex-footer-col h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    border-radius: 2px;
+  }
+
+  .modulex-footer-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+  }
+
+  .modulex-footer-social {
+    display: flex;
+    gap: 12px;
+  }
+
+  .modulex-footer-social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .modulex-footer-social-link svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .modulex-footer-social-link:hover {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    transform: translateY(-3px);
+  }
+
+  .modulex-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .modulex-footer-links li {
+    margin-bottom: 12px;
+  }
+
+  .modulex-footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .modulex-footer-links a::before {
+    content: '›';
+    font-size: 18px;
+    color: #3b82f6;
+    transition: transform 0.3s ease;
+  }
+
+  .modulex-footer-links a:hover {
+    color: #fff;
+    transform: translateX(5px);
+  }
+
+  .modulex-footer-links a:hover::before {
+    transform: translateX(3px);
+  }
+
+  .modulex-footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .modulex-footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+  }
+
+  .modulex-footer-contact-item .material-symbols-outlined {
+    color: #3b82f6;
+    font-size: 20px;
+  }
+
+  .modulex-footer-contact-item a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .modulex-footer-contact-item a:hover {
+    color: #fff;
+  }
+
+  .modulex-footer-bottom {
+    position: relative;
+    z-index: 2;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+
+  .modulex-footer-bottom p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .modulex-footer-main {
+      padding: 60px 0 30px;
+    }
+
+    .modulex-footer-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .modulex-footer-col h3 {
+      font-size: 16px;
+    }
+  }
+
+  /* W2: mobil tasma kontrolu */
+  @media (max-width: 768px) {
+    [class*="modulex"] {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  /* W2: erisilebilirlik — animasyon kapatma */
+  @media (prefers-reduced-motion: reduce) {
+    [class*="modulex"],
+    [class*="modulex"] * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>

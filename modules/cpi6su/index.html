@@ -1,0 +1,125 @@
+<section class="modulex-ozellik-donanim-tablo{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ozellik-donanim-tablo-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* ozellik-donanim-tablo — Ailede tablo yok: ozellik-cizgi-izgara hücre ızgarası, ozellik-onay-kenar onay listesi; bu modül gerçek <table> karşılaştırması — sabit ilk sütun, yatay kaydırma, paket sütunu vurgusu ve eşit satır süzgeci. */
+  .modulex-ozellik-donanim-tablo { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ozellik-donanim-tablo *, .modulex-ozellik-donanim-tablo *::before, .modulex-ozellik-donanim-tablo *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ozellik-donanim-tablo :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ozellik-donanim-tablo :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ozellik-donanim-tablo :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ozellik-donanim-tablo :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ozellik-donanim-tablo img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ozellik-donanim-tablo) img { height: auto; }
+  .modulex-ozellik-donanim-tablo [hidden] { display: none !important; }
+  .modulex-ozellik-donanim-tablo :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ozellik-donanim-tablo :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ozellik-donanim-tablo-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ozellik-donanim-tablo-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ozellik-donanim-tablo--bassiz .modulex-ozellik-donanim-tablo-bas { display: none; }
+  .modulex-ozellik-donanim-tablo-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ozellik-donanim-tablo-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ozellik-donanim-tablo-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ozellik-donanim-tablo-bas { max-width: 760px; }
+  .modulex-ozellik-donanim-tablo-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ozellik-donanim-tablo-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ozellik-donanim-tablo-dugme:hover { transform: translateY(-2px); }
+  .modulex-ozellik-donanim-tablo-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ozellik-donanim-tablo-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ozellik-donanim-tablo-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-ozellik-donanim-tablo-arac { display: flex; justify-content: flex-end; margin-block-end: 14px; }
+  .modulex-ozellik-donanim-tablo-fark { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border: 1px solid --cizgi--; border-radius: 999px; background: --bg--; font-weight: 650; transition: border-color 0.25s ease; }
+  .modulex-ozellik-donanim-tablo-fark:hover { border-color: --accent--; }
+  .modulex-ozellik-donanim-tablo-fark input { width: 18px; height: 18px; margin: 0; accent-color: --accent--; }
+  .modulex-ozellik-donanim-tablo-kap { overflow-x: auto; border: 1px solid --cizgi--; border-radius: --yuvarlak--; background: --bg--; box-shadow: 0 24px 50px -40px color-mix(in srgb, --text-- 60%, transparent); }
+  .modulex-ozellik-donanim-tablo-tablo { width: 100%; min-width: 620px; border-collapse: separate; border-spacing: 0; }
+  .modulex-ozellik-donanim-tablo-tablo--duz { min-width: 0; }
+  .modulex-ozellik-donanim-tablo-tablo :is(th, td) { padding: 14px 18px; border-block-end: 1px solid --cizgi--; text-align: center; vertical-align: middle; transition: background-color 0.25s ease; }
+  .modulex-ozellik-donanim-tablo-tablo tbody tr:last-child > * { border-block-end: 0; }
+  .modulex-ozellik-donanim-tablo-tablo tbody th { position: sticky; inset-inline-start: 0; z-index: 1; min-width: 230px; background: --bg--; font-weight: 400; text-align: start; }
+  .modulex-ozellik-donanim-tablo-tablo thead th { background: --kartBg--; vertical-align: bottom; }
+  .modulex-ozellik-donanim-tablo-kose { color: --muted--; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-align: start; text-transform: uppercase; }
+  .modulex-ozellik-donanim-tablo-tablo thead .modulex-ozellik-donanim-tablo-kose { position: sticky; inset-inline-start: 0; z-index: 2; }
+  .modulex-ozellik-donanim-tablo-pbas { position: relative; min-width: 130px; }
+  .modulex-ozellik-donanim-tablo-rozet { display: inline-block; margin-block-end: 6px; padding: 2px 10px; border-radius: 999px; background: --accent--; color: --accentText--; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; }
+  .modulex-ozellik-donanim-tablo-paket { display: grid; justify-items: center; gap: 2px; width: 100%; padding: 8px 6px; border: 0; border-radius: 10px; background: transparent; color: --text--; font: inherit; transition: background-color 0.25s ease, color 0.25s ease; }
+  .modulex-ozellik-donanim-tablo:not(.modulex-ozellik-donanim-tablo--djs) .modulex-ozellik-donanim-tablo-paket { pointer-events: none; }
+  .modulex-ozellik-donanim-tablo-paket:hover { background: color-mix(in srgb, --accent-- 10%, transparent); }
+  .modulex-ozellik-donanim-tablo-paket[aria-pressed="true"] { background: --accent--; color: --accentText--; }
+  .modulex-ozellik-donanim-tablo-pad { font-size: 1.02rem; font-weight: 800; }
+  .modulex-ozellik-donanim-tablo-pnot { color: inherit; font-size: 0.8rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .modulex-ozellik-donanim-tablo-onerilen { box-shadow: inset 0 3px 0 --accent--; }
+  .modulex-ozellik-donanim-tablo-tablo td.modulex-ozellik-donanim-tablo-onerilen { box-shadow: none; background-color: color-mix(in srgb, --accent-- 5%, --bg--); }
+  .modulex-ozellik-donanim-tablo-tablo .modulex-ozellik-donanim-tablo--kolon { background-color: color-mix(in srgb, --accent-- 14%, --bg--); }
+  .modulex-ozellik-donanim-tablo-tablo tbody tr:hover > * { background-color: color-mix(in srgb, --text-- 4%, --bg--); }
+  .modulex-ozellik-donanim-tablo-oz { display: flex; align-items: flex-start; gap: 12px; }
+  .modulex-ozellik-donanim-tablo-zikon { flex: none; color: --accentInk--; font-size: 24px; }
+  .modulex-ozellik-donanim-tablo-zyazi { display: grid; gap: 2px; }
+  .modulex-ozellik-donanim-tablo-kbaslik { font-weight: 700; line-height: 1.35; }
+  .modulex-ozellik-donanim-tablo-kmetin { color: --muted--; font-size: 0.86rem; line-height: 1.5; }
+  .modulex-ozellik-donanim-tablo-acik { text-align: start; }
+  .modulex-ozellik-donanim-tablo-tablo td.modulex-ozellik-donanim-tablo-acik { text-align: start; }
+  .modulex-ozellik-donanim-tablo-var { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: color-mix(in srgb, --accent-- 16%, --bg--); color: --accentInk--; font-size: 20px; }
+  .modulex-ozellik-donanim-tablo-yok { color: --muted--; font-size: 20px; }
+  .modulex-ozellik-donanim-tablo-deger { font-size: 0.92rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .modulex-ozellik-donanim-tablo-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .modulex-ozellik-donanim-tablo-kap:focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  @media (max-width: 768px) {
+    .modulex-ozellik-donanim-tablo-tablo :is(th, td) { padding: 12px 10px; }
+    .modulex-ozellik-donanim-tablo-tablo tbody th { min-width: 160px; }
+    .modulex-ozellik-donanim-tablo-zikon { display: none; }
+    .modulex-ozellik-donanim-tablo-arac { justify-content: stretch; }
+  }
+  .modulex-ozellik-donanim-tablo-git { display: inline-flex; align-items: center; gap: 6px; width: fit-content; color: --accentInk--; font-weight: 700; text-decoration: none; transition: gap 0.25s ease; }
+  .modulex-ozellik-donanim-tablo-git:hover { gap: 10px; }
+  .modulex-ozellik-donanim-tablo-git .material-symbols-outlined { font-size: 18px; }
+  .modulex-ozellik-donanim-tablo-ic > .modulex-ozellik-donanim-tablo-cta { grid-column: 1 / -1; margin-block-start: 32px; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ozellik-donanim-tablo :is(.modulex-ozellik-donanim-tablo-baslik, .modulex-ozellik-donanim-tablo-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ozellik-donanim-tablo-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ozellik-donanim-tablo { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-ozellik-donanim-tablo *, .modulex-ozellik-donanim-tablo *::before, .modulex-ozellik-donanim-tablo *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-ozellik-donanim-tablo";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const donanimTablo = (s, P) => {
+        const t = s.querySelector("." + P + "-tablo");
+        if (!t) return;
+        s.classList.add(P + "--djs");
+        const btn = [...s.querySelectorAll("[data-kolon-sec]")];
+        let secili = "";
+        btn.forEach((b) => b.addEventListener("click", () => {
+          secili = secili === b.dataset.kolonSec ? "" : b.dataset.kolonSec;
+          btn.forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.kolonSec === secili)));
+          t.querySelectorAll("[data-kolon]").forEach((c) => c.classList.toggle(P + "--kolon", c.dataset.kolon === secili));
+        }));
+        const f = s.querySelector("[data-fark]");
+        const kap = s.querySelector("[data-fark-kap]");
+        if (f && kap) {
+          kap.hidden = false;
+          const uygula = () => t.querySelectorAll("[data-esit]").forEach((r) => { r.hidden = f.checked; });
+          f.addEventListener("change", uygula);
+          uygula();
+        }
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      donanimTablo(s, P, az);
+    });
+  })();
+</script>

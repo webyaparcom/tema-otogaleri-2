@@ -1,0 +1,120 @@
+<section class="modulex-cagri-ekspertiz-takas{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-cagri-ekspertiz-takas-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* cagri-ekspertiz-takas — cagri-maddeler maddeleri durağan listeler; bu modül maddeleri onay animasyonlu bir rapor sayfası olarak dizer ve yanına ziyaretçinin aracını yazdığı form koyar — cagri-whatsapp'ın sabit mesajı yerine form verisiyle kurulan mesaj. */
+  .modulex-cagri-ekspertiz-takas { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --yaziRenk--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-cagri-ekspertiz-takas *, .modulex-cagri-ekspertiz-takas *::before, .modulex-cagri-ekspertiz-takas *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-cagri-ekspertiz-takas :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-cagri-ekspertiz-takas :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-cagri-ekspertiz-takas :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-cagri-ekspertiz-takas :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-cagri-ekspertiz-takas img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-cagri-ekspertiz-takas) img { height: auto; }
+  .modulex-cagri-ekspertiz-takas [hidden] { display: none !important; }
+  .modulex-cagri-ekspertiz-takas :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-cagri-ekspertiz-takas :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-cagri-ekspertiz-takas-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-cagri-ekspertiz-takas-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-cagri-ekspertiz-takas--bassiz .modulex-cagri-ekspertiz-takas-bas { display: none; }
+  .modulex-cagri-ekspertiz-takas-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-cagri-ekspertiz-takas-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-cagri-ekspertiz-takas-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-cagri-ekspertiz-takas-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-cagri-ekspertiz-takas-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-cagri-ekspertiz-takas-dugme:hover { transform: translateY(-2px); }
+  .modulex-cagri-ekspertiz-takas-dugme--ikincil { background: transparent; color: --yaziRenk--; border-color: --cizgi--; }
+  .modulex-cagri-ekspertiz-takas-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-cagri-ekspertiz-takas-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-cagri-ekspertiz-takas-rapor { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); overflow: hidden; border-radius: --yuvarlak--; background: --kartBg--; box-shadow: 0 30px 60px -44px color-mix(in srgb, --yaziRenk-- 70%, transparent); }
+  .modulex-cagri-ekspertiz-takas-sayfa { position: relative; display: grid; align-content: start; gap: 14px; padding: clamp(24px, 4vw, 48px); background-image: repeating-linear-gradient(180deg, transparent 0 31px, color-mix(in srgb, --yaziRenk-- 6%, transparent) 31px 32px); }
+  .modulex-cagri-ekspertiz-takas-damga { position: absolute; inset-block-start: clamp(18px, 3vw, 32px); inset-inline-end: clamp(18px, 3vw, 32px); display: grid; place-items: center; width: 64px; height: 64px; border: 3px double --accent--; border-radius: 50%; color: --accentInk--; transform: rotate(-12deg); transition: transform 0.4s ease; }
+  .modulex-cagri-ekspertiz-takas-rapor:hover .modulex-cagri-ekspertiz-takas-damga { transform: rotate(0deg) scale(1.06); }
+  .modulex-cagri-ekspertiz-takas-damga .material-symbols-outlined { font-size: 30px; }
+  .modulex-cagri-ekspertiz-takas-sayfa .modulex-cagri-ekspertiz-takas-ust, .modulex-cagri-ekspertiz-takas-sayfa .modulex-cagri-ekspertiz-takas-baslik { padding-inline-end: 80px; }
+  .modulex-cagri-ekspertiz-takas-kapsam { display: grid; gap: 10px; margin-block-start: 6px; }
+  .modulex-cagri-ekspertiz-takas-kbas { color: --muted--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .modulex-cagri-ekspertiz-takas-liste { display: grid; gap: 8px; }
+  .modulex-cagri-ekspertiz-takas-satir { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid --cizgi--; border-radius: 10px; background: --bg--; }
+  .modulex-cagri-ekspertiz-takas-sikon { color: --accentInk--; font-size: 22px; }
+  .modulex-cagri-ekspertiz-takas-tik { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: --accent--; color: --accentText--; font-size: 18px; transition: transform 0.35s ease calc(var(--i) * 0.15s), opacity 0.35s ease calc(var(--i) * 0.15s); }
+  .modulex-cagri-ekspertiz-takas--hazir:not(.modulex-cagri-ekspertiz-takas--gor) .modulex-cagri-ekspertiz-takas-tik { opacity: 0; transform: scale(0.3); }
+  .modulex-cagri-ekspertiz-takas-takas { display: grid; align-content: center; gap: 16px; padding: clamp(24px, 4vw, 44px); background: --vurguBg--; color: --vurguText--; }
+  .modulex-cagri-ekspertiz-takas-form { display: grid; gap: 14px; }
+  .modulex-cagri-ekspertiz-takas-alan { display: grid; gap: 6px; }
+  .modulex-cagri-ekspertiz-takas-alan label { font-size: 0.85rem; font-weight: 700; }
+  .modulex-cagri-ekspertiz-takas-girdi { inline-size: 100%; min-height: 50px; padding: 10px 14px; border: 2px solid transparent; border-radius: 12px; background: --vurguText--; color: --vurguBg--; font: inherit; font-weight: 600; transition: border-color 0.2s ease; }
+  .modulex-cagri-ekspertiz-takas-girdi:focus { outline: none; border-color: color-mix(in srgb, --vurguText-- 50%, --vurguBg--); }
+  .modulex-cagri-ekspertiz-takas-takas .modulex-cagri-ekspertiz-takas-dugme { justify-content: center; background: --vurguText--; color: --vurguBg--; border-color: --vurguText--; }
+  .modulex-cagri-ekspertiz-takas-takas .modulex-cagri-ekspertiz-takas-cta { margin: 0; }
+  .modulex-cagri-ekspertiz-takas-takas :focus-visible { outline-color: --vurguText--; }
+  .modulex-cagri-ekspertiz-takas-ikinci { color: --vurguText--; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-cagri-ekspertiz-takas-takas .modulex-cagri-ekspertiz-takas-not { color: --vurguText--; }
+  @media (max-width: 768px) {
+    .modulex-cagri-ekspertiz-takas-rapor { grid-template-columns: minmax(0, 1fr); }
+    .modulex-cagri-ekspertiz-takas-damga { width: 52px; height: 52px; }
+    .modulex-cagri-ekspertiz-takas-sayfa .modulex-cagri-ekspertiz-takas-ust, .modulex-cagri-ekspertiz-takas-sayfa .modulex-cagri-ekspertiz-takas-baslik { padding-inline-end: 60px; }
+  }
+  .modulex-cagri-ekspertiz-takas-wasvg { width: 1.25em; height: 1.25em; flex: none; }
+  .modulex-cagri-ekspertiz-takas-maddeler { display: grid; gap: 12px; }
+  .modulex-cagri-ekspertiz-takas-madde { display: flex; align-items: flex-start; gap: 12px; }
+  .modulex-cagri-ekspertiz-takas-mikon { flex: none; color: --accentInk--; font-size: 24px; }
+  .modulex-cagri-ekspertiz-takas-myazi { display: grid; gap: 2px; }
+  .modulex-cagri-ekspertiz-takas-myazi strong { font-weight: 700; }
+  .modulex-cagri-ekspertiz-takas-myazi small { color: --muted--; font-size: 0.92rem; }
+  .modulex-cagri-ekspertiz-takas-not { color: --muted--; font-size: 0.9rem; }
+  .modulex-cagri-ekspertiz-takas-saat { display: flex; align-items: center; gap: 8px; color: --muted--; font-size: 0.95rem; }
+  .modulex-cagri-ekspertiz-takas-saat .material-symbols-outlined { font-size: 20px; color: --accentInk--; }
+  .modulex-cagri-ekspertiz-takas-metin { max-width: 62ch; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-ekspertiz-takas :is(.modulex-cagri-ekspertiz-takas-baslik, .modulex-cagri-ekspertiz-takas-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-ekspertiz-takas-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-cagri-ekspertiz-takas { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-cagri-ekspertiz-takas *, .modulex-cagri-ekspertiz-takas *::before, .modulex-cagri-ekspertiz-takas *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-cagri-ekspertiz-takas";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const gozlem = (s, P, az) => {
+        const gor = () => s.classList.add(P + "--gor");
+        s.classList.add(P + "--hazir");
+        if (az || !("IntersectionObserver" in window)) { gor(); return; }
+        const io = new IntersectionObserver((gs) => {
+          gs.forEach((g) => { if (g.isIntersecting) { gor(); io.disconnect(); } });
+        }, { threshold: 0.15 });
+        io.observe(s);
+      };
+    const cagriForm = (s) => {
+        s.querySelectorAll("form[data-cf-wa]").forEach((f) => {
+          f.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const satir = [...f.elements].filter((x) => x.name && x.type !== "hidden" && String(x.value).trim()).map((x) => {
+              const l = x.id ? f.querySelector(`label[for="${x.id}"]`) : null;
+              return `${l ? l.textContent.trim() : x.name}: ${String(x.value).trim()}`;
+            });
+            const metin = [f.dataset.cfOnek || ""].concat(satir).filter(Boolean).join("\n");
+            window.open(`https://wa.me/${f.dataset.cfWa}?text=${encodeURIComponent(metin)}`, "_blank", "noopener");
+          });
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      gozlem(s, P, az);
+      cagriForm(s, P, az);
+    });
+  })();
+</script>
