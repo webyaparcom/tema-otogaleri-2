@@ -3,17 +3,23 @@
   "name": {
     "tr": "Teslimatlar",
     "en": "Handovers",
-    "ar": "التسليمات"
+    "ar": "التسليمات",
+    "de": "Lieferungen",
+    "ru": "Доставки"
   },
   "description": {
     "tr": "Kurgusal müşteri notları.",
     "en": "Fictional customer notes.",
-    "ar": "ملاحظات زبائن افتراضية."
+    "ar": "ملاحظات زبائن افتراضية.",
+    "de": "Fiktive Kundennotizen.",
+    "ru": "Вымышленные заметки клиентов."
   },
   "keyword": {
     "tr": "referans, müşteri yorumu",
     "en": "reference, review",
-    "ar": "مرجع، تقييم"
+    "ar": "مرجع، تقييم",
+    "de": "Referenz, Kundenbewertung",
+    "ru": "рекомендация, отзыв клиента"
   },
   "path": "referanslar",
   "icon": "stars",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Teslimatlar",
     "en": "Handovers",
-    "ar": "التسليمات"
+    "ar": "التسليمات",
+    "de": "Lieferungen",
+    "ru": "Доставки"
   },
   "date": "2026-11-16T11:40:36.693Z",
   "update": "2026-11-16T12:20:44.485Z"

@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Gaziantep’te ekspertizsiz ilan yayımlamayan galerinin adı olmak.</p>",
     "en": "<h2>Our vision</h2>\n<p>To be the name in Gaziantep for a dealer that never lists without inspection.</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون في غازي عنتاب اسم المعرض الذي لا ينشر إعلانًا دون فحص.</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون في غازي عنتاب اسم المعرض الذي لا ينشر إعلانًا دون فحص.</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Der Name für einen Händler in Gaziantep zu sein, der nie ohne Inspektion inseriert.</p>",
+    "ru": "<h2>Наша миссия</h2>\n<p>Стать именем дилера в Газиантепе, который никогда не размещает объявления без осмотра.</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T11:40:36.549Z",
   "update": "2026-11-16T12:20:44.499Z",

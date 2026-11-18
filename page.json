@@ -5,12 +5,16 @@
       "name": {
         "tr": "Satıştaki araçlar",
         "en": "Cars for sale",
-        "ar": "السيارات المعروضة"
+        "ar": "السيارات المعروضة",
+        "de": "Fahrzeuge",
+        "ru": "Автомобили"
       },
       "description": {
         "tr": "Ekspertizli ikinci el araç ilanları (kurgusal).",
         "en": "Inspected used-car listings (fictional).",
-        "ar": "إعلانات سيارات مستعملة مفحوصة (افتراضية)."
+        "ar": "إعلانات سيارات مستعملة مفحوصة (افتراضية).",
+        "de": "Geprüfte Gebrauchtwagen-Anzeigen (fiktiv).",
+        "ru": "Объявления о проверенных подержанных авто (вымышленные)."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -30,7 +34,9 @@
       "name": {
         "tr": "Galerimiz",
         "en": "Our dealership",
-        "ar": "معرضنا"
+        "ar": "معرضنا",
+        "de": "Unser Autohaus",
+        "ru": "Наш автосалон"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -51,7 +57,9 @@
       "description": {
         "tr": "Ekspertizli ikinci el araç; takas ve ekspertiz randevusu.",
         "en": "Inspected used cars; trade-in and inspection appointments.",
-        "ar": "سيارات مستعملة مفحوصة؛ مواعيد مقايضة وفحص."
+        "ar": "سيارات مستعملة مفحوصة؛ مواعيد مقايضة وفحص.",
+        "de": "Geprüfte Gebrauchtwagen; Tausch und Termin für Gutachten.",
+        "ru": "Проверенные подержанные автомобили; обмен и запись на экспертизу."
       }
     },
     {
@@ -59,12 +67,16 @@
       "name": {
         "tr": "Satış paketleri",
         "en": "Sale packages",
-        "ar": "باقات البيع"
+        "ar": "باقات البيع",
+        "de": "Pakete",
+        "ru": "Пакеты"
       },
       "description": {
         "tr": "Paket karşılaştırması.",
         "en": "Package comparison.",
-        "ar": "مقارنة الباقات."
+        "ar": "مقارنة الباقات.",
+        "de": "Paketvergleich.",
+        "ru": "Сравнение пакетов."
       },
       "path": "sorular",
       "icon": "help",
@@ -85,12 +97,16 @@
       "name": {
         "tr": "Teslimatlar",
         "en": "Handovers",
-        "ar": "التسليمات"
+        "ar": "التسليمات",
+        "de": "Lieferungen",
+        "ru": "Доставки"
       },
       "description": {
         "tr": "Kurgusal müşteri notları.",
         "en": "Fictional customer notes.",
-        "ar": "ملاحظات زبائن افتراضية."
+        "ar": "ملاحظات زبائن افتراضية.",
+        "de": "Fiktive Kundennotizen.",
+        "ru": "Вымышленные заметки клиентов."
       },
       "path": "referanslar",
       "icon": "stars",
@@ -111,12 +127,16 @@
       "name": {
         "tr": "Takas ve ekspertiz",
         "en": "Trade-in & inspection",
-        "ar": "المقايضة والفحص"
+        "ar": "المقايضة والفحص",
+        "de": "Inzahlungnahme",
+        "ru": "Трейд-ин"
       },
       "description": {
         "tr": "Takas ve ekspertiz talebi (demo).",
         "en": "Trade-in and inspection request (demo).",
-        "ar": "طلب مقايضة وفحص (تجريبي)."
+        "ar": "طلب مقايضة وفحص (تجريبي).",
+        "de": "Anfrage für Inzahlungnahme und Gutachten (Demo).",
+        "ru": "Заявка на обмен и экспертную оценку (демо)."
       },
       "path": "teklif-al",
       "icon": "request_quote",
@@ -136,7 +156,9 @@
       "name": {
         "tr": "Şubeler",
         "en": "Branches",
-        "ar": "الفروع"
+        "ar": "الفروع",
+        "de": "Filialen",
+        "ru": "Филиалы"
       },
       "status": "play",
       "id": "iletisim",
@@ -157,7 +179,9 @@
       "description": {
         "tr": "Adres, telefon ve çalışma saatleri.",
         "en": "Address, phone and opening hours.",
-        "ar": "العنوان والهاتف وساعات العمل."
+        "ar": "العنوان والهاتف وساعات العمل.",
+        "de": "Adresse, Telefon und Öffnungszeiten.",
+        "ru": "Адрес, телефон и часы работы."
       }
     }
   ],

@@ -3,17 +3,23 @@
   "name": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "description": {
     "tr": "Misyonumuz",
     "en": "Our mission",
-    "ar": "مهمتنا"
+    "ar": "مهمتنا",
+    "de": "Unsere Mission",
+    "ru": "Наша миссия"
   },
   "keyword": {
     "tr": "Misyon",
     "en": "mission, our mission, corporate responsibility",
-    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية"
+    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "path": "misyon",
   "icon": "flag",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Misyonumuz</h2>\n<p>İkinci el aracı raporu açık, fiyatı tek ve belgesi tam satmak.</p>",
     "en": "<h2>Our mission</h2>\n<p>To sell used cars with open reports, one price and complete paperwork.</p>",
-    "ar": "<h2>مهمتنا</h2>\n<p>أن نبيع السيارات المستعملة بتقارير مكشوفة وسعر واحد ووثائق كاملة.</p>"
+    "ar": "<h2>مهمتنا</h2>\n<p>أن نبيع السيارات المستعملة بتقارير مكشوفة وسعر واحد ووثائق كاملة.</p>",
+    "de": "<h2>Unsere Mission</h2>\n<p>Gebrauchtwagen mit offiziellem Bericht, einem Preis und vollständigen Unterlagen verkaufen.</p>",
+    "ru": "<h2>Наша миссия</h2>\n<p>Продавать подержанные автомобили с прозрачным отчётом, одной ценой и полным пакетом документов.</p>"
   },
   "title": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "date": "2026-11-16T11:40:36.549Z",
   "update": "2026-11-16T12:20:44.498Z",

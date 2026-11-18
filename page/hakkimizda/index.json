@@ -2,7 +2,9 @@
   "name": {
     "tr": "Galerimiz",
     "en": "Our dealership",
-    "ar": "معرضنا"
+    "ar": "معرضنا",
+    "de": "Unser Autohaus",
+    "ru": "Наш автосалон"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Ekspertizli ikinci el araç; takas ve ekspertiz randevusu.",
     "en": "Inspected used cars; trade-in and inspection appointments.",
-    "ar": "سيارات مستعملة مفحوصة؛ مواعيد مقايضة وفحص."
+    "ar": "سيارات مستعملة مفحوصة؛ مواعيد مقايضة وفحص.",
+    "de": "Geprüfte Gebrauchtwagen; Tausch und Termin für Gutachten.",
+    "ru": "Проверенные подержанные автомобили; обмен и запись на экспертизу."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Galerimiz",
     "en": "Our dealership",
-    "ar": "معرضنا"
+    "ar": "معرضنا",
+    "de": "Unser Autohaus",
+    "ru": "Наш автосалон"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T12:20:44.477Z",

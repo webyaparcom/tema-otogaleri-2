@@ -3,17 +3,23 @@
   "name": {
     "tr": "Satış paketleri",
     "en": "Sale packages",
-    "ar": "باقات البيع"
+    "ar": "باقات البيع",
+    "de": "Pakete",
+    "ru": "Пакеты"
   },
   "description": {
     "tr": "Paket karşılaştırması.",
     "en": "Package comparison.",
-    "ar": "مقارنة الباقات."
+    "ar": "مقارنة الباقات.",
+    "de": "Paketvergleich.",
+    "ru": "Сравнение пакетов."
   },
   "keyword": {
     "tr": "sss, soru cevap",
     "en": "faq, questions",
-    "ar": "أسئلة وأجوبة"
+    "ar": "أسئلة وأجوبة",
+    "de": "FAQ, Fragen und Antworten",
+    "ru": "FAQ, вопросы и ответы"
   },
   "path": "sorular",
   "icon": "help",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Satış paketleri",
     "en": "Sale packages",
-    "ar": "باقات البيع"
+    "ar": "باقات البيع",
+    "de": "Pakete",
+    "ru": "Пакеты"
   },
   "date": "2026-11-16T11:40:36.688Z",
   "update": "2026-11-16T12:20:44.481Z"

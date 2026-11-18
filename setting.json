@@ -4,12 +4,16 @@
   "description": {
     "tr": "Rota Otomotiv: ekspertizli ikinci el araç ilanları; kasa, yakıt ve bütçeye göre süzün, takas ve ekspertiz randevusu alın. Demo site; içerik kurgusaldır.",
     "en": "Rota Motors: inspected used-car listings; filter by body, fuel and budget, and book a trade-in or inspection. Demo site; content is fictional.",
-    "ar": "روتا للسيارات: إعلانات سيارات مستعملة مفحوصة؛ صفِّ حسب الهيكل والوقود والميزانية واحجز موعد مقايضة أو فحص. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "روتا للسيارات: إعلانات سيارات مستعملة مفحوصة؛ صفِّ حسب الهيكل والوقود والميزانية واحجز موعد مقايضة أو فحص. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Rota Otomotiv: geprüfte Gebrauchtwagen; filtern nach Karosserie, Kraftstoff und Budget, Termin für Tausch oder Inspektion buchen. Demo-Seite; Inhalte sind fiktiv.",
+    "ru": "Rota Otomotiv: проверенные подержанные авто; фильтры по кузову, топливу и бюджету, запись на обмен или диагностику. Демо-сайт; контент вымышленный."
   },
   "keyword": {
     "tr": "ikinci el araç, oto galeri, ekspertiz, takas, Gaziantep",
     "en": "used cars, car dealer, inspection, trade-in, Gaziantep",
-    "ar": "سيارات مستعملة، معرض سيارات، فحص، مقايضة، غازي عنتاب"
+    "ar": "سيارات مستعملة، معرض سيارات، فحص، مقايضة، غازي عنتاب",
+    "de": "Gebrauchtwagen, Autohaus, Gutachten, Inzahlungnahme, Gaziantep",
+    "ru": "подержанные автомобили, автосалон, экспертиза, трейд-ин, Газиантеп"
   },
   "category": "Kurumsal",
   "name": "Rota Otomotiv",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,
