@@ -3,8 +3,8 @@ var pagesettingjson = webmakerdata.pagesetting.data.find(
   function(item) { return item.modulestatus && item.modulestatus.page; },
 );
 
-var backhtml = `<div class="modulex-nav-item">
-  <a class="modulex-nav-link" href="${wxLangInternalHref('')}">@home@</a>
+var backhtml = `<div class="modulex-menu-item">
+  <a class="modulex-menu-link" href="${wxLangInternalHref('')}">@home@</a>
 </div>`;
 
 if (pagesettingjson) {
@@ -12,20 +12,21 @@ if (pagesettingjson) {
     if (iterator.status === "play" && iterator.category === "") {
       var iteratorName =
         iterator.name[json.lang] || iterator.name.tr || iterator.name.en || "";
-      var itemClass = "modulex-nav-item";
+      /* sinif adlari index.html CSS/JS secicileriyle ayni (modulex-menu-*) */
+      var itemClass = "modulex-menu-item";
       if (page.path === iterator.path) {
-        itemClass += " modulex-nav-item-active";
+        itemClass += " modulex-menu-item-active";
       }
       var dropdownHtml = pagecategory(iterator.id);
       var caretHtml = "";
       if (dropdownHtml !== "") {
-        itemClass += " modulex-nav-item-has-dropdown";
+        itemClass += " modulex-menu-item-has-dropdown";
         caretHtml =
-          '<span class="material-symbols-outlined modulex-nav-caret">expand_more</span>';
+          '<span class="material-symbols-outlined modulex-menu-caret">expand_more</span>';
       }
 
       backhtml += `<div class="${itemClass}">
-  <a class="modulex-nav-link" href="${wxLangInternalHref(
+  <a class="modulex-menu-link" href="${wxLangInternalHref(
     iterator.pathnext || iterator.path,
   )}">
     ${iteratorName}
@@ -298,7 +299,7 @@ function pagecategory(path) {
     }
 
     if (backhtml !== "") {
-      backhtml = `<div class="modulex-nav-dropdown">
+      backhtml = `<div class="modulex-menu-dropdown">
     ${backhtml}
   </div>`;
     }

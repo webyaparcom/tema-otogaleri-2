@@ -3,17 +3,23 @@
   "name": {
     "tr": "Satıştaki araçlar",
     "en": "Cars for sale",
-    "ar": "السيارات المعروضة"
+    "ar": "السيارات المعروضة",
+    "de": "Fahrzeuge",
+    "ru": "Автомобили"
   },
   "description": {
     "tr": "Ekspertizli ikinci el araç ilanları (kurgusal).",
     "en": "Inspected used-car listings (fictional).",
-    "ar": "إعلانات سيارات مستعملة مفحوصة (افتراضية)."
+    "ar": "إعلانات سيارات مستعملة مفحوصة (افتراضية).",
+    "de": "Geprüfte Gebrauchtwagen-Anzeigen (fiktiv).",
+    "ru": "Объявления о проверенных подержанных авто (вымышленные)."
   },
   "keyword": {
     "tr": "İlkelerimiz",
     "en": "Our principles",
-    "ar": "مبادئنا"
+    "ar": "مبادئنا",
+    "de": "Unsere Grundsätze",
+    "ru": "Наши принципы"
   },
   "path": "hizmetler",
   "icon": "work",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Satıştaki araçlar",
     "en": "Cars for sale",
-    "ar": "السيارات المعروضة"
+    "ar": "السيارات المعروضة",
+    "de": "Fahrzeuge",
+    "ru": "Автомобили"
   },
   "date": "2026-11-16T11:40:36.679Z",
   "update": "2026-11-16T12:20:44.474Z"

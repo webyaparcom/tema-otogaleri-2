@@ -3,17 +3,23 @@
   "name": {
     "tr": "Takas ve ekspertiz",
     "en": "Trade-in & inspection",
-    "ar": "المقايضة والفحص"
+    "ar": "المقايضة والفحص",
+    "de": "Inzahlungnahme",
+    "ru": "Трейд-ин"
   },
   "description": {
     "tr": "Takas ve ekspertiz talebi (demo).",
     "en": "Trade-in and inspection request (demo).",
-    "ar": "طلب مقايضة وفحص (تجريبي)."
+    "ar": "طلب مقايضة وفحص (تجريبي).",
+    "de": "Anfrage für Inzahlungnahme und Gutachten (Demo).",
+    "ru": "Заявка на обмен и экспертную оценку (демо)."
   },
   "keyword": {
     "tr": "teklif",
     "en": "quote",
-    "ar": "عرض سعر"
+    "ar": "عرض سعر",
+    "de": "Angebot",
+    "ru": "оценка"
   },
   "path": "teklif-al",
   "icon": "request_quote",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Takas ve ekspertiz",
     "en": "Trade-in & inspection",
-    "ar": "المقايضة والفحص"
+    "ar": "المقايضة والفحص",
+    "de": "Inzahlungnahme",
+    "ru": "Трейд-ин"
   },
   "date": "2026-11-16T11:40:36.698Z",
   "update": "2026-11-16T12:20:44.489Z"
